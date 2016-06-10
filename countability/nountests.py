@@ -21,10 +21,6 @@ verbtag = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 
 #looks at tagged sentence to get the verb the noun refers to
 def getVerb(tagged, dep, noun):
-	# vtag = re.findall(r'/(V\w*)', tagged)
-	# return vtag
-	#toss up - above might not capture the right verb the noun acts on, below disregards cases in which dependency between noun-verb are undefined
-	#		 - above is more faulty, but does not encounter bugs, below is more foolproof, but when it breaks, it breaks the program. would require lots of hand coding to get right
 	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-[0-9]*\)' % noun, dep)
 	stype = getTag(tagged, nsubj[0])
 	#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
