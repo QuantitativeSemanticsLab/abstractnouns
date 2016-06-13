@@ -1,0 +1,66 @@
+CSV format:
+sentence, tagged sentence, dependency parse, noun, noun tag, verb referrent, verb tag, determiner(s), adjectival modifier(s), possesive pronoun(s), numeric modifier(s), case modifier(s), adverbial modifier(s), denumerator, denumerator type, plurality of noun, plurality of verb, tests passed, countability
+
+*** CSVs are categorized by noun lemmas (ex: 'dog' and 'dogs' are in the same CSV), so the lemma is universal throughout the CSV ***
+
+Dataframe Column Functions:
+sentence:
+	full sentence in string form
+	comes from COCA 
+tagged sentence:
+	string of sentence with tags for each word
+	comes from stanford parser in string format 
+dependency parse:
+	string of dependency relations between words
+	also from stanford parser in string format 
+noun:
+	string of the non-lemmatized version of the noun; can be plural, possesive, etc. 
+	uses getNoun(tagged, lemma) 
+noun tag:
+	string of the tag of the non lemmatized version of the noun
+	uses getTag(tagged, noun)
+verb referrent:
+	string of the verb that the noun refers to 
+	uses getVerb(tagged, dep, noun)
+verb tag:
+	string of the tag of the verb that the noun refers to 
+	uses getTag(tagged, verb referrent)
+determiner(s):
+	list of the determiners that modify the noun
+	uses getDetOfN(dep, noun)
+adjectival modifier(s):
+	list of the adjectives that modify the noun
+	uses getAmodOfN(dep, noun)
+possesive(s):
+	list of the possessive pronouns or nouns that modify the noun
+	uses getPossOfN(dep, noun)
+numeric modifier(s):
+	list of number(s) that modify the noun
+	uses getNumOfN(dep, noun)
+case modifier(s):
+	list of case(s) that modify the noun
+	uses getCaseOfN(dep, noun)
+adverbial modifier(s):
+	list of adverb(s) that modify the noun
+	uses getAdvOfN(dep, noun)
+denumerator:
+	string of the denumerator that modifies the noun
+	uses getDenOfN(dep, noun)[0]
+denumerator type:
+	string of the type of denumerator that modifies the noun
+	uses getDenOfN(dep, noun)[1]
+plurality of noun:
+	string of the plurality of the noun
+	uses isPluralN(tagged, noun, lemma)
+plurality of verb:
+	string of the plurality of the verb the noun refers to
+	uses isPluralV(tagged, verb)
+tests passed:
+	string of the allan test the sentence matches
+	uses allanTests(tagged, dep, noun, lemma)
+countability:
+	string of whether the sentence is countable, uncountable, or unknown
+	uses isCountable(tagged, dep, noun)
+
+
+

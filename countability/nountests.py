@@ -76,10 +76,10 @@ fuzzy = ['several', 'many', 'few'] #fall under adjectives, excludes fuzzy number
 typeO = ['each', 'every','either', 'both'] #fall under determiners, excludes concrete numbers
 
 #determines whether the noun is modified by a denumerator, and returns a tuple of the denumerator and what type of denumerator it is, or nothing if there is no denumerator
-def getDenOfN(dep, noun):
-	dt = getDetOfN(dep, noun)
-	jj = getAmodOfN(dep, noun)
-	nm = getNumOfN(dep, noun)
+def getDenOfN(dep, noun, dt, jj, nm):
+	#dt = getDetOfN(dep, noun)
+	#jj = getAmodOfN(dep, noun)
+	#nm = getNumOfN(dep, noun)
 	for n in nm: #listed first to avoid discrepancies like "a thousand" or "several hundred"
 		if n in unit:
 			return n, "unit"
@@ -103,8 +103,8 @@ singulartag = ['NN', 'NNP']
 pluraltag = ['NNS', 'NNPS']
 
 #determines whether a noun is concretely plural, concretely singular, or ambiguous(mixed results) and returns the plurality of the noun
-def isPluralN(tagged, noun, lemma):
-	ntag = getTag(tagged, noun)
+def isPluralN(tagged, noun, lemma, ntag):
+	#ntag = getTag(tagged, noun)
 	if ntag in singulartag:
 		if noun != lemma:
 			return "ambiguous"
@@ -117,8 +117,8 @@ def isPluralN(tagged, noun, lemma):
 			return "ambiguous"
 
 #determines whether a verb is concretely plural, concretely singular, or ambiguous(in the past tense) and returns the plurality of the verb
-def isPluralV(tagged, verb):
-	vtag = getTag(tagged, verb)
+def isPluralV(tagged, verb, vtag):
+	#vtag = getTag(tagged, verb)
 	if vtag == 'VBP':
 		return "plural"
 	elif vtag == 'VBZ':
@@ -127,24 +127,24 @@ def isPluralV(tagged, verb):
 		return "ambiguous"
 
 #looks at sentence to determine what allan test(s?) the sentence is modeled after for the given noun, and returns the name of the test(s?) the sentence fits 
-def allanTests(tagged, dep, noun, lemma):
-	den = getDenOfN(dep, noun)
-	det = getDetOfN(dep, noun)
-	pluN = isPluralN(tagged, noun, lemma)
-	verb = getVerb(tagged, dep, noun)
-	pluV = isPluralV(tagged, verb)
+def allanTests(tagged, dep, noun, lemma, den, dent, det, pluN, pluV):
+	# den = getDenOfN(dep, noun)
+	# det = getDetOfN(dep, noun)
+	# pluN = isPluralN(tagged, noun, lemma)
+	# verb = getVerb(tagged, dep, noun)
+	# pluV = isPluralV(tagged, verb)
 	test = ""
 	#A+N test
-	if den[1] == "unit" and pluN != "plural":
+	if dent == "unit" and pluN != "plural": #den[1] == "unit" and pluN != "plural":
 		test += "A+N"
 	#F+Ns test
-	if den[1] == "fuzzy" and pluN != "singular":
+	if dent == "fuzzy" and pluN != "singular": #den[1] == "fuzzy" and pluN != "singular":
 		test += "F+NS"
 	#EX-PL test
 	if pluN != "plural" and pluV == "plural":
 		test += "EX-PL"
 	#O-DEN test
-	if den[1] == "other": 
+	if dent == "other": #den[1] == "other": 
 		test += "O-DEN"
 	#All+N test
 	for d in det:
@@ -152,9 +152,9 @@ def allanTests(tagged, dep, noun, lemma):
 			test+= "All+N"
 	return test
 
-
-def isCountable(tagged, dep, noun, lemma):
-	tests = allanTests(tagged, dep, noun, lemma)
+#looks at sentence to determine whether the noun is countable in the given context based on the allan tests
+def isCountable(tagged, dep, noun, lemma, tests):
+	#tests = allanTests(tagged, dep, noun, lemma)
 	if tests != "":
 		if tests == "All+N":
 			return "uncountable"
@@ -163,6 +163,76 @@ def isCountable(tagged, dep, noun, lemma):
 	else: 
 		return "unknown"
 
+#converts a list object into a string object for easier printing
+def listToString(alist):
+	return "[" + ', '.join(alist) + "]"
+
+#takes in a sentence, tags, dependencies, and lemma and prints output to all noun tests
+def printNounTests(sentence):
+	tagged = sentence[0]
+	print "tagged = " + tagged 
+	dep = sentence[1]
+	print "dep = " + dep 
+	lemma = sentence[2]
+	print "lemma = " + lemma 
+	noun = getNoun(tagged, lemma)
+	print "noun = " + noun 
+	nountag = getTag(tagged, noun)
+	print "nountag = " + nountag 
+	verbref = getVerb(tagged, dep, noun)
+	print "verbref = " + verbref 
+	verbtag = getTag(tagged, verbref)
+	print "verbtag = " + verbtag 
+	dets = getDetOfN(dep, noun)
+	print "dets = " + listToString(dets) 
+	adjs = getAmodOfN(dep, noun)
+	print "adjs = " + listToString(adjs) 
+	poss = getPossOfN(dep, noun)
+	print "poss = " + listToString(poss) 
+	num = getNumOfN(dep, noun)
+	print "num = " + listToString(num) 
+	case = getCaseOfN(dep, noun)
+	print "case = " + listToString(case) 
+	adv = getAdvOfN(dep, noun)
+	print "adv = " + listToString(adv) 
+	dens = getDenOfN(dep, noun, dets, adjs, num) 
+	den = dens[0]
+	print "den = " + den 
+	dentype = dens[1]
+	print "dentype = " + dentype 
+	pluN = isPluralN(tagged, noun, lemma, nountag)
+	print "pluN = " + pluN 
+	pluV = isPluralV(tagged, verbref, verbtag)
+	print "pluV = " + pluV 
+	passedT = allanTests(tagged, dep, noun, lemma, den, dentype, dets, pluN, pluV)
+	print "passedT = " + passedT 
+	countable = isCountable(tagged, dep, noun, lemma, passedT)
+	print "countable = " + countable 
+
+#takes in a sentence, tags, dependencies, and lemma and returns a list of the outputs to all noun tests
+def returnNounTests(sentence):
+	sent = sentence[0]
+	tagged = sentence[1]
+	dep = sentence[2]
+	lemma = sentence[3]
+	noun = getNoun(tagged, lemma)
+	nountag = getTag(tagged, noun)
+	verbref = getVerb(tagged, dep, noun)
+	verbtag = getTag(tagged, verbref)
+	dets = getDetOfN(dep, noun)
+	adjs = getAmodOfN(dep, noun)
+	poss = getPossOfN(dep, noun)
+	num = getNumOfN(dep, noun)
+	case = getCaseOfN(dep, noun)
+	adv = getAdvOfN(dep, noun)
+	dens = getDenOfN(dep, noun, dets, adjs, num) 
+	den = dens[0]
+	dentype = dens[1]
+	pluN = isPluralN(tagged, noun, lemma, nountag)
+	pluV = isPluralV(tagged, verbref, verbtag)
+	passedT = allanTests(tagged, dep, noun, lemma, den, dentype, dets, pluN, pluV)
+	countable = isCountable(tagged, dep, noun, lemma, passedT)
+	return [noun, nountag, verbref, verbtag, dets, adjs, poss, num, case, adv, dens, den, dentype, pluN, pluV, passedT, countable]
 
 #test sentence 1: A darkness fell over the room
 sentence1 = [
@@ -190,58 +260,61 @@ sentence5 = [
     "det(lightning-2, all-1) nsubj(frightening-4, lightning-2) cop(frightening-4, is-3) root(ROOT-0, frightening-4) case(child-7, to-5) det(child-7, the-6) nmod(frightening-4, child-7)", 
     "lightning"]
 
-def listToString(alist):
-	return "[" + ', '.join(alist) + "]"
+#runNounTests(sentence1)
+#runNounTests(sentence2)
+#runNounTests(sentence3)
+#runNounTests(sentence4)
+#runNounTests(sentence5)
 
-def runNounTests(sentence):
-	tagged = sentence[0]
-	print "tagged = " + tagged 
-	dep = sentence[1]
-	print "dep = " + dep 
-	lemma = sentence[2]
-	print "lemma = " + lemma 
-	noun = getNoun(tagged, lemma)
-	print "noun = " + noun 
-	nountag = getTag(tagged, noun)
-	print "nountag = " + nountag 
-	verbref = getVerb(tagged, dep, noun)
-	print "verbref = " + verbref 
-	verbtag = getTag(tagged, verbref)
-	print "verbtag = " + verbtag 
-	dets = getDetOfN(dep, noun)
-	print "dets = " + listToString(dets) 
-	adjs = getAmodOfN(dep, noun)
-	print "adjs = " + listToString(adjs) 
-	poss = getPossOfN(dep, noun)
-	print "poss = " + listToString(poss) 
-	num = getNumOfN(dep, noun)
-	print "num = " + listToString(num) 
-	case = getCaseOfN(dep, noun)
-	print "case = " + listToString(case) 
-	adv = getAdvOfN(dep, noun)
-	print "adv = " + listToString(adv) 
-	dens = getDenOfN(dep, noun)
-	den = dens[0]
-	print "den = " + den 
-	dentype = dens[1]
-	print "dentype = " + dentype 
-	pluN = isPluralN(tagged, noun, lemma)
-	print "pluN = " + pluN 
-	pluV = isPluralV(tagged, verbref)
-	print "pluV = " + pluV 
-	passedT = allanTests(tagged, dep, noun, lemma)
-	print "passedT = " + passedT 
-	countable = isCountable(tagged, dep, noun, lemma)
-	print "countable = " + countable 
+import csv
 
-runNounTests(sentence1)
-runNounTests(sentence2)
-runNounTests(sentence3)
-runNounTests(sentence4)
-runNounTests(sentence5)
+#less readable/scalable version of writing categorizations to the CSV
+# def addToCSV(infile, outfile):
+# 	csvifile = open(infile, 'rU')
+# 	csvofile = open(outfile, 'w')
+# 	reader = csv.reader(csvifile)
+# 	writer = csv.writer(csvofile)
+# 	header = True
+# 	for row in reader:
+# 		if header:
+# 			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+# 			header = False
+# 		else:
+# 			row.append(getNoun(row[1], row[3])) #adds noun to col4
+# 			row.append(getTag(row[1], row[4])) #adds tag of noun to col5
+# 			row.append(getVerb(row[1], row[2], row[4])) #adds verb referrent to col6
+# 			row.append(getTag(row[1], row[6])) #adds verb tag to col7
+# 			row.append(getDetOfN(row[2], row[4])) #adds determiners to col8
+# 			row.append(getAmodOfN(row[2], row[4])) #adds adj mods to col9
+# 			row.append(getPossOfN(row[2], row[4])) #adds possesives to col10
+# 			row.append(getNumOfN(row[2], row[4])) #adds num mods to col11
+# 			row.append(getCaseOfN(row[2], row[4])) #adds case mods to col12
+# 			row.append(getAdvOfN(row[2], row[4])) #adds adv mods to col13
+# 			row.append(getDenOfN(row[2], row[4], row[8], row[9], row[11])[0]) #adds denumerator to col14
+# 			row.append(getDenOfN(row[2], row[4], row[8], row[9], row[11])[1]) #adds denumerator type to col15
+# 			row.append(isPluralN(row[2], row[4], row[3], row[5])) #adds plurality of noun to col16
+# 			row.append(isPluralV(row[2], row[6], row[7])) #adds plurality of verb to col17
+# 			row.append(allanTests(row[1], row[2], row[4], row[3], row[14], row[15], row[8], row[16], row[17])) #adds allen tests passed to col18
+# 			row.append(isCountable(row[1], row[2], row[4], row[3], row[18])) #adds countability to col19
+# 		writer.writerow(row)
+#addToCSV('testSentences.csv', 'testSentencesO.csv')
 
+#takes in a CSV with the sentences, tagged sentences, dependency parses, and lemmas, and writes a new file with extended categorizations for each sentence
+def appendToCSV(infile, outfile):
+	csvifile = open(infile, 'rU')
+	csvofile = open(outfile, 'w')
+	reader = csv.reader(csvifile)
+	writer = csv.writer(csvofile)
+	header = True
+	for row in reader:
+		if header:
+			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			header = False
+		else:
+			row.extend(returnNounTests([row[0], row[1], row[2], row[3]]))
+		writer.writerow(row)
 
-
+appendToCSV('testSentences.csv', 'testSentencesO.csv')
 
 
 
