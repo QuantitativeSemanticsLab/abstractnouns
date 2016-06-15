@@ -23,7 +23,7 @@ verb referrent:
 	string of the verb that the noun refers to 
 	uses getVerb(tagged, dep, noun)
 verb tag:
-	string of the tag of the verb that the noun refers to 
+	string of the tag of the verb that the noun refers to gi
 	uses getTag(tagged, verb referrent)
 determiner(s):
 	list of the determiners that modify the noun

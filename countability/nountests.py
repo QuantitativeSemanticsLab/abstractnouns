@@ -1,15 +1,26 @@
 import re
 from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize 
+import csv
 
+#tag1 = "the/DT dog/NN is/VBZ hungry/JJ as/IN dogs/NN on/IN fire/NN"
+#tok = word_tokenize(tag1)
+#print tok 
 
-#returns a list of nouns from a tagged sentence
-def getNoun(tagged, lemma):
-	nouns = re.findall(r'\s(\S*)/N', tagged)
-	noun = ''
-	for n in nouns:
-		if WordNetLemmatizer().lemmatize(n, 'n') == lemma:
-			noun = n
-	return noun
+#returns a list of tuples of nouns amd indeces from a tagged sentence
+def getNouns(tagged, lemma):
+	tokenized = word_tokenize(tagged)
+	nouns = []
+	for i in range(len(tokenized)):
+		noun = re.findall(r'(\S*)/N', tokenized[i])
+		if len(noun) == 1 and WordNetLemmatizer().lemmatize(noun[0], 'n') == lemma:
+			tag = re.findall(r'%s\/(\w*)' % noun[0], tokenized[i])
+			nouns.append((noun[0], i+1, tag[0]))
+	return nouns
+
+#print getNouns(tag1, 'dog')
+
+#returns the indices of the nouns from the tagged sentence 
 
 #looks at tagged sentence to get the tag of a given word
 def getTag(tagged, word):
@@ -20,8 +31,8 @@ def getTag(tagged, word):
 verbtag = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 
 #looks at tagged sentence to get the verb the noun refers to
-def getVerb(tagged, dep, noun):
-	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-[0-9]*\)' % noun, dep)
+def getVerb(tagged, dep, noun, index):
+	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
 	stype = getTag(tagged, nsubj[0])
 	#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
 	if stype not in verbtag:
@@ -38,36 +49,36 @@ def getVerb(tagged, dep, noun):
 	return verb[0]
 
 #determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s)
-def getDetOfN(dep, noun):
-	det = re.findall(r'det\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getDetOfN(dep, noun, index):
+	det = re.findall(r'det\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return det
 
 #determines whether there is an adjectival modifier for the given noun in a dependency parse, and returns the adjective(s)
-def getAmodOfN(dep, noun):
-	amod = re.findall(r'amod\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getAmodOfN(dep, noun, index):
+	amod = re.findall(r'amod\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return amod
 
 #determines whether there is a possesive pronoun or proper noun for the given noun in a dependency parse, and returns the pronoun(s) or noun(s)
-def getPossOfN(dep, noun):
-	poss = re.findall(r'nmod\:poss\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getPossOfN(dep, noun, index):
+	poss = re.findall(r'nmod\:poss\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return poss
 
 #determines whether there is a numeric modifier for the given noun in a dependency parse, and returns the number(s)
-def getNumOfN(dep, noun):
-	num = re.findall(r'nummod\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getNumOfN(dep, noun, index):
+	num = re.findall(r'nummod\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	compnum = re.findall(r'compound\(%s*-[0-9]*, (\w*)-[0-9]*\)' % num, dep)
 	num = compnum + num
 	return num
 
 #determines whether there is a case modifier for the given noun in a dependency parse, and returns the case(s)
-def getCaseOfN(dep, noun):
-	case = re.findall(r'case\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getCaseOfN(dep, noun, index):
+	case = re.findall(r'case\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return case
 
 
 #determines whether there is a adverbial modifier for the given noun in a dependency parse, and returns the adverb(s)
-def getAdvOfN(dep, noun):
-	adv = re.findall(r'advmod\(%s-[0-9]*, (\w*)-[0-9]*\)' % noun, dep)
+def getAdvOfN(dep, noun, index):
+	adv = re.findall(r'advmod\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return adv
 
 #classifying denumerators
@@ -76,7 +87,7 @@ fuzzy = ['several', 'many', 'few'] #fall under adjectives, excludes fuzzy number
 typeO = ['each', 'every','either', 'both'] #fall under determiners, excludes concrete numbers
 
 #determines whether the noun is modified by a denumerator, and returns a tuple of the denumerator and what type of denumerator it is, or nothing if there is no denumerator
-def getDenOfN(dep, noun, dt, jj, nm):
+def getDenOfN(dep, noun, dt, jj, nm, adv):
 	#dt = getDetOfN(dep, noun)
 	#jj = getAmodOfN(dep, noun)
 	#nm = getNumOfN(dep, noun)
@@ -84,8 +95,8 @@ def getDenOfN(dep, noun, dt, jj, nm):
 		if n in unit:
 			return n, "unit"
 		else:
-			if not getAdvOfN(dep, n):
-				return n, "typeO"
+			if not adv:
+				return n, "other"
 			else:
 				return n, "fuzzy"
 	for d in dt:
@@ -210,22 +221,22 @@ def printNounTests(sentence):
 	print "countable = " + countable 
 
 #takes in a sentence, tags, dependencies, and lemma and returns a list of the outputs to all noun tests
-def returnNounTests(sentence):
+def returnNounTests(sentence, lemma, nountup):
 	sent = sentence[0]
 	tagged = sentence[1]
 	dep = sentence[2]
-	lemma = sentence[3]
-	noun = getNoun(tagged, lemma)
-	nountag = getTag(tagged, noun)
-	verbref = getVerb(tagged, dep, noun)
+	noun = nountup[0]
+	index = nountup[1]
+	nountag = nountup[2]
+	verbref = getVerb(tagged, dep, noun, index)
 	verbtag = getTag(tagged, verbref)
-	dets = getDetOfN(dep, noun)
-	adjs = getAmodOfN(dep, noun)
-	poss = getPossOfN(dep, noun)
-	num = getNumOfN(dep, noun)
-	case = getCaseOfN(dep, noun)
-	adv = getAdvOfN(dep, noun)
-	dens = getDenOfN(dep, noun, dets, adjs, num) 
+	dets = getDetOfN(dep, noun, index)
+	adjs = getAmodOfN(dep, noun, index)
+	poss = getPossOfN(dep, noun, index)
+	num = getNumOfN(dep, noun, index)
+	case = getCaseOfN(dep, noun, index)
+	adv = getAdvOfN(dep, noun, index)
+	dens = getDenOfN(dep, noun, dets, adjs, num, adv) 
 	den = dens[0]
 	dentype = dens[1]
 	pluN = isPluralN(tagged, noun, lemma, nountag)
@@ -266,8 +277,6 @@ sentence5 = [
 #runNounTests(sentence4)
 #runNounTests(sentence5)
 
-import csv
-
 #less readable/scalable version of writing categorizations to the CSV
 # def addToCSV(infile, outfile):
 # 	csvifile = open(infile, 'rU')
@@ -300,7 +309,7 @@ import csv
 #addToCSV('testSentences.csv', 'testSentencesO.csv')
 
 #takes in a CSV with the sentences, tagged sentences, dependency parses, and lemmas, and writes a new file with extended categorizations for each sentence
-def appendToCSV(infile, outfile):
+def appendToCSV(infile, outfile, lemma):
 	csvifile = open(infile, 'rU')
 	csvofile = open(outfile, 'w')
 	reader = csv.reader(csvifile)
@@ -310,11 +319,16 @@ def appendToCSV(infile, outfile):
 		if header:
 			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
 			header = False
+			writer.writerow(row)
 		else:
-			row.extend(returnNounTests([row[0], row[1], row[2], row[3]]))
-		writer.writerow(row)
+			nounoccs = getNouns(row[1], row[3])
+			for i in range(len(nounoccs)):
+				newrow = []
+				newrow.extend([row[0], row[1], row[2], row[3]])
+				newrow.extend(returnNounTests([row[0], row[1], row[2]], row[3], nounoccs[i]))
+				writer.writerow(newrow)
 
-appendToCSV('testSentences.csv', 'testSentencesO.csv')
+appendToCSV('testSentences.csv', 'testSentencesO.csv', 'kitten')
 
 
 
