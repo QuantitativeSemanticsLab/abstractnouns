@@ -3,64 +3,68 @@ sentence, tagged sentence, dependency parse, noun, noun tag, verb referrent, ver
 
 *** CSVs are categorized by noun lemmas (ex: 'dog' and 'dogs' are in the same CSV), so the lemma is universal throughout the CSV ***
 
+
 Dataframe Column Functions:
 sentence:
 	full sentence in string form
-	comes from COCA 
+	comes from COCA, stored in dataframe in first column 
 tagged sentence:
 	string of sentence with tags for each word
-	comes from stanford parser in string format 
+	comes from stanford parser in string format, stored in dataframe in 2nd column 
 dependency parse:
 	string of dependency relations between words
-	also from stanford parser in string format 
+	also from stanford parser in string format, stored in dataframe in 3rd column
+lemma (in mixed csvs only):
+	base word of the noun for the given sentence
+	hand added to dataframe in 4th column 
 noun:
 	string of the non-lemmatized version of the noun; can be plural, possesive, etc. 
-	uses getNoun(tagged, lemma) 
+	uses getNouns(tagged, lemma)[0] 
 noun tag:
 	string of the tag of the non lemmatized version of the noun
-	uses getTag(tagged, noun)
-verb referrent:
+	uses getNouns(tagged, noun)[2]
+verb:
 	string of the verb that the noun refers to 
-	uses getVerb(tagged, dep, noun)
+	uses getVerb(tagged, dep, noun, index)
 verb tag:
 	string of the tag of the verb that the noun refers to gi
-	uses getTag(tagged, verb referrent)
+	uses getTag(tagged, verb)
 determiner(s):
 	list of the determiners that modify the noun
-	uses getDetOfN(dep, noun)
+	uses getDetOfN(dep, noun, index)
 adjectival modifier(s):
 	list of the adjectives that modify the noun
-	uses getAmodOfN(dep, noun)
+	uses getAmodOfN(dep, noun, index)
 possesive(s):
 	list of the possessive pronouns or nouns that modify the noun
-	uses getPossOfN(dep, noun)
+	uses getPossOfN(dep, noun, index)
 numeric modifier(s):
 	list of number(s) that modify the noun
-	uses getNumOfN(dep, noun)
+	uses getNumOfN(dep, noun, index)
 case modifier(s):
 	list of case(s) that modify the noun
-	uses getCaseOfN(dep, noun)
+	uses getCaseOfN(dep, noun, index)
 adverbial modifier(s):
 	list of adverb(s) that modify the noun
-	uses getAdvOfN(dep, noun)
+	uses getAdvOfN(dep, noun, index)
 denumerator:
 	string of the denumerator that modifies the noun
-	uses getDenOfN(dep, noun)[0]
+	uses getDenOfN(dets, adjs, num, adv)[0]
 denumerator type:
 	string of the type of denumerator that modifies the noun
-	uses getDenOfN(dep, noun)[1]
+	uses getDenOfN(dets, adjs, num, adv)[1]
 plurality of noun:
 	string of the plurality of the noun
-	uses isPluralN(tagged, noun, lemma)
+	uses isPluralN(noun, lemma, nountag)
 plurality of verb:
 	string of the plurality of the verb the noun refers to
-	uses isPluralV(tagged, verb)
+	uses isPluralV(verb, verbtag)
 tests passed:
 	string of the allan test the sentence matches
-	uses allanTests(tagged, dep, noun, lemma)
+	uses allanTests(dentype, dets, pluN, pluV)
 countability:
 	string of whether the sentence is countable, uncountable, or unknown
-	uses isCountable(tagged, dep, noun)
+	uses isCountable(testspassed)
 
 
 
