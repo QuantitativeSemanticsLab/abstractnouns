@@ -20,6 +20,9 @@ lemma (in mixed csvs only):
 noun:
 	string of the non-lemmatized version of the noun; can be plural, possesive, etc. 
 	uses getNouns(tagged, lemma)[0] 
+index: 
+	int of the position of the noun in the sentence (indexing starts at 1)
+	uses getNouns(tagged, lemma)[1]
 noun tag:
 	string of the tag of the non lemmatized version of the noun
 	uses getNouns(tagged, noun)[2]
@@ -29,6 +32,12 @@ verb:
 verb tag:
 	string of the tag of the verb that the noun refers to gi
 	uses getTag(tagged, verb)
+prepositional modifier:
+	string of whether the noun is modified or a modifier in a prep phrase
+	uses getPrepOfN(dep, noun, index)[0]
+prepositional phrase:
+	list of the other modifier/modified words in the prepositional phrase
+	uses getPrepOfN(dep, noun, index)[1]
 determiner(s):
 	list of the determiners that modify the noun
 	uses getDetOfN(dep, noun, index)

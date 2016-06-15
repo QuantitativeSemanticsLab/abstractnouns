@@ -1,13 +1,11 @@
 import re
 from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize 
 import csv
-
 
 
 #returns a list of tuples of nouns, indeces, and tags from a tagged sentence for a given lemma
 def getNouns(tagged, lemma):
-	tokenized = word_tokenize(tagged)
+	tokenized = tagged.split()
 	nouns = []
 	for i in range(len(tokenized)):
 		noun = re.findall(r'(\S*)/N', tokenized[i])
@@ -27,20 +25,38 @@ verbtag = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 #looks at tagged sentence to get the verb the noun refers to
 def getVerb(tagged, dep, noun, index):
 	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
-	stype = getTag(tagged, nsubj[0])
-	#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
-	if stype not in verbtag:
-		verb = re.findall(r'cop\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
-		vtag = getTag(tagged, verb[0])
-	#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
-	elif stype == 'VBG':
-		verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
-		vtag = getTag(tagged, verb[0])
-	#all other cases
+	dobj = re.findall(r'dobj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
+	if len(nsubj) >= 1:
+		stype = getTag(tagged, nsubj[0])
+		#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
+		if stype not in verbtag:
+			verb = re.findall(r'cop\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
+			vtag = getTag(tagged, verb[0])
+		#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
+		elif stype == 'VBG':
+			verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
+			vtag = getTag(tagged, verb[0])
+		#all other cases
+		else:
+			verb = nsubj
+			vtag = stype
+		return verb[0], vtag
+	elif len(dobj) >= 1:
+		vtag = getTag(tagged, dobj[0])
+		return dobj[0], vtag
 	else:
-		verb = nsubj
-		vtag = stype
-	return verb[0]
+		return '', ''
+
+#determines whether the noun is included in a prep phrase, then returns a tuple of the position in the phrase(modifier vs. modified) with the rest of the phrase		
+def getPrepOfN(dep, noun, index):
+	nmod = re.findall(r'nmod\:(\w*)\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
+	modn = re.findall(r'nmod\:(\w*)\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
+	if len(nmod) >=1:
+		return 'modified', nmod
+	elif len(modn) >=1:
+		return 'modifier', modn
+	else:
+		return '', []
 
 #determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s)
 def getDetOfN(dep, noun, index):
@@ -69,7 +85,6 @@ def getCaseOfN(dep, noun, index):
 	case = re.findall(r'case\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return case
 
-
 #determines whether there is a adverbial modifier for the given noun in a dependency parse, and returns the adverb(s)
 def getAdvOfN(dep, noun, index):
 	adv = re.findall(r'advmod\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
@@ -86,7 +101,7 @@ def getDenOfN(dt, jj, nm, adv):
 		if n in unit:
 			return n, "unit"
 		else:
-			if not adv:
+			if n not in adv:
 				return n, "other"
 			else:
 				return n, "fuzzy"
@@ -118,11 +133,13 @@ def isPluralN(noun, lemma, ntag):
 			return "ambiguous"
 
 #determines whether a verb is concretely plural, concretely singular, or ambiguous(in the past tense) and returns the plurality of the verb
-def isPluralV(verb, vtag):
+def isPluralV(vtag):
 	if vtag == 'VBP':
 		return "plural"
 	elif vtag == 'VBZ':
 		return "singular"
+	elif vtag == '':
+		return ''
 	else:
 		return "ambiguous"
 
@@ -130,16 +147,16 @@ def isPluralV(verb, vtag):
 def allanTests(dent, det, pluN, pluV):
 	test = ""
 	#A+N test
-	if dent == "unit" and pluN != "plural": #den[1] == "unit" and pluN != "plural":
+	if dent == "unit" and pluN != "plural":
 		test += "A+N"
 	#F+Ns test
-	if dent == "fuzzy" and pluN != "singular": #den[1] == "fuzzy" and pluN != "singular":
+	if dent == "fuzzy" and pluN != "singular": 
 		test += "F+NS"
 	#EX-PL test
 	if pluN != "plural" and pluV == "plural":
 		test += "EX-PL"
 	#O-DEN test
-	if dent == "other": #den[1] == "other": 
+	if dent == "other":  
 		test += "O-DEN"
 	#All+N test
 	for d in det:
@@ -157,7 +174,6 @@ def isCountable(tests):
 	else: 
 		return "unknown"
 
-
 #takes in a sentence, tags, dependencies, and lemma and returns a list of the outputs to all noun tests
 def returnNounTests(sentence, lemma, nountup):
 	sent = sentence[0]
@@ -166,8 +182,10 @@ def returnNounTests(sentence, lemma, nountup):
 	noun = nountup[0]
 	index = nountup[1]
 	nountag = nountup[2]
-	verbref = getVerb(tagged, dep, noun, index)
-	verbtag = getTag(tagged, verbref)
+	verbref = getVerb(tagged, dep, noun, index)[0]
+	verbtag = getVerb(tagged, dep, noun, index)[1]
+	prep = getPrepOfN(dep, noun, index)[0]
+	prepp = getPrepOfN(dep, noun, index)[1]
 	dets = getDetOfN(dep, noun, index)
 	adjs = getAmodOfN(dep, noun, index)
 	poss = getPossOfN(dep, noun, index)
@@ -178,10 +196,11 @@ def returnNounTests(sentence, lemma, nountup):
 	den = dens[0]
 	dentype = dens[1]
 	pluN = isPluralN(noun, lemma, nountag)
-	pluV = isPluralV(verbref, verbtag)
+	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
-	return [noun, nountag, verbref, verbtag, dets, adjs, poss, num, case, adv, dens, den, dentype, pluN, pluV, passedT, countable]
+	return [noun, index, nountag, verbref, verbtag, prep, prepp, dets, adjs, poss, num, case, adv, den, dentype, pluN, pluV, passedT, countable]
+
 
 # #test sentence 1: A darkness fell over the room
 # sentence1 = [
@@ -246,7 +265,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			row.extend(['Noun', 'Index', 'Noun Tag', 'Verb', 'Verb Tag', 'Prepositional Position', 'Prepositional Phrase', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
 			header = False
 			writer.writerow(row)
 		else:
@@ -256,8 +275,10 @@ def appendToCSV(infile, outfile, lemma):
 				newrow.extend([row[0], row[1], row[2]])
 				newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i]))
 				writer.writerow(newrow)
+	#csvifile.close()
+	#csvofile.close()
 
-appendToMixedCSV('testSentences.csv', 'testSentencesO.csv')
+appendToCSV('crimeI.csv', 'crimeO.csv', 'crime')
 
 
 
