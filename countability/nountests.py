@@ -36,6 +36,8 @@ verbtag = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 def getVerb(tagged, dep, noun, index):
 	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
 	dobj = re.findall(r'dobj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
+	comp = re.findall(r'compound\((\w*)-([0-9]*), %s-%d\)' % (noun, index), dep)
+	#handles cases where noun is the subject of the verb
 	if len(nsubj) >= 1:
 		stype = getTag(tagged, nsubj[0])
 		#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
@@ -50,12 +52,17 @@ def getVerb(tagged, dep, noun, index):
 		else:
 			verb = nsubj
 			vtag = stype
-		return verb[0], vtag
+		return verb[0], vtag , 'subject'
+	#handles cases where noun is the object of the verb
 	elif len(dobj) >= 1:
 		vtag = getTag(tagged, dobj[0])
-		return dobj[0], vtag
+		return dobj[0], vtag, 'object'
+	#handles compound case where noun modifies another noun (that is either the subject or object of the verb)
+	elif len(comp) >= 1:
+		verbtup = getVerb(tagged, dep, comp[0][0], int(comp[0][1]))
+		return verbtup[0], verbtup[1], verbtup[2] 
 	else:
-		return '', ''
+		return '', '', ''
 
 #determines whether the noun is included in a prep phrase, then returns a tuple of the position in the phrase(modifier vs. modified) with the rest of the phrase		
 def getPrepOfN(dep, noun, index):
@@ -196,6 +203,7 @@ def returnNounTests(sentence, lemma, nountup):
 	verbtup = getVerb(tagged, extdep, noun, index)
 	verbref = verbtup[0]
 	verbtag = verbtup[1]
+	verbrel = verbtup[2]
 	preptup = getPrepOfN(dep, noun, index)
 	prep = preptup[0]
 	prepp = preptup[1]
@@ -212,7 +220,7 @@ def returnNounTests(sentence, lemma, nountup):
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
-	return [noun, index, dep, nountag, verbref, verbtag, prep, prepp, dets, adjs, poss, num, case, adv, den, dentype, pluN, pluV, passedT, countable]
+	return [noun, index, dep, nountag, verbref, verbtag, verbrel, prep, prepp, dets, adjs, poss, num, case, adv, den, dentype, pluN, pluV, passedT, countable]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -278,7 +286,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Noun Tag', 'Verb', 'Verb Tag', 'Prepositional Position', 'Prepositional Phrase', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Noun Tag', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Prepositional Position', 'Prepositional Phrase', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
 			header = False
 			writer.writerow(row)
 		else:
