@@ -2,6 +2,16 @@ import re
 from nltk.stem import WordNetLemmatizer
 import csv
 
+#returns a string of the relevant dependencies (those that contain the target noun)
+def getRelDeps(dep, noun, index):
+	reldep = ''
+	reldepleft = re.findall(r'(\S*\(%s-%d, \w*-[0-9]*\))' % (noun, index), dep)
+	reldepright = re.findall(r'(\S*\(\w*-[0-9]*, %s-%d\))' % (noun, index), dep)
+	for r in reldepleft:
+		reldep += r + ' '
+	for r in reldepright:
+		reldep += r + ' '
+	return reldep
 
 #returns a list of tuples of nouns, indeces, and tags from a tagged sentence for a given lemma
 def getNouns(tagged, lemma):
@@ -178,18 +188,21 @@ def isCountable(tests):
 def returnNounTests(sentence, lemma, nountup):
 	sent = sentence[0]
 	tagged = sentence[1]
-	dep = sentence[2]
+	extdep = sentence[2]
 	noun = nountup[0]
 	index = nountup[1]
+	dep = getRelDeps(extdep, noun, index)
 	nountag = nountup[2]
-	verbref = getVerb(tagged, dep, noun, index)[0]
-	verbtag = getVerb(tagged, dep, noun, index)[1]
-	prep = getPrepOfN(dep, noun, index)[0]
-	prepp = getPrepOfN(dep, noun, index)[1]
+	verbtup = getVerb(tagged, extdep, noun, index)
+	verbref = verbtup[0]
+	verbtag = verbtup[1]
+	preptup = getPrepOfN(dep, noun, index)
+	prep = preptup[0]
+	prepp = preptup[1]
 	dets = getDetOfN(dep, noun, index)
 	adjs = getAmodOfN(dep, noun, index)
 	poss = getPossOfN(dep, noun, index)
-	num = getNumOfN(dep, noun, index)
+	num = getNumOfN(extdep, noun, index)
 	case = getCaseOfN(dep, noun, index)
 	adv = getAdvOfN(dep, noun, index)
 	dens = getDenOfN(dets, adjs, num, adv) 
@@ -199,7 +212,7 @@ def returnNounTests(sentence, lemma, nountup):
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
-	return [noun, index, nountag, verbref, verbtag, prep, prepp, dets, adjs, poss, num, case, adv, den, dentype, pluN, pluV, passedT, countable]
+	return [noun, index, dep, nountag, verbref, verbtag, prep, prepp, dets, adjs, poss, num, case, adv, den, dentype, pluN, pluV, passedT, countable]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -265,7 +278,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Noun Tag', 'Verb', 'Verb Tag', 'Prepositional Position', 'Prepositional Phrase', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Noun Tag', 'Verb', 'Verb Tag', 'Prepositional Position', 'Prepositional Phrase', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
 			header = False
 			writer.writerow(row)
 		else:
