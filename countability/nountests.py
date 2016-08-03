@@ -110,7 +110,7 @@ def getAdvOfN(dep, noun, index):
 #classifying denumerators
 unit = ['a', 'an', 'one', '1'] #fall under determiners or numbers
 fuzzy = ['several', 'many', 'few'] #fall under adjectives, excludes fuzzy numbers
-typeO = ['each', 'every','either', 'both'] #fall under determiners, excludes concrete numbers
+typeO = ['each', 'every','either', 'both' ] #fall under determiners, excludes concrete numbers
 
 #determines whether the noun is modified by a denumerator, and returns a tuple of the denumerator and what type of denumerator it is, or nothing if there is no denumerator
 def getDenOfN(dt, jj, nm, adv):
