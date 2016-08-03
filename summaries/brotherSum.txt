@@ -1,0 +1,24 @@
+       Noun     Noun.Tag  Negation Verb.Reference    Verb.Tag  Relation.to.Verb Verb.Negation           Prepositional.Phrases      Prepositions    Prepositional.Subjects Prepositional.Objects         Determiners                Conjunctions
+ brother :111   NN :110   []:184          :91            :91          :88         :88         []                   :127       []         :127   []            :135        []         :172       []            :152   []                  :142  
+ brothers: 73   NNP:  1            was    : 7     VBD    :40   object :37       []:96         [('of', 'deaths')]   :  2       ['of']     : 20   ['deaths']    :  2        ['class']  :  1       ['the']       : 24   [('and', 'father')] :  4  
+                NNS: 73            had    : 5     VB     :18   subject:59                     [('among', 'uproar')]:  1       ['to']     :  5   ['made']      :  2        ['famiJy'] :  1       ['a']         :  2   [('and', 'sisters')]:  4  
+                                   are    : 3     VBN    :10                                  [('as', 'another')]  :  1       ['as']     :  4   ['activities']:  1        ['general']:  1       ['another']   :  2   [('and', 'brother')]:  2  
+                                   became : 3     VBP    : 9                                  [('as', 'ashira')]   :  1       ['in']     :  4   ['advice']    :  1        ['Kaunda'] :  1       ['A']         :  1   [('and', 'Fathers')]:  2  
+                                   have   : 3     VBZ    : 9                                  [('as', 'lived')]    :  1       ['between']:  3   ['another']   :  1        ['member'] :  1       ['all', 'the']:  1   [('and', 'he')]     :  2  
+                                   (Other):72     (Other): 7                                  (Other)              : 51       (Other)    : 21   (Other)       : 42        (Other)    :  7       (Other)       :  2   (Other)             : 28  
+       Compounds       Adjectival.Modifiers   Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers Case.Modifiers     Adverbial.Modifiers               Appositional.Modifiers  Denumerator  Type.of.Denumerator Plurality.of.Noun
+ []         :162   []            :145       ['authority'] :  1         []        :83             ['five'] :  1     []     :139    ['themselves']:  1      []                       :163               :170        :170           plural  : 73     
+ ['Abbas']  :  1   ['younger']   :  9       ['death']     :  2         ['his']   :30             ['four'] :  1     ['of'] : 17    ['virtually'] :  1      ['modified', 'Alexis']   :  1        two    :  4   fuzzy:  2           singular:111     
+ ['Absalon']:  1   ['older']     :  8       ['house']     :  1         ['her']   :17             ['three']:  3     ['to'] :  5    ['years']     :  1      ['modified', 'Hussein']  :  1        three  :  3   other: 10                            
+ ['Alvarez']:  1   ['little']    :  2       ['novels']    :  1         ['my']    :13             ['two']  :  4     ['as'] :  4    []            :181      ['modified', 'Luis']     :  1        a      :  2   unit :  2                            
+ ['Amnon']  :  1   ['own']       :  2       ['reluctance']:  1         ['victim']: 8             ['Two']  :  1     ['by'] :  2                            ['modified', 'mechanic'] :  1        five   :  1                                        
+ ['Bose']   :  1   ['apotropaic']:  1       ['wives']     :  1         ['My']    : 4             []       :174     ['for']:  2                            ['modified', 'merchants']:  1        four   :  1                                        
+ (Other)    : 17   (Other)       : 17       []            :177         (Other)   :29                               (Other): 15                            (Other)                  : 16        (Other):  3                                        
+ Plurality.of.Verb Allan.Tests.Passed    Countability
+          :91           :169          countable: 15  
+ ambiguous:75      A+N  :  2          unknown  :169  
+ plural   : 9      EX-PL:  1                         
+ singular : 9      F+NS :  2                         
+                   O-DEN: 10                         
+                                                     
+                                                     

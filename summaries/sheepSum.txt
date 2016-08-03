@@ -1,0 +1,24 @@
+    Noun     Noun.Tag     Negation   Verb.Reference    Verb.Tag   Relation.to.Verb   Verb.Negation        Prepositional.Phrases   Prepositions Prepositional.Subjects    Prepositional.Objects  Determiners               Conjunctions         Compounds  
+ sheep:304   NN :295   ['no'] :  1          :177           :177          :176               :176   []                :182       []      :182   []         :191        []            :288       []     :220   []                 :198   []           :240  
+             NNP:  5   ['not']:  1   are    :  6    VBD    : 36   object : 64      ['never']:  1   [('of', 'case')]  :  3       ['of']  : 49   ['case']   :  3        ['Scotland']  :  2       ['the']: 43   [('and', 'cattle')]: 15   ['Dall']     :  4  
+             NNS:  4   []     :302   were   :  5    VBP    : 23   subject: 64      ['not']  :  1   [('of', 'flock')] :  3       ['in']  : 14   ['each']   :  3        ['Alps']      :  1       ['a']  : 21   [('and', 'goats')] : 14   ['bighorn']  :  3  
+                                     have   :  4    VB     : 21                    []       :126   [('of', 'each')]  :  2       ['with']:  9   ['flock']  :  3        ['bluetongue']:  1       ['The']:  8   [('and', 'cows')]  :  7   ['producers']:  3  
+                                     grazed :  3    VBN    : 18                                    [('of', 'flocks')]:  2       ['for'] :  8   ['animals']:  2        ['clothing']  :  1       ['an'] :  2   [('and', 'horses')]:  5   ['rancher']  :  3  
+                                     had    :  3    VBG    : 16                                    [('of', 'head')]  :  2       ['to']  :  6   ['flocks'] :  2        ['evening']   :  1       ['A']  :  1   [('and', 'camels')]:  4   ['cloned']   :  2  
+                                     (Other):106    (Other): 13                                    (Other)           :110       (Other) : 36   (Other)    :100        (Other)       : 10       (Other):  9   (Other)            : 61   (Other)      : 49  
+   Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun.   Numeric.Modifiers  Case.Modifiers Adverbial.Modifiers                                 Appositional.Modifiers  Denumerator  Type.of.Denumerator Plurality.of.Noun
+ []          :263       []          :291         ['his']      :  4         []         :292     []      :218    []        :294      []                                         :291               :264        :264           ambiguous:  4    
+ ['black']   :  6       ['clothing']:  4         ['monastery']:  1         ['50']     :  2     ['of']  : 42    ['even']  :  2      ['modified', 'coyotes', 'modified', 'dogs']:  1        a      : 21   fuzzy:  3           singular :300    
+ ['cloned']  :  3       ['blood']   :  1         ['my']       :  1         ['five']   :  2     ['in']  :  8    ['only']  :  2      ['modified', 'D']                          :  1        50     :  2   other: 12                            
+ ['domestic']:  2       ['bones']   :  1         ['our']      :  3         ['one']    :  2     ['with']:  7    ['about'] :  1      ['modified', 'former']                     :  1        an     :  2   unit : 25                            
+ ['few']     :  2       ['DNA']     :  1         ['their']    :  7         ['0']      :  1     ['for'] :  5    ['either']:  1      ['modified', 'humans']                     :  1        five   :  2                                        
+ ['many']    :  2       ['eyelid']  :  1         ['your']     :  1         ['fifteen']:  1     ['to']  :  4    ['Here']  :  1      ['modified', 'Keon']                       :  1        many   :  2                                        
+ (Other)     : 26       (Other)     :  5         []           :287         (Other)    :  4     (Other) : 20    (Other)   :  3      (Other)                                    :  8        (Other): 11                                        
+ Plurality.of.Verb Allan.Tests.Passed    Countability
+          :177          :244          countable: 60  
+ ambiguous: 92     A+N  : 25          unknown  :244  
+ plural   : 23     EX-PL: 23                         
+ singular : 12     O-DEN: 12                         
+                                                     
+                                                     
+                                                     

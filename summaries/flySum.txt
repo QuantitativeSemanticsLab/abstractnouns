@@ -1,0 +1,24 @@
+    Noun     Noun.Tag  Negation Verb.Reference    Verb.Tag   Relation.to.Verb   Verb.Negation               Prepositional.Phrases      Prepositions   Prepositional.Subjects                       Prepositional.Objects  Determiners 
+ flies:  8   NN :195   []:204          :108           :108          :106               :106   []                       :152       []         :152   []           :158        []                               :192       []     :114  
+ fly  :196   NNP:  1            is     : 10    VB     : 33   object : 50      ['never']:  1   [('in', 'ointment')]     :  4       ['of']     : 12   ['species']  :  2        ['ointment']                     :  4       ['the']: 53  
+             NNS:  8            reduce :  3    VBZ    : 22   subject: 48      []       : 97   [('of', 'species')]      :  2       ['on']     :  9   ['agreement']:  1        ['Anaheim']                      :  1       ['a']  : 21  
+                                are    :  2    VBD    : 12                                    [('against', 'battle')]  :  1       ['in']     :  8   ['battle']   :  1        ['Chile', 'Mexico', 'California']:  1       ['The']: 10  
+                                catch  :  2    VBG    : 10                                    [('against', 'defenses')]:  1       ['against']:  3   ['buckle']   :  1        ['impact']                       :  1       ['A']  :  3  
+                                confirm:  2    VBN    : 10                                    [('against', 'lay')]     :  1       ['with']   :  3   ['buzzing']  :  1        ['penalty']                      :  1       ['an'] :  1  
+                                (Other): 77    (Other):  9                                    (Other)                  : 43       (Other)    : 17   (Other)      : 40        (Other)                          :  4       (Other):  2  
+                 Conjunctions                      Compounds              Adjectival.Modifiers  Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers     Case.Modifiers Adverbial.Modifiers
+ []                    :194   []                        :78   []                    :171       ['body']     :  1         ['day'] :  1              ['one']  :  1     []         :161    ['along']:  1      
+ [('and', 'changes')]  :  1   ['ash']                   :12   ['tsetse']            :  5       ['cousin']   :  1         ['your']:  1              ['three']:  2     ['on']     : 14    ['at']   :  1      
+ [('and', 'hazelnuts')]:  1   ['fruit']                 :11   ['female']            :  4       ['fluid']    :  1         []      :202              []       :201     ['of']     : 12    ['even'] :  1      
+ [('and', 'lady')]     :  1   ['larvae']                : 6   ['imported', 'phorid']:  2       ['foot']     :  1                                                     ['against']:  3    []       :201      
+ [('and', 'relative')] :  1   ['scorpion']              : 6   ['male']              :  2       ['forewings']:  1                                                     ['with']   :  3                       
+ [('and', 'sawfly')]   :  1   ['Mediterranean', 'fruit']: 4   ['phorid']            :  2       ['wings']    :  1                                                     ['by']     :  2                       
+ (Other)               :  5   (Other)                   :87   (Other)               : 18       []           :198                                                     (Other)    :  9                       
+                                                  Appositional.Modifiers Denumerator Type.of.Denumerator Plurality.of.Noun Plurality.of.Verb Allan.Tests.Passed    Countability
+ ['modified', 'bird', 'modified', 'cat', 'modified', 'range']:  1             :178        :178           plural  :  8               :108             :173       countable: 31  
+ ['modified', 'melanogaster']                                :  1        a    : 21   other:  3           singular:196      ambiguous: 67     A+N     : 22       unknown  :173  
+ ['modified', 'stercorana']                                  :  1        an   :  1   unit : 23                             plural   :  7     A+NEX-PL:  1                      
+ ['modifier', 'vulture']                                     :  1        both :  1                                         singular : 22     EX-PL   :  5                      
+ []                                                          :200        one  :  1                                                           O-DEN   :  3                      
+                                                                         three:  2                                                                                             
+                                                                                                                                                                               

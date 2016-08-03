@@ -1,0 +1,24 @@
+      Noun    Noun.Tag   Negation   Verb.Reference Verb.Tag Relation.to.Verb Verb.Negation             Prepositional.Phrases      Prepositions     Prepositional.Subjects                 Prepositional.Objects         Determiners
+ carrot :50   NN :51   ['no']:  1          :48        :48          :48              :48    []                     :68        []         :68    []             :73         ['assistance']             : 2        ['a']         :10  
+ carrots:52   NNS:51   []    :101   Add    : 5     VB :17   object :33       ['not']: 1    [('of', 'assistance')] : 2        ['of']     :16    ['combination']: 2         ['incentive']              : 1        ['all', 'the']: 1  
+                                    are    : 3     VBD: 5   subject:21       []     :53    [('of', 'combination')]: 2        ['such_as']: 3    ['admirer']    : 1         ['MFN']                    : 1        ['all']       : 1  
+                                    combine: 2     VBG: 7                                  [('as', 'citing')]     : 1        ['to']     : 3    ['analogy']    : 1         ['purchases', 'assistance']: 1        ['an']        : 1  
+                                    contain: 2     VBN: 7                                  [('as', 'used')]       : 1        ['as']     : 2    ['cited']      : 1         ['those']                  : 1        ['the']       :17  
+                                    include: 2     VBP:12                                  [('by', 'followed')]   : 1        ['like']   : 2    ['citing']     : 1         ['tops']                   : 1        ['The']       : 2  
+                                    (Other):40     VBZ: 6                                  (Other)                :27        (Other)    : 8    (Other)        :23         []                         :95        []            :70  
+                Conjunctions       Compounds         Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers  Case.Modifiers Adverbial.Modifiers             Appositional.Modifiers Denumerator Type.of.Denumerator
+ []                   :71    []         :82   []               :86        []:102                   ['West']:  1              ['1']:  1         []      :76     []:102              ['modifier', 'bananas']: 1           :90           :90            
+ [('and', 'onions')]  : 3    ['bars']   : 2   ['white']        : 2                                 []      :101              []   :101         ['of']  :11                         ['modifier', 'peas']   : 1         1 : 1       unit:12            
+ [('and', 'onion')]   : 2    ['market'] : 2   ['appropriate']  : 1                                                                             ['as']  : 3                         ['modifier', 'this']   : 1         a :10                          
+ [('and', 'stick')]   : 2    ['sellers']: 2   ['big', 'enough']: 1                                                                             ['to']  : 3                         []                     :99         an: 1                          
+ [('and', 'water')]   : 2    ['tops']   : 2   ['big']          : 1                                                                             ['like']: 2                                                                                           
+ [('and', 'apricots')]: 1    ['acreage']: 1   ['coercive']     : 1                                                                             ['such']: 2                                                                                           
+ (Other)              :21    (Other)    :11   (Other)          :10                                                                             (Other) : 5                                                                                           
+ Plurality.of.Noun Plurality.of.Verb Allan.Tests.Passed    Countability
+ ambiguous: 1               :48              :89        countable:13   
+ plural   :51      ambiguous:36      A+N     :11        unknown  :89   
+ singular :50      plural   :12      A+NEX-PL: 1                       
+                   singular : 6      EX-PL   : 1                       
+                                                                       
+                                                                       
+                                                                       

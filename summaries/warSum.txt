@@ -1,0 +1,24 @@
+   Noun      Noun.Tag        Negation    Verb.Reference    Verb.Tag    Relation.to.Verb   Verb.Negation           Prepositional.Phrases     Prepositions   Prepositional.Subjects      Prepositional.Objects   Determiners                    Conjunctions 
+ war :6865   NN :6861   ['never']:   1          :5022          :5022          :4971              :4971   []                  :3038      []        :3038   []          :3504       []              :6517      []      :3689   []                     :6811  
+ wars: 696   NNP:   5   ['no']   :  12   was    : 174   VBD    : 787   object :1314     ['never']:   8   [('of', 'end')]     : 150      ['of']    :1508   ['end']     : 170       ['Iraq']        :  37      ['the'] :2821   [('and', 'peace')]     :  32  
+             NNS: 695   ['No']   :   1   is     : 161   VB     : 653   subject:1276     ['Never']:   1   [('to', 'go')]      :  46      ['in']    : 579   ['years']   :  53       ['Iran']        :  26      ['a']   : 605   [('and', 'revolution')]:   9  
+                        ['not']  :  17   ended  :  55   VBN    : 375                    ['not']  :  63   [('of', 'years')]   :  38      ['to']    : 274   ['go']      :  52       ['drugs']       :  24      ['The'] : 179   [('or', 'peace')]      :   9  
+                        ['Not']  :   2   be     :  44   VBZ    : 331                    []       :2518   [('of', 'time')]    :  24      ['during']: 216   ['outbreak']:  39       ['Vietnam']     :  22      ['an']  :  67   [('and', 'war')]       :   7  
+                        []       :7528   are    :  40   VBG    : 259                                     [('of', 'outbreak')]:  23      ['after'] : 200   ['time']    :  30       ['independence']:  21      ['that']:  42   [('and', 'politics')]  :   6  
+                                         (Other):2065   (Other): 134                                     (Other)             :4242      (Other)   :1746   (Other)     :3713       (Other)         : 914      (Other) : 158   (Other)                : 687  
+      Compounds     Adjectival.Modifiers   Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers    Case.Modifiers      Adverbial.Modifiers            Appositional.Modifiers  Denumerator   Type.of.Denumerator Plurality.of.Noun
+ []        :6052   []         :5859      []            :7495        []         :7383          []      :7456     []        :3575   []             :7426     []                    :7399              :6759        :6759          ambiguous:   3   
+ ['world'] :  83   ['civil']  : 338      ['end']       :  14        ['its']    :  37          ['two'] :  35     ['of']    :1579   ['even']       :  18     ['modifier', 'war']   :   4       a      : 608   fuzzy:   5          plural   : 694   
+ ['effort']:  56   ['cold']   : 246      ['outcome']   :   5        ['their']  :  18          ['1967']:  20     ['in']    : 546   ['immediately']:   5     ['modifier', 'wars']  :   4       an     :  67   other: 117          singular :6864   
+ ['Gulf']  :  48   ['nuclear']:  68      ['supporters']:   5        ['his']    :  13          ['1948']:  12     ['to']    : 300   ['just']       :   5     ['modified', 'war']   :   3       two    :  35   unit : 680                           
+ ['crimes']:  46   ['major']  :  31      ['conclusion']:   3        ['America']:  11          ['1973']:   7     ['during']: 218   ['only']       :   5     ['modifier', 'War']   :   3       1967   :  21                                        
+ ['years'] :  31   ['small']  :  23      ['effects']   :   2        ['people'] :   8          ['one'] :   5     ['for']   : 174   ['when']       :   5     ['modified', 'Angola']:   2       1948   :  12                                        
+ (Other)   :1245   (Other)    : 996      (Other)       :  37        (Other)    :  91          (Other) :  26     (Other)   :1169   (Other)        :  97     (Other)               : 146       (Other):  59                                        
+ Plurality.of.Verb Allan.Tests.Passed      Countability 
+          :5022            :6692      countable  : 868  
+ ambiguous:2099    A+N     : 674      uncountable:   1  
+ plural   : 109    A+NEX-PL:   6      unknown    :6692  
+ singular : 331    All+N   :   1                        
+                   EX-PL   :  66                        
+                   F+NS    :   5                        
+                   O-DEN   : 117                        

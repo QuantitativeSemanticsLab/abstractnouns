@@ -1,0 +1,24 @@
+   Noun     Noun.Tag     Negation    Verb.Reference    Verb.Tag   Relation.to.Verb   Verb.Negation         Prepositional.Phrases   Prepositions Prepositional.Subjects       Prepositional.Objects  Determiners                  Conjunctions
+ key :859   NN :859   ['no'] :   2          :364           :364          :353               :353   []                 :573       []      :573   []        :846         []               :804       ['the']:501   []                    :995  
+ keys:256   NNP:  2   ['not']:   5   is     :249    VBZ    :319   object :436      ['never']:  1   [('to', 'success')]: 39       ['to']  :199   ['one']   : 13         ['success']      : 42       []     :266   [('and', 'key')]      :  4  
+            NNS:254   []     :1108   are    : 40    VB     :127   subject:326      ['not']  : 10   [('of', 'one')]    : 10       ['of']  : 80   ['seen']  :  6         ['understanding']:  6       ['The']:159   [('and', 'lock')]     :  4  
+                                     was    : 33    VBD    : 85                    []       :751   [('as', 'seen')]   :  5       ['with']: 38   ['play']  :  5         ['C']            :  4       ['a']  :139   [('and', 'algorithm')]:  3  
+                                     be     : 26    VBP    : 85                                    [('in', 'play')]   :  5       ['in']  : 37   ['use']   :  5         ['instrument']   :  3       ['an'] : 11   [('and', 'islands')]  :  2  
+                                     lies   : 17    VBG    : 57                                    [('of', 'use')]    :  5       ['as']  : 32   ['serves']:  4         ['keyboard']     :  3       ['A']  :  8   [('and', 'master')]   :  2  
+                                     (Other):386    (Other): 78                                    (Other)            :478       (Other) :156   (Other)   :236         (Other)          :253       (Other): 31   (Other)               :105  
+        Compounds      Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers  Case.Modifiers Adverbial.Modifiers              Appositional.Modifiers  Denumerator  Type.of.Denumerator Plurality.of.Noun Plurality.of.Verb
+ []          :993   []           :924       ['length'] :   1         []     :1075              []      :1087     []      :872    []       :1060      []                      :1096              :929        :929           ambiguous:  2              :364    
+ ['function']:  4   ['correct']  :  7       ['venture']:   1         ['its']:   6              ['one'] :   7     ['of']  : 67    ['often']:   6      ['modified', '1']       :   1       a      :139   fuzzy:  4           plural   :254     ambiguous:347    
+ ['group']   :  4   ['important']:  7       []         :1113         ['my'] :   5              ['two'] :   6     ['as']  : 40    ['also'] :   4      ['modified', 'activity']:   1       an     : 11   other: 25           singular :859     plural   : 85    
+ ['storage'] :  4   ['major']    :  7                                ['his']:   4              ['One'] :   5     ['with']: 35    ['only'] :   3      ['modified', 'adapters']:   1       one    :  7   unit :157                             singular :319    
+ ['access']  :  3   ['minor']    :  7                                ['her']:   2              ['four']:   3     ['in']  : 31    ['well'] :   3      ['modified', 'Arab']    :   1       two    :  6                                                          
+ ['arrow']   :  3   ['real']     :  7                                ['our']:   2              ['13']  :   2     ['to']  : 13    ['as']   :   2      ['modified', 'factor']  :   1       One    :  5                                                          
+ (Other)     :104   (Other)      :156                                (Other):  21              (Other) :   5     (Other) : 57    (Other)  :  37      (Other)                 :  14       (Other): 18                                                          
+ Allan.Tests.Passed    Countability
+         :890       countable:225  
+ A+N     :150       unknown  :890  
+ A+NEX-PL:  7                      
+ EX-PL   : 41                      
+ F+NS    :  2                      
+ O-DEN   : 25                      
+                                   

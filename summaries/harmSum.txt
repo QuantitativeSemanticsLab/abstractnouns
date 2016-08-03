@@ -1,0 +1,24 @@
+    Noun    Noun.Tag   Negation  Verb.Reference Verb.Tag Relation.to.Verb Verb.Negation                Prepositional.Phrases      Prepositions        Prepositional.Subjects             Prepositional.Objects   Determiners                   Conjunctions
+ harm :60   NN :60   ['no']: 5          :34        :34          :33         :33         []                        :39        []         :39    []                :42         ['environment']        : 1        ['a']   : 2   []                      :65   
+ harms:12   NNS:12   []    :67   is     : 4     VB :18   object :27       []:39         [('of', 'apportionment')] : 3        ['of']     :21    ['apportionment'] : 3         ['harm']               : 1        ['both']: 1   [('and', 'a')]          : 1   
+                                 prevent: 4     VBD: 4   subject:12                     [('of', 'risk')]          : 3        ['to']     : 3    ['risk']          : 3         ['injury', 'infection']: 1        ['some']: 1   [('and', 'program')]    : 1   
+                                 do     : 2     VBG: 3                                  [('of', 'foreseeability')]: 2        ['from']   : 2    ['foreseeability']: 2         ['minors']             : 1        ['the'] :19   [('and', 'threat')]     : 1   
+                                 done   : 2     VBN: 6                                  [('of', 'harm')]          : 2        ['against']: 1    ['analysis']      : 1         []                     :68        []      :49   [('negcc', 'increased')]: 1   
+                                 impose : 2     VBZ: 7                                  [('against', 'guarding')] : 1        ['for']    : 1    ['benefits']      : 1                                                         [('or', 'bestow')]      : 1   
+                                 (Other):24                                             (Other)                   :22        (Other)    : 5    (Other)           :20                                                         (Other)                 : 2   
+         Compounds         Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers     Case.Modifiers     Adverbial.Modifiers Appositional.Modifiers Denumerator Type.of.Denumerator Plurality.of.Noun Plurality.of.Verb
+ ['benefits'] : 1   []               :33        ['way']: 1               []:72                     []:72             []         :43     ['physically']: 1       []:72                      :69          :69            plural  :12                :34     
+ ['bodily']   : 1   ['environmental']: 5        []     :71                                                           ['of']     :20     ['probably']  : 1                              a   : 2     other: 1            singular:60       ambiguous:31     
+ ['pecuniary']: 2   ['physical']     : 5                                                                             ['against']: 2     []            :70                              both: 1     unit : 2                              singular : 7     
+ []           :68   ['more']         : 3                                                                             ['to']     : 2                                                                                                                       
+                    ['potential']    : 2                                                                             ['for']    : 1                                                                                                                       
+                    ['serious']      : 2                                                                             ['from']   : 1                                                                                                                       
+                    (Other)          :22                                                                             (Other)    : 3                                                                                                                       
+ Allan.Tests.Passed    Countability
+      :69           countable: 3   
+ A+N  : 2           unknown  :69   
+ O-DEN: 1                          
+                                   
+                                   
+                                   
+                                   

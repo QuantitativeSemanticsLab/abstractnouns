@@ -1,3 +1,4 @@
+import sys
 import re
 from nltk.stem import WordNetLemmatizer
 import csv
@@ -166,7 +167,7 @@ def getPrepOfN(dep, noun, index):
 
 #determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s)
 def getDetOfN(dep, noun, index):
-	det = re.findall(r'det\:\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
+	det = re.findall(r'det\:*\w*\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return det
 
 #determines whether the noun is compounded with another word, then returns the word it's compounded to 
@@ -434,5 +435,11 @@ def appendToCSV(infile, outfile, lemma):
 #appendToCSV('brotherIn.csv', 'brotherOut.csv', 'brother')
 # appendToCSV('harmIn.csv', 'harmOut.csv', 'harm')
 #appendToCSV('crimeIn.csv', 'crimeOut.csv', 'crime')
-appendToCSV('testingIn.csv', 'testingOut.csv', 'testing')
+#appendToCSV('testingIn.csv', 'testingOut.csv', 'testing')
+lemma = sys.argv[1]
+infilepath = 'infiles/'+ lemma + 'In.csv'
+outfilepath = 'outfiles/' + lemma + 'Out.csv'
+appendToCSV(infilepath, outfilepath, lemma)
+print 'written to ' + outfilepath
+
 

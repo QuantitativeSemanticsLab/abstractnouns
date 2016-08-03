@@ -1,0 +1,24 @@
+         Noun     Noun.Tag  Negation Verb.Reference    Verb.Tag  Relation.to.Verb Verb.Negation           Prepositional.Phrases   Prepositions Prepositional.Subjects      Prepositional.Objects  Determiners                      Conjunctions
+ lightning :131   NN :130   []:132          :89            :89          :87         :87         []                   :73        []      :73    []         :74         ['1990', '1992']:  1       ['a']  :  1   []                        :112  
+ lightnings:  1   NNP:  1            be     : 3     VBD    :12   object :25       []:45         [('of', 'flash')]    : 5        ['of']  :22    ['flash']  : 7         ['home']        :  1       ['the']:  1   [('and', 'thunder')]      :  5  
+                  NNS:  1            was    : 3     VB     :11   subject:20                     [('by', 'hit')]      : 3        ['by']  :13    ['struck'] : 4         ['link']        :  1       []     :130   [('and', 'thunderstorms')]:  3  
+                                     been   : 2     VBG    : 6                                  [('by', 'struck')]   : 3        ['like']: 7    ['flashes']: 3         ['second']      :  1                     [('and', 'apex')]         :  1  
+                                     occurs : 2     VBP    : 5                                  [('like', 'flashes')]: 2        ['with']: 3    ['hit']    : 3         ['Sinai']       :  1                     [('and', 'arresters')]    :  1  
+                                     struck : 2     VBN    : 4                                  [('of', 'bolt')]     : 2        ['as']  : 2    ['bolt']   : 2         ['sorts']       :  1                     [('and', 'earthquakes')]  :  1  
+                                     (Other):31     (Other): 5                                  (Other)              :44        (Other) :12    (Other)    :39         []              :126                     (Other)                   :  9  
+       Compounds            Adjectival.Modifiers Possesed..owned.by.noun.   Possesive..owner.of.noun. Numeric.Modifiers     Case.Modifiers  Adverbial.Modifiers               Appositional.Modifiers Denumerator Type.of.Denumerator Plurality.of.Noun
+ []         :80   []                  :124       ['descent']:  1          ['Chango']     :  1         []:132            []         :80     ['perhaps']:  1      ['modified', 'Abraham']  :  1         :131           :131            plural  :  1     
+ ['rod']    : 8   ['blue']            :  1       []         :131          ['electricity']:  1                           ['of']     :21     []         :131      ['modified', 'gap']      :  1        a:  1       unit:  1            singular:131     
+ ['fires']  : 5   ['causing']         :  1                                ['Shango']     :  1                           ['by']     :15                          ['modified', 'seconds']  :  1                                                         
+ ['strikes']: 4   ['direct', 'nearby']:  1                                []             :129                           ['like']   : 7                          ['modified', 'Thompson'] :  1                                                         
+ ['ball']   : 3   ['distant']         :  1                                                                              ['with']   : 2                          ['modifier', 'signature']:  1                                                         
+ ['bolt']   : 3   ['fiery']           :  1                                                                              ['against']: 1                          []                       :127                                                         
+ (Other)    :29   (Other)             :  3                                                                              (Other)    : 6                                                                                                                
+ Plurality.of.Verb Allan.Tests.Passed    Countability
+          :89           :126          countable:  6  
+ ambiguous:34      A+N  :  1          unknown  :126  
+ plural   : 5      EX-PL:  5                         
+ singular : 4                                        
+                                                     
+                                                     
+                                                     

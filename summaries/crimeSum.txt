@@ -1,0 +1,24 @@
+     Noun      Noun.Tag      Negation       Verb.Reference    Verb.Tag    Relation.to.Verb   Verb.Negation                Prepositional.Phrases      Prepositions   Prepositional.Subjects  Prepositional.Objects    Determiners  
+ crime :1413   NN :1409   ['no'] :  11             :1316          :1316          :1295              :1295   []                       : 968      []         :968   []           :1068       []          :1859      []       :1544  
+ crimes: 686   NNP:   6   ['No'] :   1   is        :  62   VB     : 198   object : 479     ['never']:   2   [('of', 'fear')]         :  52      ['of']     :441   ['fear']     :  60       ['humanity']:  20      ['the']  : 235  
+               NNS: 684   ['not']:  10   committed :  53   VBN    : 145   subject: 325     ['not']  :  23   [('of', 'victims')]      :  14      ['for']    :126   ['convicted']:  17       ['peace']   :   6      ['a']    : 204  
+                          []     :2077   commit    :  38   VBD    : 129                    []       : 779   [('of', 'convicted')]    :  13      ['in']     : 79   ['victims']  :  17       ['areas']   :   4      ['these']:  15  
+                                         are       :  30   VBZ    : 109                                     [('against', 'humanity')]:  12      ['to']     : 79   ['charged']  :  13       ['genocide']:   4      ['an']   :  14  
+                                         committing:  27   VBG    :  97                                     [('of', 'accused')]      :   9      ['against']: 44   ['accused']  :  12       ['persons'] :   4      ['any']  :  14  
+                                         (Other)   : 573   (Other): 105                                     (Other)                  :1031      (Other)    :362   (Other)      : 912       (Other)     : 202      (Other)  :  73  
+                  Conjunctions       Compounds       Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers  Case.Modifiers Adverbial.Modifiers                                          Appositional.Modifiers
+ []                     :1777   []        :1579   []           :1576      ['element']:   1         []       :2027            []       :2077    []      :1134   []        :2063     []                                                  :2027      
+ [('and', 'violence')]  :  10   ['war']   :  53   ['violent']  :  80      ['impact'] :   1         ['his']  :  19            ['three']:   4    ['of']  : 456   ['only']  :   4     ['modified', 'crimes']                              :   3      
+ [('and', 'AIDS')]      :   7   ['rate']  :  25   ['organized']:  33      ['nature'] :   1         ['their']:  18            ['two']  :   3    ['for'] : 147   ['even']  :   3     ['modifier', 'crimes']                              :   3      
+ [('and', 'crimes')]    :   7   ['hate']  :  24   ['military'] :  26      []         :2096         ['its']  :   4            ['one']  :   2    ['to']  :  77   ['itself']:   3     ['modifier', 'drugs']                               :   3      
+ [('and', 'punishment')]:   7   ['street']:  22   ['serious']  :  24                               ['my']   :   3            ['103']  :   1    ['in']  :  59   ['almost']:   2     ['modifier', 'poverty']                             :   3      
+ [('and', 'disorder')]  :   6   ['rates'] :  21   ['other']    :  17                               ['our']  :   3            ['17']   :   1    ['with']:  39   ['also']  :   2     ['modified', 'robbery', 'modified', 'circumstances']:   2      
+ (Other)                : 285   (Other)   : 375   (Other)      : 343                               (Other)  :  25            (Other)  :  11    (Other) : 187   (Other)   :  22     (Other)                                             :  58      
+  Denumerator   Type.of.Denumerator Plurality.of.Noun Plurality.of.Verb Allan.Tests.Passed    Countability 
+        :1843        :1843          ambiguous:   4             :1316            :1803      countable: 296  
+ a      : 208   fuzzy:   4          plural   : 683    ambiguous: 578    A+N     : 219      unknown  :1803  
+ an     :  14   other:  27          singular :1412    plural   :  96    A+NEX-PL:   3                      
+ every  :   7   unit : 225                            singular : 109    EX-PL   :  43                      
+ many   :   5                                                           F+NS    :   4                      
+ three  :   4                                                           O-DEN   :  27                      
+ (Other):  18                                                                                              

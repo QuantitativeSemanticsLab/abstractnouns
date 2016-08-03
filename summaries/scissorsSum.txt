@@ -1,0 +1,24 @@
+       Noun    Noun.Tag Negation     Verb.Reference Verb.Tag Relation.to.Verb Verb.Negation           Prepositional.Phrases      Prepositions     Prepositional.Subjects    Prepositional.Objects  Determiners
+ scissors:30   NNS:30   []:30               :25        :25          :25         :25         []                   :11        []         :11    []             :12         ['censorship']: 1        ['a']  : 1  
+                                 cut        : 1     VB : 1   object : 3       []: 5         [('of', 'pair')]     : 4        ['of']     : 7    ['pair']       : 4         []            :29        ['the']: 3  
+                                 manipulate : 1     VBD: 4   subject: 2                     [('with', 'cut')]    : 2        ['with']   : 5    ['cut']        : 2                                  []     :26  
+                                 represented: 1                                             [('after', 'began')] : 1        ['among']  : 2    ['accessories']: 1                                              
+                                 took       : 1                                             [('among', 'loses')] : 1        ['after']  : 1    ['began']      : 1                                              
+                                 were       : 1                                             [('among', 'warned')]: 1        ['between']: 1    ['cutting']    : 1                                              
+                                                                                            (Other)              :10        (Other)    : 3    (Other)        : 9                                              
+                                                      Conjunctions Compounds    Adjectival.Modifiers Possesed..owned.by.noun. Possesive..owner.of.noun. Numeric.Modifiers     Case.Modifiers Adverbial.Modifiers               Appositional.Modifiers
+ []                                                         :12    []:30     ['blunt']    : 1        []:30                    []:30                     ['1970']: 1       []         :15     []:30               ['modifier', 'pen']      : 1        
+ [('and', 'paper'), ('and', 'stencils'), ('and', 'figures')]: 2              ['minuscule']: 1                                                           []      :29       ['of']     : 6                         ['modifier', 'responses']: 1        
+ [('and', 'paper')]                                         : 2              ['red']      : 1                                                                             ['with']   : 3                         []                       :28        
+ [('and', 'screwdriver')]                                   : 2              ['the']      : 1                                                                             ['among']  : 2                                                             
+ [('', 'etc')]                                              : 1              []           :26                                                                             ['after']  : 1                                                             
+ [('and', 'beads')]                                         : 1                                                                                                           ['between']: 1                                                             
+ (Other)                                                    :10                                                                                                           (Other)    : 2                                                             
+ Denumerator Type.of.Denumerator Plurality.of.Noun Plurality.of.Verb Allan.Tests.Passed    Countability
+     :28          :28            ambiguous:30               :25           :28           countable: 2   
+ 1970: 1     other: 1                              ambiguous: 5      A+N  : 1           unknown  :28   
+ a   : 1     unit : 1                                                O-DEN: 1                          
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
