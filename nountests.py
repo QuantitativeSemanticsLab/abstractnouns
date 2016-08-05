@@ -230,6 +230,28 @@ def getApposOfN(dep, noun, index):
 	appos = mfdappos + mfyappos
 	return appos
 
+def getModalOfN(dep, tagged, noun, index):
+	aux = re.findall(r'aux\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
+	if len(aux) >= 1:
+		atag = getTag(tagged, aux[0])
+		if atag == 'MD':
+			return aux
+	return []
+
+def getCondOfN(dep, tagged, noun, index, verb):
+	mark = re.findall(r'mark\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
+	markv = re.findall(r'mark\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb, dep)
+	if len(mark) >= 1 :
+		mtag = getTag(tagged, mark[0])
+		if mtag == 'IN':
+			return mark
+	if len(markv) >= 1 :
+		mtag = getTag(tagged, markv[0])
+		if mtag == 'IN':
+			return markv
+	return []
+
+
 
 #classifying denumerators
 unit = ['a', 'an', 'one', '1'] #fall under determiners or numbers
@@ -315,6 +337,16 @@ def isCountable(tests):
 	else: 
 		return "unknown"
 
+def isVerdical(modl, cond, negn, negv):
+	if len(negn) >= 1 or len(negv) >=1:
+		return 'verdical'
+	elif len(modl) >= 1:
+		return 'nonverdical'
+	elif len(cond) >= 1:
+		return 'nonverdical'
+	else:
+		return 'unknown'
+
 #takes in a sentence, tags, dependencies, and lemma and returns a list of the outputs to all noun tests
 def returnNounTests(sentence, lemma, nountup):
 	sent = sentence[0]
@@ -346,6 +378,8 @@ def returnNounTests(sentence, lemma, nountup):
 	case = getCaseOfN(dep, noun, index)
 	adv = getAdvOfN(dep, noun, index)
 	appos = getApposOfN(dep, noun, index)
+	modl = getModalOfN(dep, tagged, noun, index)
+	cond = getCondOfN(dep, tagged, noun, index, verbref)
 	dens = getDenOfN(dets, adjs, num, adv) 
 	den = dens[0]
 	dentype = dens[1]
@@ -353,7 +387,8 @@ def returnNounTests(sentence, lemma, nountup):
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
-	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, conjs, comps,  adjs, possd, possv, num, case, adv, appos, den, dentype, pluN, pluV, passedT, countable]
+	verdical = isVerdical(modl, cond, neg, verbneg)
+	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, conjs, comps,  adjs, possd, possv, num, case, adv, appos, modl, cond, den, dentype, pluN, pluV, passedT, countable, verdical]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -419,7 +454,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunctions', 'Compounds', 'Adjectival Modifiers', 'Possesed (owned by noun)', 'Possesive (owner of noun)', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositional Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunctions', 'Compounds', 'Adjectival Modifiers', 'Possesed (owned by noun)', 'Possesive (owner of noun)', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositional Modifiers', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:
