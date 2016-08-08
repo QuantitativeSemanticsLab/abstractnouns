@@ -89,7 +89,8 @@ def getVerb(tagged, dep, noun, index):
 			verb = nsubj
 			vtag = stype
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
-		return verb[0], vtag , 'subject', neg
+		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+		return verb[0], vtag , 'subject', neg, vlemma
 	if len(nobj) >= 1:
 		stype = getTag(tagged, nobj[0])
 		#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
@@ -114,34 +115,40 @@ def getVerb(tagged, dep, noun, index):
 			verb = nobj
 			vtag = stype
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
-		return verb[0], vtag , 'object', neg
+		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+		return verb[0], vtag , 'object', neg, vlemma
 	elif len(nsubjpass) >=1:
 		vtag = getTag(tagged, nsubjpass[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubjpass[0], dep)
-		return nsubjpass[0], vtag, 'subject', neg
+		vlemma = WordNetLemmatizer().lemmatize(nsubjpass[0], 'v')
+		return nsubjpass[0], vtag, 'subject', neg, vlemma
 	#handles cases where noun is the object of the verb
 	elif len(dobj) >= 1:
 		vtag = getTag(tagged, dobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % dobj[0], dep)
-		return dobj[0], vtag, 'object', neg
+		vlemma = WordNetLemmatizer().lemmatize(dobj[0], 'v')
+		return dobj[0], vtag, 'object', neg, vlemma
 	elif len(iobj) >= 1:
 		vtag = getTag(tagged, iobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % iobj[0], dep)
-		return iobj[0], vtag, 'object', neg
+		vlemma = WordNetLemmatizer().lemmatize(iobj[0], 'v')
+		return iobj[0], vtag, 'object', neg, vlemma
 	elif len(xcomp) >= 1:
 		vtag = getTag(tagged, xcomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % xcomp[0], dep)
-		return xcomp[0], vtag, 'object', neg
+		vlemma = WordNetLemmatizer().lemmatize(xcomp[0], 'v')
+		return xcomp[0], vtag, 'object', neg, vlemma
 	elif len(ccomp) >= 1:
 		vtag = getTag(tagged, ccomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % ccomp[0], dep)
-		return ccomp[0], vtag, 'object', neg
+		vlemma = WordNetLemmatizer().lemmatize(ccomp[0], 'v')
+		return ccomp[0], vtag, 'object', neg, vlemma
 	#handles compound case where noun modifies another noun (that is either the subject or object of the verb)
 	elif len(comp) >= 1:
 		verbtup = getVerb(tagged, dep, comp[0][0], int(comp[0][1]))
-		return verbtup[0], verbtup[1], verbtup[2], verbtup[3] 
+		return verbtup[0], verbtup[1], verbtup[2], verbtup[3], verbtup[4] 
 	else:
-		return '', '', '', ''
+		return '', '', '', '', ''
 
 #determines whether the noun is included in a prep phrase, then returns a tuple of the position in the phrase(modifier vs. modified) with the rest of the phrase		
 def getPrepOfN(dep, noun, index):
@@ -181,8 +188,18 @@ def getCompOfN(dep, noun, index):
 def getConjOfN(dep, noun, index):
 	conjright = re.findall(r'conj\:*(\w*)\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	conjleft = re.findall(r'conj\:*(\w*)\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
-	conj = conjright + conjleft
-	return conj
+	conjs = []
+	conjd = []
+	conjp = []
+	for i in conjright:
+		conjs.append(i[0])
+		conjd.append(i[1])
+		conjp.append(i)
+	for i in conjleft:
+		conjs.append(i[0])
+		conjd.append(i[1])
+		conjp.append(i)
+	return conjp, conjs, conjd
 
 #determines whether there is an adjectival modifier for the given noun in a dependency parse, and returns the adjective(s)
 def getAmodOfN(dep, noun, index):
@@ -221,14 +238,16 @@ def getAdvOfN(dep, noun, index):
 def getApposOfN(dep, noun, index):
 	mfd = re.findall(r'appos\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	mfy = re.findall(r'appos\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
+	appos = []
 	mfdappos = []
 	mfyappos = []
 	for i in mfd:
-		mfdappos += ('modified', i)
+		appos += ('modified', i)
+		mfdappos.append(i)
 	for i in mfy:
-		mfyappos += ('modifier', i)
-	appos = mfdappos + mfyappos
-	return appos
+		appos += ('modifier', i)
+		mfyappos.append(i)
+	return appos, mfyappos, mfdappos
 
 def getModalOfN(dep, tagged, noun, index):
 	aux = re.findall(r'aux\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
@@ -362,6 +381,19 @@ def returnNounTests(sentence, lemma, nountup):
 	verbref = verbtup[0]
 	verbtag = verbtup[1]
 	verbrel = verbtup[2]
+	verblemma = verbtup[4]
+	if verbrel == 'subject':
+		verbsubj = verbref
+		verbsubjlemma = verblemma
+		verbobj = ''
+		verbobjlemma = ''
+	elif verbrel == 'object':
+		verbobj = verbref
+		verbobjlemma = verblemma
+		verbsubj = ''
+		verbsubjlemma = ''
+	else:
+		verbsubj, verbsubjlemma, verbobj, verbobjlemma = '', '', '', ''
 	verbneg = verbtup[3]
 	preptup = getPrepOfN(dep, noun, index)
 	prepphrs = preptup[0]
@@ -369,7 +401,10 @@ def returnNounTests(sentence, lemma, nountup):
 	prepsubjs = preptup[2]
 	prepobjs = preptup[3]
 	dets = getDetOfN(dep, noun, index)
-	conjs = getConjOfN(dep, noun, index)
+	conj = getConjOfN(dep, noun, index)
+	conjp = conj[0]
+	conjs = conj[1]
+	conjd = conj[2]
 	comps = getCompOfN(dep, noun, index)
 	adjs = getAmodOfN(dep, noun, index)
 	possd = getPossdOfN(dep, noun, index)
@@ -378,6 +413,9 @@ def returnNounTests(sentence, lemma, nountup):
 	case = getCaseOfN(dep, noun, index)
 	adv = getAdvOfN(dep, noun, index)
 	appos = getApposOfN(dep, noun, index)
+	app = appos[0]
+	appmod = appos[1]
+	modapp = appos[2]
 	modl = getModalOfN(dep, tagged, noun, index)
 	cond = getCondOfN(dep, tagged, noun, index, verbref)
 	dens = getDenOfN(dets, adjs, num, adv) 
@@ -388,7 +426,7 @@ def returnNounTests(sentence, lemma, nountup):
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
 	verdical = isVerdical(modl, cond, neg, verbneg)
-	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, conjs, comps,  adjs, possd, possv, num, case, adv, appos, modl, cond, den, dentype, pluN, pluV, passedT, countable, verdical]
+	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, conjp, conjs, conjd, comps,  adjs, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, pluV, passedT, countable, verdical]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -454,7 +492,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunctions', 'Compounds', 'Adjectival Modifiers', 'Possesed (owned by noun)', 'Possesive (owner of noun)', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositional Modifiers', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed (owned by noun)', 'Possesive (owner of noun)', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:
