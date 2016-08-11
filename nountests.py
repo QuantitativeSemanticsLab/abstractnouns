@@ -327,23 +327,23 @@ def isPluralV(vtag):
 
 #looks at sentence to determine what allan test(s?) the sentence is modeled after for the given noun, and returns the name of the test(s?) the sentence fits 
 def allanTests(dent, det, pluN, pluV):
-	test = ""
+	test = []
 	#A+N test
 	if dent == "unit" and pluN != "plural":
-		test += "A+N"
+		test.append("A+N")
 	#F+Ns test
 	if dent == "fuzzy" and pluN != "singular": 
-		test += "F+NS"
+		test.append("F+Ns")
 	#EX-PL test
 	if pluN != "plural" and pluV == "plural":
-		test += "EX-PL"
+		test.append("EX-PL")
 	#O-DEN test
 	if dent == "other":  
-		test += "O-DEN"
+		test.append("O-DEN")
 	#All+N test
 	for d in det:
 		if d == "all" and len(det) == 1 and pluN == "singular":
-			test+= "All+N"
+			test.append("All+N")
 	return test
 
 #looks at sentence to determine whether the noun is countable in the given context based on the allan tests
@@ -492,7 +492,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed (owned by noun)', 'Possesive (owner of noun)', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:

@@ -7,4 +7,5 @@ esl = pd.read_csv('esl.cd', delimiter = '\\', index_col = 0, header = None, name
 eslNouns = esl[esl['classNum']== 1]
 eslNouns = eslNouns.iloc[:, 0:14]
 
-print eslNouns 
+#print eslNouns 
+eslNouns.to_csv('celex.csv', index = False)

@@ -1,0 +1,704 @@
+Noun,Noun Tag,Verb Tag,Relation to Verb,Verb Subject,Verb Subject Lemma,Verb Object,Verb Object Lemma,Verb Negation,Prepositions,Prepositional Subjects,Prepositional Objects,Determiners,Conjunctions,Conjoined,Compounds,Adjectival Modifiers,Possesed owned by noun,Possesive owner of noun,Numeric Modifiers,Adverbial Modifiers,Appositional Modifiers,Modified Appositives,Modality,Conditional,Denumerator,Type of Denumerator,Plurality of Noun,Plurality of Verb,Allan Tests Passed,Countability,Verdicality
+injustice,NN,,,,,,,,,,,a,,,,flagrant,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,VB,object,,,remove,remove,,,,,a,,,,terrible,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,about,complain,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,invitation,,,and,selfishness,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,every,,,,,,,,,,,,,every,other,singular,singular,o-den,countable,unknown
+injustice,NN,VB,object,,,tolerate,tolerate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,,,,,,,of,conditions,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,by,attended,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,at,know,,,and,resentment,,political,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,rectifying,rectify,not,,,,,,,,past,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustices,NNS,VB,object,,,rectify,rectify,,,,,,,,,historical,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"on, of",claims,argument,,,,,historical,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,claims,,,,,,historical,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,redress,redress,,,,,the,,,,particular,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,rectifying,rectify,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,for,implications,,,or,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustices,NNS,VBN,subject,reversed,reverse,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,awareness,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,to,,woman,,and,unfairness,,grave,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBG,object,,,denouncing,denounce,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,subject,had,have,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,combated,combat,,,,,,,,and,poverty,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VB,object,,,remove,remove,,,,,,,,,gross,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"of, to",reconcile,system,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, by",prompted,system,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,been,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,subject,made,make,,,,of,,detention,the,,,"scale, randomness, sheer",,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,for,filed,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,over,debate,,the,,,,"alleged, historical, economic",,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,"in, of",burden,guatemala,"all, the",,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,VBD,object,,,provided,provide,,,,,,and,peru,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,problems,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,perpetrated,perpetrate,,,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VBP,object,,,understand,understand,,,,,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,,,,violent,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBN,subject,done,do,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,was,be,,,,,a,,,,grave,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,about,remain,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,accept,accept,,,,,,and,inequities,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,to,,persons,an,,,,,,,,consequently,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,to,drew,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,do,do,,to,,text,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,,,,,,,,of,reminded,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBP,subject,occur,occur,,,,,,,the,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,VBZ,object,,,casts,cast,,,,,,and,tyranny,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,against,struggle,,,and,oppression,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,resistance,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,between,that,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,did,do,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,,and,ecological,ignorance,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,by,brought,,a,"and, and","humiliation, unwillingness",,great,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,"of, over",express,genocide,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,of,aware,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,without,necessity,,,and,awareness,,such,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,causes,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"as, to",regards,sin,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,case,,,,,,clear,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,realised,realise,,,,,,and,illogic,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,for,compensate,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VB,object,,,be,be,,,,,a,,,,stark,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VB,object,,,do,do,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,from,stem,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,to,appeal,,,,,,historic,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,including,list,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBZ,object,,,suffers,suffer,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,under,suffers,,,,,,real,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,all,,,,,,its,,,,,,,,,singular,,all+n,countable,unknown
+injustice,NN,VBD,subject,led,lead,,,,of,,world,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"of, to",led,revolution,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,tolerate,tolerate,,,,,,,,,,,,,,one,,,,,,one,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,of,feelings,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,act,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,put,,,,,,,,,,,,n13,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,a,,,,serious,,,,when,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,,,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,discovered,discover,,,,,,"and, and","inequalities, system",,social,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBP,object,,,do,do,,,,,an,,,,,,,,,,,,,an,unit,singular,plural,"a+n, ex-pl",countable,unknown
+injustice,NN,,,,,,,,of,example,,the,,,,inherent,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,perpetuate,perpetuate,,,,,,,,,cruel,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,"in, against",protest,mutinies,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNP,,,,,,,,,,,,,,cannon,,,,,,,,,,,,ambiguous,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,subject,becomes,become,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,,,,,,,on,determine,,any,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,about,thinking,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,examples,,,,,,great,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,reduced,reduce,,,,in,,entertainment,,,,,racial,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,in,deny,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,acceptance,,,,,,economic,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,in,consists,,,and,class,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBD,object,,,presupposed,presuppose,,,,,,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VBP,subject,constitute,constitute,,,,,,,,,,,"massive, systemic",,america,three,,,,,,three,other,plural,plural,o-den,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,bondage,,,and,separation,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,erupts,erupt,,,,,,and,lines,,economic,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,of,god,,,and,cruelty,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,by,wounded,,,and,sin,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,for,concern,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,remedy,remedy,,of,,society,the,,,,ancestral,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,for,growth,,,and,corruption,,"growing, social",,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,over,lose,,a,,,,slight,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,,,,,,,,,,corruption,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,to,attributed,,,,,,economic,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,in,interested,,,and,inequalities,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,VBD,object,,,analyzed,analyze,,,,,the,,,,stereotyping,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,with,deal,,,and,deprivations,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,issues,,,,,,"political, economic, social",,,,"fairly, effectively",,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,at,restoring,,an,,,,earlier,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,for,whites,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,,and,violence,,systemic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,protection,,,"and, and","evil, calamity",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,experience,experience,,,,,,and,poverty,,"other, social",,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,JJ,object,,,correct,correct,,,,,some,,,,"perceived, social",,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,,social,,,,,government,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,,social,,,,,politics,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,cases,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,do,do,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,to,sensitize,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBP,subject,exist,exist,,,,,,,,,,,social,,,,,,,,,,,plural,plural,,countable,unknown
+injustices,NNS,VBP,subject,persist,persist,,,,,,,,,,,social,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,,,,,,,,of,demanded,,an,and,salaries,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,against,fighting,,,and,exploitation,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,order,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,revolt,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,calamity,,,and,passion,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,correct,correct,,,,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,with,do,,a,,,,perceived,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,,,,much,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VB,object,,,redress,redress,,,,,the,,,,current,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VBG,object,,,addressing,address,,,,,,,,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,VBP,subject,occur,occur,,,,,,,,,,,environmental,,,,,,,,,,,plural,plural,,countable,unknown
+injustices,NNS,VB,object,,,remedy,remedy,,,,,,,,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,VBP,subject,are,be,,,,,,,these,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustices,NNS,,,,,,,,"toward, of",aspect,women,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,of,critiques,,,and,institutions,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,"of, with",descend,civilization,the,,,,historic,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,of,violation,,,or,rights,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBZ,object,,,recognizes,recognize,,of,,accusation,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,by,scarred,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,behind,force,,every,,,,,,,,,,,,,every,other,singular,,o-den,countable,unknown
+injustice,NN,,,,,,,,,,,,"and, and","militarism, poverty",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,subject,are,be,,,,,,,,and,exploitation,,political,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NNP,,,,,,,,of,,life,,,,the,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBG,object,,,challenging,challenge,,,,,,and,inequalities,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,conditions,,,and,inequality,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,protested,,,and,unfairness,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,speak,,any,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,equality,,,and,treatment,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,"or, or","truth, falsehood",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,perceive,perceive,,,,,,,,,social,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,rectify,rectify,,,,,,,,,such,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,end,end,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,judging,judge,,,,,,and,things,,eventual,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,act,,,,,,unacceptable,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,subject,were,be,,,,against,,blacks,,,,"voting, rights",,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBN,object,,,perpetuated,perpetuate,,,,,,,,,environmental,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,cause,,,,,,environmental,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,perpetuating,perpetuate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,perpetuate,perpetuate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VB,subject,perpetuate,perpetuate,,,,,,,,,,,past,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,of,some,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,to,pointing,,,or,real,,imagined,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,described,describe,,,,,,,the,or,good,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,interstices,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,"of, of, to, to",blindness,"history, insensitivity, complicity",the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBZ,subject,allows,allow,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,VBG,object,,,governing,govern,,like,,imprisonment,,,,"spain, perpetrates",,,max,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,"of, of",exploration,treaty,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,VBP,subject,occur,occur,,,,to,point,,,and,mistakes,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,,,,,,,,,,,,"and, and","love, justice",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,inflict,inflict,,,,,,,,and,power,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBN,object,,,called,call,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,on,pass,,,and,deprivation,cruelty,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,an,,,,,,,,insensibility,impurity,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,for,nightmare,,every,,,,minority,,,,,,,,,every,other,singular,,o-den,countable,unknown
+injustice,NN,,,,,,,,against,speaking,,,and,slavery,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"in, of",sort,countries,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,overawe,overawe,,of,,nations,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,with,confronted,,,or,aggression,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,prevail,prevail,,,not,of,,january,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,,,,,,,by,governed,,,and,insecurity,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,of,cognizant,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,with,fraught,,,and,evil,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,subject,were,be,,,,of,conscious,,the,,,,social,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,tyranny,,,,,,jawr,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,or,discrimination,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,VB,object,,,avoid,avoid,,,,,,or,misunderstandings,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,to,,indians,,,,,publicizing,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBD,object,,,criticized,criticize,,of,,blacks,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,and,unintended,consequences,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,by,dominated,,,and,inequality,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,for,laboratories,,,,,,eradicating,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,life,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,greater,,,or,right,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,through,woke,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,backdrop,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,solve,solve,,,,,,"and, and","segregation, mobility",employment,social,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,recognize,recognize,,of,,loss,the,,,,historical,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,as,viewed,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,VBN,subject,perpetrated,perpetrate,,,,,,,a,,,,historical,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,"of, at",rails,control,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, of",picture,politics,the,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,ugliness,,,,,,,,society,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,eradicated,eradicate,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,recognize,recognize,,,,,,and,value,,social,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,as,perceives,,,,,,cosmic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,rebellion,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,this,,,,experienced,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,denounce,denounce,,of,,society,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,become,become,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,noting,note,,,,,,,,,particularly,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,against,bring,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,remedy,remedy,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,heralds,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,versus,justice,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,raised,,,and,inequity,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,correct,correct,,of,,discharges,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBN,subject,designated,designate,,,,,,,,and,virtue,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,assails,assail,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,object,,,permits,permit,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,object,,,buries,bury,,of,,accusation,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,,,,,,,to,alive,,,,,,,,its,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,VBP,object,,,trumpet,trumpet,,,,,the,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,,,,,,,,to,response,,,,,,ensconced,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,end,,,,,,historic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,correct,correct,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,of,web,,,,,,systematic,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBG,object,,,opposing,oppose,,in,,forms,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,and,persecution,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,about,visitors,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,to,pointing,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,the,,,,,,,,,victimization,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,of,evidence,,,,,,systemic,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,experiences,,,,,gender,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,looking,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,victim,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,VBZ,subject,sup103,sup103,,,,against,,people,,and,mistake,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBP,object,,,hate,hate,,,,,,and,violence,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VB,object,,,overthrow,overthrow,,,,,,and,discrimination,,economic,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,stressed,stress,,,,,,and,inequality,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,critiques,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, about",arguments,use,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,,history,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,VBG,object,,,studying,study,,in,,caregiving,,and,take,gender,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,remedy,remedy,,,,,,,,gender,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,perpetuation,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,,,,"all, the",,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,to,inclination,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,form,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,DT,subject,is,be,,,,,,,this,,,,last,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,thus,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,occurred,occur,,,,to,,philosophy,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,VBZ,subject,is,be,,,,in,,way,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,of,history,,,,,,environmental,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,of,,it,the,and,something,,personal,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,"in, of",tone,thing,,,,,extraordinary,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,create,create,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VB,subject,destabilize,destabilize,,,,,,,these,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,identification,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustices,NNS,,,,,,,,of,aware,,,and,inequities,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,JJ,subject,are,be,,,,to,seek,,,and,inequities,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,issues,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,facts,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,principle,,,and,unfairness,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,system,,,and,unfairness,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,overcome,overcome,,in,,education,the,and,odds,,"past, present, social",,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,questions,,,and,judgment,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,problem,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNP,,,,,,,,,,,,or,wrongs,,,,,,,,,,,,,ambiguous,,,countable,unknown
+injustice,NNS,,,,,,,,,,,,,,,such,,,,,,,,,,,ambiguous,,,countable,unknown
+injustice,NN,,,,,,,,of,question,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,angry,,some,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,persist,persist,,,,,,,,,,,such,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,subject,serves,serve,,,,,,,this,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,VB,object,,,correct,correct,,,,,,,,,previous,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,a,,,,needless,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,of,perpetrators,,,and,heroes,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,promote,promote,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,evaluate,evaluate,,,,,a,,,,societal,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustices,NNS,VB,object,,,identify,identify,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,centuries,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,perpetrators,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBN,object,,,suffered,suffer,,,,,,and,betrayals,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBP,object,,,call,call,,,,,,"and, and","treatment, hardship",,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,discuss,discuss,,,,,,and,wrongdoing,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,for,upbraids,,,,,,,,their,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,a,,,,fresh,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustices,NNS,,,,,,,,"of, to",express,slavery,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,spectrum,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,fight,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,sees,see,,,,,,,,,european,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,,,,,,,of,randomness,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,VBP,subject,are,be,,,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,,,,,,,,of,victim,,,,,,native,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, along_with",disturbing,masters,the,,,,"social, racial",,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,for,capacity,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,in,,legislation,another,,,,major,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,,,,,,,of,denunciation,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,of,transformation,,,,,,social,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,reminds,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,with,dealing,,,or,exclusion,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,situations,,,and,exclusion,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBG,object,,,exposing,expose,,,,,,,,,imperialist,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,spirit,,,and,exclusion,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,veil,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,countenance,countenance,,,,,,and,untruth,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VB,object,,,countenance,countenance,,,,,,and,untruth,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,over,let,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,reduction,,,and,untruth,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,reduction,,,and,untruth,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,avoid,avoid,,,,,,and,untruth,entangles,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VBN,subject,perpetrated,perpetrate,,,,,,,the,,,,"greatest, political",,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,against,battle,,,and,obscurantism,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,give,give,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,treating,treat,,"as, as",,"absence, negation",,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"as, of",character,phenomenon,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,complaints,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,treating,treat,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,conceptions,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,represent,represent,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBP,object,,,treat,treat,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VBN,subject,treated,treat,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,for,justice,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,look,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,Putting,Putting,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,putting,put,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,put,put,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,putting,put,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,asymmetry,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,talking,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,Putting,Putting,,of,,justice,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,subject,plays,play,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,about,complaints,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,feelings,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,with,start,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"in, over",priority,thinking,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,treat,treat,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,,,,,,,,of,priority,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,characterization,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,independence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,be,be,,,,from,,point,,,,,,,,,,,,would,,,,singular,ambiguous,,countable,nonverdical
+injustice,NN,,,,,,,,to,represent,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,requires,require,,,,in,,way,,,,,characterizing,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,for,word,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,with,concept,,,and,prefix,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBP,object,,,treat,treat,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,"like, like",,"war, illness",,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VB,object,,,put,put,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,to,seem,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,between,relationship,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,treat,treat,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,,,,,,,,"from, of",acts,point,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,at,looking,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,acts,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,act,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,act,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,acts,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,acts,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,acts,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,derived,derive,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,thinking,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,as,identify,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,in,element,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,recognize,recognize,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,by,inspired,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,involves,involve,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,subject,involves,involve,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,of,definition,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,connects,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,complaints,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,reaction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,correction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,causes,cause,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,of,correction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,feeling,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,act,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,claims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBG,object,,,committing,commit,,of,,own,,,,,"new, grave",,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,treating,treat,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,about,leads,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,treating,treat,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,correction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,part,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,form,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,subject,are,be,,,not,,,,,and,justice,,,,,,,,,,,,,singular,plural,ex-pl,countable,verdical
+injustice,NN,,,,,,,,of,correction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,see,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,reaction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,protecting,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,issue,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,on,works,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,claim,claim,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,VBN,subject,done,do,,,,,,,,,,,particular,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,claim,,,,,,,,,one,,,,,,one,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,of,claim,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,done,do,,,,,,,,,,,specific,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,form,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,cry,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,rooted,root,,,,,,,,and,conflict,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,,,,,,,,armed,,,,when,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,VBZ,object,,,commits,commit,,,,,,,,,,,,,,,,,,,,plural,singular,,countable,unknown
+injustice,NN,VB,object,,,include,include,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,remove,remove,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,assessing,assess,,,,,,and,justice,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,subject,,,,,,,,,,and,persecutions,,social,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,think,,,and,good,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,example,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,recognized,recognize,,,,of,,state,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,before,resentment,,,,,,,,,,,,"envy, jealousy, shame, punishment",,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,prevention,,,,,,felt,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,object,,,felt,felt,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,VB,object,,,protest,protest,,of,,louis,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNP,,,,,,,,,,,,,,"egregious, irs",,,,,,,,,,,,ambiguous,,,countable,unknown
+injustice,NN,VB,object,,,fix,fix,,,,,the,,,,basic,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,explained,explain,,of,,discrimination,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,uncovering,,the,,,,enormous,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,subject,occurred,occur,,,,of,types,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,VBP,object,,,suffer,suffer,,,,,some,,,,gross,,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,,,,,,,,"of, in",believe,system,the,,,,fundamental,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,disturbed,disturb,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,of,enormity,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, to",due,system,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,correct,correct,,,,,,and,instabilities,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,study,study,,,,,,,,,peruvian,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,tackling,tackle,,in,,epic,,,,,racial,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,subject,falls,fall,,,,,,,,and,price,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,of,price,,that,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,falls,fall,,,,,,,the,,,,economic,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBN,object,,,done,do,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VBP,object,,,remain,remain,,of,,ii,the,,,,last,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NNP,,,,,,,,,,,,,,frontier,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,a,,,,great,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,against,counteracting,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,comes,,,and,pain,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,,,,the,,,,outrageous,,,,,damage,,,,,,plural,,,countable,unknown
+injustices,NNS,VBN,subject,inflicted,inflict,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,against,fight,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,in,rooted,,,and,inequality,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,crisis,,,,,,economic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, by",fed,law,,and,weakness,,perceived,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,movie,,,,,,"american, racial",,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,not,killer,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, at",done,demand,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBP,object,,,agree,agree,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+injustices,NNS,VBG,object,,,righting,right,,,,,those,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,decades,,,and,suffering,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,onslaught,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,object,,,witnessed,witness,,,,,,,,,racial,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VB,object,,,confront,confront,,of,,times,the,and,biases,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,and,identity,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,with,combined,,,,,,historic,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,to,confined,,the,,,,glaring,,,,only,,,,,,,plural,,,countable,unknown
+injustice,NN,VBD,object,,,attacked,attack,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,,role,fighting,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,understood,understand,,,,,,and,causes,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,subject,arrest,arrest,,,,in,,refusal,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,to,leads,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forces,,,and,evil,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,at,sporting,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,decries,decry,,,,,the,,,,terrible,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,against,reflects,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,confiding,confide,,of,,condition,the,and,observations,,general,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,by,shattered,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,mediate,mediate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,and,betrayal,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,the,,,,basic,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,to,,producer,an,,,,,,,,,,,,that,an,unit,singular,singular,a+n,countable,nonverdical
+injustices,NNS,,,,,,,,of,grow,,any,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,against,standing,,,and,oppression,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,manifested,manifest,,,,,an,,,,"greater, crueler",,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustices,NNS,,,,,,,,of,gravest,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,against,fight,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,assailing,assail,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBG,object,,,addressing,address,,,,,,,,,systemic,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,healing,,,,,,,,world,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,associated,associate,,,,,,,any,,,,possible,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,eradicate,eradicate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,tolerate,tolerate,,,,,,,,,inevitable,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VBN,subject,ignored,ignore,,,,,,,,,,,"individual, especially",,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,bit,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,speaking,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,moment,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,fight,,,and,inequality,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,Gross,Gross,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustice,NN,,,,,,,,toward,feel,,,and,abuses,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,NN,object,,,embarrassment,embarrassment,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VBZ,object,,,depicts,depict,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,"in, against",fight,culture,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,from,shielded,,the,,,,financial,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBG,object,,,attacking,attack,,of,,tax,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,decry,decry,,of,,episode,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,erased,erase,,,not,,,,,and,pain,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,,,,,,,of,feeling,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,realize,realize,,,,,,and,misery,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustices,NNS,,,,,,,,of,consciousness,,the,and,abuses,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBP,object,,,understand,understand,,,,,,and,poverty,,social,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+injustices,NNS,VBD,subject,endured,endure,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,been,be,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,about,spoke,,the,,,,everyday,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNS,,,,,,,,"of, against",spoke,slavery,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,by,disgusted,,,and,fraud,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,object,,,done,do,,,,,some,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,face,,any,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,thing,,,or,racism,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,stop,stop,,,not,,,,,,,,social,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,subject,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,bitter,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,set,set,,,,,,,,aright,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,of,root,,,,,,much,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,suffer,suffer,not,,,,,and,pain,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,,,,,,,by,deformed,,,and,terror,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,brutalization,,,and,racism,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,victims,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, in",army,order,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,crusade,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,the,,,,personal,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,prevent,prevent,,,,,,or,incompetence,,such,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,because_of,resolve,,the,,,,basic,,,,,,unconstitutionality,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,,,,a,,,,great,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+injustice,NN,VBZ,object,,,is,be,,,,,a,,,,great,,,,,,,,,a,unit,singular,singular,a+n,countable,verdical
+injustice,NN,VBP,object,,,consider,consider,,,,,a,,,,great,,,,,,,,,a,unit,singular,plural,"a+n, ex-pl",countable,unknown
+injustice,NN,VBZ,object,,,is,be,,of,,proportions,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustices,NNS,,,,,,,,at,howling,,all,,,,perceived,,,,,,,,,,,plural,,,countable,unknown
+injustices,NNP,VBD,subject,suffered,suffer,,,,,,,,,,the,,,,,,,,,,,,ambiguous,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,remedy,remedy,,,,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,at,only,,the,,,,outrageous,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,underscoring,underscore,,of,,past,the,,,"antagonism, unchecked",,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,brunt,,,,,,environmental,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"in, about",doing,world,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,understanding,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,confront,confront,,,,,,and,racial,,economic,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,from,saw,,,and,war,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,in,world,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBN,subject,done,do,,,,to,succumb,,,and,prejudice,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,is,be,,,,,,,the,,,,ultimate,,,,,,,,,,,singular,singular,,countable,unknown
+injustices,NNS,,,,,,,,of,share,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBN,subject,done,do,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,was,be,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VB,object,,,address,address,,,,,,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,generations,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,scales,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,suffering,suffer,,,,,a,,,,great,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VBG,object,,,relishing,relish,,,,,the,,,importance,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,attributed,attribute,,,,,,,,and,poverty,,economic,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,results,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,subject,undermines,undermine,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBZ,subject,enrages,enrage,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,,,,,,,,by,aggrieved,,,,,,real,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,a,,,,great,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+injustices,NNS,VBG,object,,,addressing,address,,,,,,,,,"perceived, social",,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,legacy,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,challenged,challenge,,,,,,,,and,suffering,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,and,oppression,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,to,shut,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,,and,violence,,economic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,subject,shape,shape,,,,,,,,and,greed,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,at,outrage,,,,,,"social, political",,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,redress,redress,,,,,,,,,such,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,about,think,,,,,,,,,,"cruelty, perhaps",,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,issues,,,and,violence,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,justice,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,over,brooding,,,,,gender,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,"of, to",began,segregation,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,poverty,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,object,,,exposed,expose,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBD,object,,,abhorred,abhor,,,,,,"and, and","repression, one",,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,do,do,not,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,VB,object,,,permit,permit,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,to,lead,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,,heritages,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+injustices,NNP,,,,,,,,tmod,was,,,,,,,,,,,,,,,,,ambiguous,,,countable,unknown
+injustice,NN,,,,,,,,with,shape,,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,eliminate,eliminate,,,,,the,,,,"primary, environmental",,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VB,object,,,revolve,revolve,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,victim,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,issues,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,situations,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,of,rid,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VB,object,,,practice,practice,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,and,racial,segregation,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,object,,,did,do,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,the,,,,abstract,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,on,focused,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,time,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,ignore,ignore,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,sees,see,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,verdical
+injustice,NN,,,,,,,,of,form,,,and,discrimination,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,walls,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,response,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,against,handling,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,subject,gave,give,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,,,,,,,,"in, of",made,communities,the,or,sinfulness,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,,,,,or,justice,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,feels,feel,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+injustice,NN,VBG,object,,,resisting,resist,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,against,protest,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,subject,found,find,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,against,stand,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBP,object,,,attack,attack,,from,,light,,,,,"evil, social",,,,,,,,,,,plural,plural,,countable,unknown
+injustice,NN,VBG,object,,,protesting,protest,,of,,death,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"to, of",face,hall,the,,,,threatened,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,subject,occurred,occur,,,never,,,,a,,,,tremendous,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,verdical
+injustice,NN,,,,,,,,of,full,,,and,frustrations,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,"of, against",speak,time,the,,,,"social, political",,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,forms,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBG,object,,,going,go,,,,,"all, the",,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,"all, the",and,side,,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBN,subject,righted,right,,,,,,,all,,,,past,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustices,NNS,VBN,object,,,perceived,perceive,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,home,,,and,oppression,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,face,,,,,"poverty, social",,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,witness,witness,,,,,the,and,tradition,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,take,,the,,only,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,the,,,,,,,,also,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,with,dealing,,,and,hurts,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,VBG,object,,,fighting,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,"and, and","war, misery",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,area,,,,,,imperial,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,,,,,,,,"like, at",rages,actor,,,,,,,,,,,,,,,,plural,,,countable,unknown
+injustice,NN,,,,,,,,of,feeling,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,a,,,,grave,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+injustice,NN,VBN,object,,,overlooked,overlook,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,confront,confront,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,internalized,internalize,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBD,subject,introduced,introduce,,,,,,,,,,,historical,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,of,weight,,,,,,racial,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBP,object,,,do,do,,,,,a,,,,serious,,,,,,,,,a,unit,singular,plural,"a+n, ex-pl",countable,unknown
+injustices,NNS,VBN,subject,committed,commit,,,,,,,,,,,massive,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VBN,subject,perpetrated,perpetrate,,,,,,,an,,,,,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,,,,,,,,against,truth,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,"of, of",proof,nature,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,about,become,,,"and, and","discrimination, prejudice",,societal,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,years,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,judgment,,,and,wrong,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,for,had,,the,,,,original,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBG,object,,,accepting,accept,,,,,,or,evil,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,fight,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,against,protests,,,,,"war, social",,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,opens,,,and,discrimination,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,,"but, and","nothing, poverty",,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,as,saw,,a,,,,historical,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+injustice,NN,,,,,,,,,,,all,,,,,,,,,lesson,,,,,,singular,,all+n,countable,unknown
+injustice,NN,,,,,,,,"of, to",exposing,patriarchy,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBN,object,,,done,do,,,,,a,or,harm,,great,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+injustice,NN,VBG,object,,,denying,deny,not,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+injustice,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VB,object,,,perpetuate,perpetuate,,,,,every,and,slavery,,"other, historical",,,,,,,,,every,other,singular,ambiguous,o-den,countable,unknown
+injustice,NN,,,,,,,,against,protest,,,,,,social,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,,,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,and,pain,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,an,,,,,,,,,,,,,an,unit,singular,singular,a+n,countable,unknown
+injustices,NNS,VB,object,,,expose,expose,,,,,,,,,past,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,"against, for",cover,palestinians,,and,violations,,systematic,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBZ,object,,,breeds,breed,,,,,,,,,such,,,,,,,,,,,plural,singular,,countable,unknown
+injustice,NN,VBN,subject,acknowledged,acknowledge,,,,of,,dispossession,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,oppose,oppose,,,,,,and,assaults,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustices,NNS,VBG,object,,,citing,cite,,of,,centuries,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,,,,,,,witness,,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VBD,object,,,recounted,recount,,,,,,and,miseries,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,find,find,,,,,,,,,environmental,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,about,anecdotes,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,,,,,,,,to,relate,,,and,degradation,,economic,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBZ,object,,,does,do,,,,,a,,,,great,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+injustice,NN,,,,,,,,with,confrontation,,,,,,massive,,,,,,,,,,,singular,,,countable,unknown
+injustices,NNS,VB,object,,,avoid,avoid,,,,,these,,,,obvious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+injustice,NN,,,,,,,,of,sense,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+injustice,NN,VBD,subject,was,be,,,,,,,,and,corruption,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+injustice,NN,VB,object,,,rectify,rectify,,,,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown

@@ -1,0 +1,279 @@
+Noun,Noun Tag,Verb Tag,Relation to Verb,Verb Subject,Verb Subject Lemma,Verb Object,Verb Object Lemma,Verb Negation,Prepositions,Prepositional Subjects,Prepositional Objects,Determiners,Conjunctions,Conjoined,Compounds,Adjectival Modifiers,Possesed owned by noun,Possesive owner of noun,Numeric Modifiers,Adverbial Modifiers,Appositional Modifiers,Modified Appositives,Modality,Conditional,Denumerator,Type of Denumerator,Plurality of Noun,Plurality of Verb,Allan Tests Passed,Countability,Verdicality
+robbery,NN,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBN,object,,,investigated,investigate,,,,,a,or,murder,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,for,convictions,,,,,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,cult,,,and,murder,highway,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,forgery,first,,,,then,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,risk,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBN,object,,,supported,support,,of,,kuwait,,,,,,,hussein,,,,benefactor,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,of,possibility,,,and,weather,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBZ,object,,,tortured,torture,,,,,,,,victims,,,,,,,,,,,,singular,singular,,countable,unknown
+robbery,NN,,,,,,,,of,days,,,and,looting,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,including,criminal,,,,,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,defendant,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,except,commit,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,with,indicates,,,,,,,,your,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,on,trespassed,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,such_as,felony,,,or,kidnapping,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,armed,,,,,driving,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,involved,involve,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,during,received,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VB,subject,bargained,bargain,,,,,,,,,,gathright,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBD,object,,,killed,kill,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBD,object,,,killed,kill,,,,,,,,victim,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBD,object,,,involved,involve,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,for,doing,,,,,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,protected,protect,,,,,,,,and,line,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,of,cases,,,and,murder,,aggravated,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,to,witness,,an,,,bank,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,NN,object,,,witness,witness,not,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,verdical
+robbery,NN,VB,object,,,disguise,disguise,,,,,,,,attempt,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBG,object,,,covering,cover,,,,,,and,fraud,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,for,delinquency,,,,,,,,,,twice,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,"and, and","assault, theft",,"attempted, armed",,,,,burglary,kidnapping,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,Consider,Consider,,,,,,,,scenarios,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,for,recommended,,this,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,attempt,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,recommended,,this,and,homicide,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,abuse,,,and,abuse,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,from,ranging,,,and,rape,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,included,include,,,,,,and,homicide,,armed,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBD,object,,,included,include,,,,,,and,homicide,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,including,crimes,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,join,,a,or,rape,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,victims,,,,,assault,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,police,police,,,,,a,"or, or, or","theft, assault, crime",,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,of,incidents,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,incidents,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,or,prostitution,,,,,,,shoplifting,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,hear,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VB,object,,,prevent,prevent,not,of,,house,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+robbery,NN,VB,subject,be,be,,,,of,,house,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBP,object,,,prevent,prevent,not,of,,house,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,verdical
+robbery,NN,VBZ,subject,is,be,,,,,,,a,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+robbery,NN,,,,,,,,,,,a,,,bank,,,,,,crime,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,a,,,bank,,,,,,crime,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VBD,object,,,compared,compare,,,,,,,,cases,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,,,,a,,,bank,,,,,,crime,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,,and,assault,,,,,,,wages,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,such_as,crimes,,,and,rape,,personal,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"for, of",tale,money,,,,,simple,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,with,charged,,,and,murder,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,imprisonment,,,,,,,rapes,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,to,perceived,,,,,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,from,money,,,and,trafficking,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,subject,unfold,unfold,,,,,,,,,,crimes,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,like,convicted,,,and,rape,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,fighting,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,d,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,and,rape,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,theft,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,exception,,,,,,,,,,,,2,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,including,predicted,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,aggression,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,sentence,,,,,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,convicted,,,and,rape,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,decapitated,,an,,,,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,act,,,and,plunder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,part,,an,,,,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,to,taking,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,about,thing,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,taking,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,rehearse,rehearse,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,"in, including",worked,nyack,the,,,brinks,bloody,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,like,heist,,an,,,,,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,in,role,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,did,do,,for,,challenge,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,about,talking,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,participate,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,observed,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,during,shot,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VBD,object,,,had,have,,at,,garage,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,such_as,crimes,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,arrested,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,greater,,,"and, and","theft, transportation",bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,following,chile,,the,,,"december, 1905, villa, mercedes, bank",,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,,merchants,,or,damage,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"of, in",participated,bags,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,like,crimes,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,like,crime,,,,,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,to,go,,,,,,outright,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBG,object,,,committing,commit,,,,,,,,bank,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,"in, of",victim,ohio,an,,,,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,in,injured,,,or,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,with,charged,,a,,,,different,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,,or,homicide,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"of, during",student,stand,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,with,sully,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,had,have,,on,,mind,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,to,witnesses,,a,,,bank,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,for,rates,,,"and, and, and","burglary, murder, assault",,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,someone,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,like,look,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VBD,object,,,committed,commit,,,,,a,,,family,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,VBD,subject,launched,launch,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,VBZ,subject,is,be,,,,,,,,,,,armed,,,,,,,,,,,singular,singular,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,suicide,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"at, in",serving,club,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,VBN,subject,convicted,convict,,,,,,,,or,rape,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,with,charged,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,charge,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,was,be,,,,,,,,,,,armed,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,as,categorize,,an,or,theft,,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,VBZ,subject,is,be,,,,,,,,,,,armed,,,,,,,,,,,singular,singular,,countable,unknown
+robbery,NN,,,,,,,,of,convicted,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"in, for",arrested,state,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,sentencing,,,,,bank,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,killing,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,for,sentence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,about,tell,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,with,do,,,and,it,,,,her,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,be,be,,,,,,,,,"first, institutional",,their,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,for,volunteered,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,of,odds,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,do,do,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,after,hours,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,began,begin,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,,,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,about,know,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBG,object,,,planning,plan,,of,,motel,an,,,,armed,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,with,charged,,both,and,murder,,armed,,,,,,,,,both,other,singular,,o-den,countable,unknown
+robbery,NN,,,,,,,,of,years,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,after,left,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,prison,,,,,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,abuse,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,with,charged,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBN,object,,,been,be,,,,,a,,,,botched,,,,,,,"may, have",,a,unit,singular,ambiguous,a+n,countable,nonverdical
+robbery,NN,,,,,,,,from,ranges,,a,,,,fatal,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,amount,,,and,skulduggery,,"actual, armed",,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,arrests,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,years,,,,,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,percent,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBN,object,,,witnessed,witness,,,,,a,or,murder,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,VBD,subject,were,be,,,,,,,,and,theft,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,such_as,crimes,,,and,theft,murder,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,such_as,offenses,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,spent,spend,,,,,,,,,,victim,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,to,guilty,,,,,,"attempted, armed",,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,as,defined,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,killing,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,context,,,or,burglary,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,get,,a,,,bank,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,evidence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,convicted,,,"and, and","theft, use",,armed,,,,repeatedly,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,get,get,,,,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,attempt,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,chance,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,arrested,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,was,be,,,,of,,course,the,and,theft,,occasional,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,"with, into",degenerating,badge,,,,simple,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"of, npmod",yet,woman,another,,,,,,,,,,time,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,and,assault,,,,,,,homicide,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,wanted,,,"and, and","murder, break",bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,spree,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,killed,,an,,,,attempted,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,for,condemned,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBN,object,,,survived,survive,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,ad,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,suffered,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,in,killed,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,including,go,,,"and, and","kidnapping, assault",,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,context,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,during,killed,,a,,,,botched,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,of,victims,,,and,rape,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,such_as,crimes,,,or,fraud,bank,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,arrested,,,or,vandalism,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,attempt,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,subject,did,do,,,,,,,,and,mugging,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,in,murdering,,an,,,,armed,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,to,prone,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,"on, for",beheaded,order,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,process,,,,,state,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,great,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,for,arrested,,,,,,armed,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,of,victim,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,,,,,,,attempt,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,Was,Was,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,to,confess,,,and,murder,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,simple,simple,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,"of, during",committed,restaurant,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,during,serving,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+robbery,NN,,,,,,,,,,,,and,abuse,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VBD,object,,,was,be,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,VBD,subject,produced,produce,,,,,,,,,,,official,,,,,,,,,,,singular,ambiguous,,countable,unknown
+robbery,NN,,,,,,,,of,victims,,,or,intimidation,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,VB,object,,,commit,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+robbery,NN,,,,,,,,of,signs,,,or,struggle,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,as,convicted,,,and,assault,,,,,,,,,,,,,singular,,,countable,unknown
+robbery,NN,,,,,,,,in,sentenced,,a,,,street,,,,1995,,,,,,1995,other,singular,,o-den,countable,unknown
+robberies,NNS,,,,,,,,with,deal,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,subject,carried,carry,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,in,occupation,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,scourge,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,for,convicted,,,,,bank,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VB,object,,,Contemplate,Contemplate,,,,,,and,percentage,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,involving,those,,,and,women,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,object,,,attempted,attempt,,,,,,or,assaults,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,of,details,,,", ","actions, descriptions",,armed,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,with,charged,,the,"or, or","rapes, assaults",,serious,,,,most,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,,,,,,,bank,,,,,,shootings,,,,,,plural,,,countable,unknown
+robberies,NNS,VBZ,subject,is,be,,,,,,,,and,thefts,,,,,,,,,,,,,plural,singular,,countable,unknown
+robberies,NNS,,,,,,,,with,dealt,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,including,were,,,"and, and","assaults, rapes",,armed,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VB,object,,,prevent,prevent,,,,,,or,assaults,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,object,,,,,,,,,,and,says,"convenience, store",,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,through,objects,,,and,fires,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,subject,were,be,,,,in,,city,,and,murders,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,VBD,object,,,staged,stag,,,,,,,,,petty,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,for,blamed,,,,,bank,several,,,,,,,,,several,fuzzy,plural,,f+ns,countable,unknown
+robberies,NNS,VBN,subject,been,be,,,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,for,month,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VB,subject,stop,stop,,,,,,,,and,muggings,bank,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,,,,the,and,crime,,,,,"9, million",,,,,,9,other,plural,,o-den,countable,unknown
+robberies,NNS,,,,,,,,"for, of","inclination, last",,,,,bank,executed,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,"in, of",string,suburbs,,,,,armed,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VB,subject,cease,cease,,,,,,,,and,robberies,bank,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,VB,subject,cease,cease,,,,,,,,and,robberies,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,in,experienced,,,"and, and, and","holdups, robberies, muggings",store,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,in,experienced,,,and,robberies,bank,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,reports,,,or,holdups,bank,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,string,,,,,,armed,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,to,subject,,,and,thefts,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,number,,,and,homicides,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,number,,,and,assaults,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,with,led,,,and,murders,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,to,confesses,,,and,dealing,,countless,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,with,supplemented,,,"and, and","snatchings, muggings",street,occasional,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,subject,drove,drive,,,,,,,,and,holdups,street,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,of,series,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,subject,was,be,,,,,,,,and,prostitution,,frequent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,in,result,,,"and, and, and","assaults, rapes, murders",,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,in,killed,,,or,burglaries,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBG,object,,,doing,do,,,,,,,,street,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,for,years,,,,,,,,,two,,,,,,two,other,plural,,o-den,countable,unknown
+robberies,NNS,VBN,subject,held,hold,,,,of,number,,,and,homicides,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,VBP,subject,are,be,,,,,,,,,,,armed,,,,,,,,,,,plural,plural,,countable,unknown
+robberies,NNS,VBD,subject,occurred,occur,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,,,,,,,,,,,,and,rapes,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,,,,,and,assaults,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,for,spent,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,as,times,,,,,,many,,,,,,,,,many,fuzzy,plural,,f+ns,countable,unknown
+robberies,NNS,VBN,subject,reported,report,,,,,,,,,,,more,,,,,,,,,,,plural,ambiguous,,countable,verdical
+robberies,NNS,,,,,,,,in,increase,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,record,,,and,bombings,bank,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,,,,,,,,of,series,,,,,bank,,,,,,,,,,,,plural,,,countable,unknown
+robberies,NNS,VBD,subject,occurred,occur,,,,of,string,,,and,bombings,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+robberies,NNS,VBN,object,,,been,be,,,,,,and,robbed,,,,,,there,,,,,,,plural,ambiguous,,countable,verdical
+robberies,NNS,,,,,,,,to,galloped,,,,,bank,,,,,,,,,,,,plural,,,countable,unknown

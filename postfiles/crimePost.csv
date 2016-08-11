@@ -1,0 +1,2100 @@
+Noun,Noun Tag,Verb Tag,Relation to Verb,Verb Subject,Verb Subject Lemma,Verb Object,Verb Object Lemma,Verb Negation,Prepositions,Prepositional Subjects,Prepositional Objects,Determiners,Conjunctions,Conjoined,Compounds,Adjectival Modifiers,Possesed owned by noun,Possesive owner of noun,Numeric Modifiers,Adverbial Modifiers,Appositional Modifiers,Modified Appositives,Modality,Conditional,Denumerator,Type of Denumerator,Plurality of Noun,Plurality of Verb,Allan Tests Passed,Countability,Verdicality
+crimes,NNS,,,,,,,,"of, of, for",held,"slavery, racism",the,,,,historical,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,terrible,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","illiteracy, illegitimacy",,,,,,,drugs,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","abuse, security",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"of, of, of, because_of",condemned,"parentage, education, occupation",any,but,because,,,,,,,,,,,,,singular,,,countable,verdical
+crime,NN,,,,,,,,in,busing,,,and,policy,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,buyer,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBG,object,,,investigating,investigate,,,,,,"and, and, and","accidents, fires, demonstrations",,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,reporting,report,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,cope,,,or,schools,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,first,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VB,object,,,seem,seem,,of,,graffiti,that,,,,the,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,carried,carry,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,VBD,object,,,called,call,,,,,,or,sins,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,JJ,subject,punished,punish,,,not,,,,,,,,secular,,,,"then, even",,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,of,sorts,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,effects,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,incidence,,,"and, and, and, and, and","delinquency, pregnancies, unemployment, suicide, dropouts",,juvenile,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,lead,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,implicated,,this,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,against,,crown,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,real,,ochoa,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,object,,,harassed,harass,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,combat,combat,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,the,,,june,,,,4,,,,,,4,other,plural,,o-den,countable,unknown
+crimes,NNS,VBD,subject,linked,link,,,,,,,,,,,,,people,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,such_as,redistribution,,,,,,urban,,,,along,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,those,,,,,,terrorist,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,in,alleging,,a,,,capital,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,shame,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,ground,,,"and, and, and, and","prostitution, corruption, impoverishment, dissolution",,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"about, of",,"survival, exxon",the,but,not,,"recent, catastrophic, corporate",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,enforcement,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,against,protection,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,include,include,,,,,,,the,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,,,,,,,cost,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,programs,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,against,protection,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,cases,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,expense,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,injured,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,serve,,,,,,official,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",tried,courts,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,brings,bring,,,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,defense,,,,,,violent,,,,,,lubell,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,condoned,condone,,,,,,and,murders,,social,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,story,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,object,,,experienced,experience,not,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,against,reorganize,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,on,chapter,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,avoiding,avoid,,,,,,and,drugs,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,study,study,,,,,,"and, and, and, and","prostitution, offenses, prevalence, relationships",street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,on,data,,,and,arrests,,reported,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,between,relationships,,,and,aids,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,kinds,,,,,street,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,subject,decline,decline,,,,,,,,,,property,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,affected,affect,,,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,portion,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,trends,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,kinds,,,,,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,related,relate,,,,,,,,and,aids,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,measures,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,subject,reported,report,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,variation,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,data,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,data,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,present,present,,,,,,,,,,data,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,VB,object,,,consider,consider,,,,,,", and","both, arrests",,reported,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,categories,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,examine,,,and,the,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,effects,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,related,relate,,,,,,,,,,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with_respect_to,have,,,,,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,between,relationships,,,and,aids,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,imperfect,imperfect,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,amount,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,affected,,,,,,more,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,role,,,,,street,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,subject,were,be,,,,,,,,,,categories,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,categories,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,collect,,,and,aids,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,measures,,,,,street,,,,,,,use,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,enter,enter,,,,,,,,data,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,subject,affect,affect,,,,,,,,,,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,affect,affect,,,,,,,,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,related,relate,,,,,,,,and,aids,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,data,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,data,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,kinds,,,and,years,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,were,be,,,,,,,,,,definitions,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,reducing,reduce,,,,,,,,street,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,exposed,,,"and, and, and","abuse, violence, poverty",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,any,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,condemning,condemn,,,,,the,,,,soviet,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,possible,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,responsibility,,,,,,nazi,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,price,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,tools,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"of, by",buried,century,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,Delete,Delete,,of,,counterrevolution,the,,,words,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,increasing,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,subject,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,control,control,,,,,,and,accident,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,evidence,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,evidence,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,evidence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,investigate,investigate,,,,,,,,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,evidence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,lack,,the,,,street,traditional,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,evidence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",evidence,course,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,regulating,regulate,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,object,,,regulated,regulate,,,,,,,,,such,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,type,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,prosecution,,,,,,environmental,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,and,chicanos,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,in,increase,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,guilty,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,punished,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,lesser,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"in, of, of, of, with",charged,"contrast, extortion, stockpiling, arms",the,,,,minor,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,pay,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NNP,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,indifference,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,glorification,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,forgive,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,justice,,,,,,"own, political",,his,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,for,punishment,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,to,leading,,the,,,,gratuitous,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,advantage,,,,,,,,amnon,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,punishment,,,,,,,,his,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",guilty,"god, community",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,fit,fit,,,,,,,,,,,his,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,responsible,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,,,,vampire,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBP,object,,,regard,regard,,,,,,,,,such,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,against,,god,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,,,,,,,,"against, of",worst,charity,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,and,sin,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VB,object,,,eliminate,eliminate,,,,,,and,poverty,addiction,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,with,do,,any,or,misdemeanors,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,film,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,film,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,film,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,stern,,,,,,,,his,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,spectator,,a,negcc,event,,,,,,always,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,day,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,participate,participate,,,,,,,,,,victims,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,involved,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBZ,subject,confounds,confound,,,,,,,"such, a",,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBZ,subject,deprives,deprive,,,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBZ,object,,,is,be,,under,,law,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBG,object,,,reenacting,reenact,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,hide,hide,,,,,,,,,,,his,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,after,granted,,,,,,"such, terrible",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"of, upon",look,conspirators,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,speech,,,and,unemployment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,about,talked,,,and,problem,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,issues,,,and,justice,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,join,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,accused,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,related,,the,,,,,,,,itself,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,to,country,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,directed,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,investigation,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,alleged,allege,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,accused,,,,,,heinous,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,and,drugs,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,for,guilt,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,prevention,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,blamed,blame,,,,,,,,and,thefts,,other,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,such_as,problems,,,"and, and, and, and, and","poverty, homelessness, illiteracy, aids, breakdown",,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trial,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,held,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,tribunal,,,,,war,,,his,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,an,,,war,"offense, tantamount",,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,with,change,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,accused,,,and,basis,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,containing,contain,,,,,some,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,engravings,,,"and, and","sex, murder",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,about,attitudes,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,committed,commit,,in,,general,,,,,,,,about,,,,,,about,other,singular,ambiguous,o-den,countable,unknown
+crimes,NNS,VBN,object,,,surrounded,surround,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,surrounding,surround,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,before,life,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, about",attitudes,general,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,contributors,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,increases,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,commission,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,tmod,adultery,,,,,,,,,,,,and,,,,,singular,,,countable,verdical
+crimes,NNS,VBD,subject,occurred,occur,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,,,,while,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,regardless_of,judged,,,or,circumstances,,,,their,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,subject,state,state,,,,against,,security,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,jurisdiction,,,,,,"most, such",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,forces,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, as",defined,"security, order",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,became,become,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,list,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,object,,,advocate,advocate,,in,,form,,or,violence,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,penalty,,,,,,certain,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,for,jurisdiction,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,soaring,soar,,,,,,,,rates,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,prostitution,general,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,mention,,,,,,atrocious,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,rates,,,and,pregnancy,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,think,,,and,problems,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,center,,,and,illegitimacy,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,creating,create,,,,,,,,waves,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,heritage,,,and,illegitimacy,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,explanation,,,"and, and, and","dependency, poverty, riots",,"black, urban",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,solve,solve,never,,,,,and,congestion,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,invaded,,,and,aids,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,drug,use,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","jails, wards",,increased,,,,,all,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,rose,rise,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,lower,,,,,poverty,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,occurred,occur,,,never,for,famous,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,of,problems,,,"and, and, and","welfarism, homelessness, schools",,rising,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,speaking,,,and,horton,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,soared,soar,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,and,welfare,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,salient,,,and,adulthood,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,rises,,,"and, and","parenthood, unemployment",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,pose,pose,,,,,,,,,,city,inner,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,against,directed,,,and,vices,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,significance,,,,,ghetto,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,the,,,,enormous,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,attacked,attack,,of,,stalin,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,horrible,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,and,unemployment,,,,,,,costs,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,between,relationship,,,and,aging,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"among, of",fear,elderly,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"among, of",fear,elderly,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,list,,,,,household,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,area,,,and,aging,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,perpetrators,,,,,,,,,,,,pollak,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,for,,time,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VB,object,,,report,report,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"against, of",estimations,elderly,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"against, of",perpetrators,persons,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"against, of",perpetrators,persons,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,area,,,and,aging,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,reports,,,,,,sexual,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,but,exploitation,,,and,war,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBZ,object,,,attributes,attribute,,of,,union,the,,,,monstrous,,,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,PRP,subject,is,be,,,,,,,,,,,,,,,only,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"on, with",dealt,aircraft,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,fighting,fight,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,prevent,prevent,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,demanding,,the,,,,heinous,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,,,,nazi,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,subject,,,,,,,,,this,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,recognized,recognize,,,,,the,,,,following,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,assortment,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,recognized,recognize,,,,,,,,,fifty,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,recognized,recognize,,,,,,,,and,hundred,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,against,laws,,,and,murder,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,hate,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,with,document,,,and,rape,sex,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,for,pay,,this,,,,historical,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","prostitution, native",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,stories,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,investigate,investigate,,,,,,,,genre,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,object,,,reiterate,reiterate,,of,,region,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,for,stood,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,sign,,,"and, and","innocence, destiny",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,transformed,transform,,,,,,and,issue,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,surrounding,surround,,,,,,,,,,,billy,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,by,mention,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,have,have,,,,,,,,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,object,,,pay,pay,,,,,,and,price,user,,,,,,,crime,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,crime,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,suppress,suppress,,,,,,,,,predatory,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,have,have,,,,,,,,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, of",much,day,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,prison,,,,,property,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,into,witnessed,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,punishment,,,,,,inexpiable,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,subject,brought,bring,,,,,,,,"or, and","sin, power",,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,of,wave,,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,rise,,,"and, and","accidents, suicides",,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,face,,,,,,rising,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,persistence,,,and,slums,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,responsibility,,this,,,,incalculable,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,responsible,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,increased,increase,,,,,,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,charges,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,carry,carry,,,,,,,,discussion,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VB,object,,,face,face,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,a,,,war,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VB,object,,,discuss,discuss,,,,,,,,issue,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBZ,subject,is,be,,,,,,,,and,comparison,war,,,,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,DT,object,,,is,be,,,,,,,,statistics,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,protecting,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,,,,,,taxes,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,than,grounds,,,,,"rebellion, other",,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,,,,,,,drugs,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBN,object,,,taken,take,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,relativize,relativize,,,,,,,,,nazi,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,demanded,demand,,,,,,,,,,tribunals,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,try,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,combat,combat,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,facing,,,and,president,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,turn,,,or,drug,,petty,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,into,translated,,,,,depression,psychological,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,defined,,a,,,,"political, social",,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,"against, of",question,humanity,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,lead,lead,,,,,,,,,,,economic,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VB,object,,,punish,punish,,,,,these,,,,"economic, political",,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,seen,,the,and,cure,,mounting,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",examination,south,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,delinquency,language,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,with,cope,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, on",data,arizona,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,placed,place,,,,,,,,,serious,,,seven,,,,,,seven,other,plural,ambiguous,o-den,countable,unknown
+crime,NN,VBP,object,,,commit,commit,,,,,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VBD,subject,occurred,occur,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,increase,,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"against, in",involved,individuals,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,plague,plague,,,,,,,,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,considered,consider,,,,,,and,corruption,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,ran,run,,,,,,,,and,level,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,forces,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,"from, between",relation,standpoint,the,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,traffic,,common,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,relativize,relativize,,,,,,,,"national, socialist",,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"among, about",concerned,poor,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"against, than",concerned,rich,,,,,,,,,about,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,accusations,,,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,legislation,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,elevating,elevate,,,,,an,,,,occasional,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,legislation,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,into,transforms,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBN,subject,motivated,motivate,,,,,,,,,,,interracial,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,define,define,,,,,,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,labeling,label,,,,,a,,,hate,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VBN,subject,prosecuted,prosecute,,,,,,,,,,,interracial,,,,most,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,as,prosecuted,,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,cases,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,motivated,motivate,,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,prosecuted,prosecute,,,,,,,any,,,,interracial,,,,practically,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,prosecuted,,a,,,hate,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBG,object,,,labeling,label,,,,,,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,object,,,apply,apply,not,,,,,,,label,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBP,object,,,hate,hate,,,,,,,,capital,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,as,denounce,,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNP,,,,,,,,,,,,,,,,,,,,,,,,,,ambiguous,,,countable,unknown
+crime,NN,VB,subject,be,be,,,,,,,,,,statute,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,elements,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,charge,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,degenerate,degenerate,,,,,,,,,,trials,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,turn,turn,,,,,,,,trials,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,prejudice,prejudice,,,,,the,,,"factor, hate","key, distinguishing",,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,from,prejudice,,,,,,ordinary,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,politics,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,VB,object,,,denounce,denounce,,,,,,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,aspects,,,,,,,,,many,,,,,,many,other,plural,,o-den,countable,unknown
+crime,NN,VBG,object,,,transforming,transform,,,,,,,,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,object,,,hate,hate,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,apply,apply,,,,,,,,label,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,classified,,a,,,hate,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBN,subject,labeled,label,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,object,,,labeled,label,,,,,,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,not,,,,,,,,,,,,,,,,,,,plural,plural,,countable,verdical
+crime,NN,VBN,object,,,considered,consider,not,,,,a,,,hate,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,verdical
+crime,NN,,,,,,,,,,,,,,label,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,stakes,,,,,intergroup,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,apply,apply,,,,,,,,label,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,Adding,Adding,,,,,,,,charges,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,charging,,a,,,hate,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,in,involved,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,against,,whites,,,,,many,,,,,,,,,many,fuzzy,plural,plural,f+ns,countable,unknown
+crime,NN,VB,subject,work,work,,,not,,,,,,,laws,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VB,subject,apply,apply,,,,,,,,,,laws,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,subject,import,import,,,,,,,,,,attempts,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,as,qualify,,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,statutes,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,includes,include,,,,,,,,,,law,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,expand,expand,,,,,,,,label,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,statutes,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,bestow,bestow,,,,,,,,status,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,percentage,,all,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,as,qualify,,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,category,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,fits,fit,,,,,,,,,,law,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,hate,hate,,,,,,,,deals,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,punishments,,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,subject,fall,fall,,,,in,happen,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,subject,provide,provide,,,,,,,,,,label,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,laws,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,these,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VB,subject,apply,apply,,,not,,,,,,,laws,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,for,arrested,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,laws,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,deter,deter,not,,,,any,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,hate,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,in,,category,,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,warrant,warrant,,,,,,,,,,,racist,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,these,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,the,,,,horrible,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBP,subject,do,do,,,,,,,,,,laws,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,to,applicable,,some,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NNP,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,sorts,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,hate,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,to,extend,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,subject,reflect,reflect,,,,,,,,,,laws,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,witnessed,,,and,unrest,,increasing,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,included,include,,,,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,puts,put,,,,,,,,,,fighting,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,statutory,,,,,problems,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"than, than, of",fear,"men, persons",,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, in, of",knowledge,"community, persons",,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,witnessed,witness,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"among, of",fear,black,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,study,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,toward,attitudes,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,amount,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,perceptions,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,reduce,reduce,,,,,,and,fear,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",fear,sample,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"for, of",correlates,sample,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,sex,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fearful,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fearful,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"for, for, of",fear,"blacks, hispanics",,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"for, of",fear,respondents,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,live,,,,,,more,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,feared,fear,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,sex,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,"and, and","sex, victimization",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,and,victimization,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,among,accused,,,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,apprehended,,,,,,"violent, property",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"involving, involving, in",participation,"theft, violence",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,about,statements,,an,,,,"unrelated, unrepresented",,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,decisions,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,proportionate,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,warrant,warrant,,,,than,,homicide,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,to,disproportionate,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,time,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,minor,,,,even,,,,that,a,unit,singular,,a+n,countable,nonverdical
+crime,NN,VBG,object,,,fighting,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,commission,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,with,preoccupation,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,,,,,and,attaches,,,,its,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBD,subject,came,come,,,,,,,this,,,,unspeakable,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,reducing,reduce,,,,,,,,campus,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,trial,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,of,,milosevic,the,,,,worst,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,,,our,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,acquitted,,any,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,reinforces,reinforce,,,,,,and,other,problems,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,,,,,,,dramas,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,left,leave,,,,,,,,,,,many,,,,too,,,,,many,fuzzy,plural,ambiguous,f+ns,countable,unknown
+crime,NN,,,,,,,,with,coupled,,an,,,,"intellectual, moral",,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,face,,,,,,horrendous,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,source,,,and,atrocities,,other,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,into,established,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,against,,humanity,,or,crimes,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,or,crimes,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,evidence,,,,,,previous,,yeary,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"with, over",losing,body,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,criminal,,,,,,various,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,confessed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,accused,,,,,,,,,,,,workers,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,get,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,guilt,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,some,and,selling,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,for,lay,,every,,,,federal,,,,almost,,,,,every,other,singular,,o-den,countable,unknown
+crimes,NNS,,,,,,,,to,force,,,,,sentence,,,,,,,criminals,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,made,make,,,,,,,,,federal,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,object,,,solve,solve,,,,,,,,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,involved,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBD,subject,backed,back,,,,,,,,,,package,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,on,year,,,,,drug,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,an,,,,international,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,"under, as",war,law,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,as,articulated,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,as,codify,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trials,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trials,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trials,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trial,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, with",charging,humanity,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,verdical
+crime,NN,VBZ,object,,,is,be,,in,,sense,a,,,,,,,,,,,,that,a,unit,singular,singular,a+n,countable,nonverdical
+crimes,NNS,,,,,,,,of,one,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,the,and,conflict,,,,,,,law,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,prosecuted,prosecute,,,,,,,,,,cases,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBD,subject,tended,tend,,,,,,,,,,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,DT,object,,,is,be,,,,,,,,victim,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,into,investigations,,,,,,"alleged, environmental",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,serve,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, as",treated,place,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,identifies,identify,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,as,labeled,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,to,extend,,,,,,environmental,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,violations,,an,,,,environmental,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,environmental,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,object,,,been,be,,"for, to, to, to",,"person, negligently388, oil, materials390",a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,prosecutions,,,,,,environmental,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,in,found,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,"of, for",convicted,corporation,the,,,liability,strict,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,have,have,,,,,,,,,,,environmental,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,from,suffer,,,"and, and, and, and, and","homes, abuse, drugs, malnutrition, factors",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,include,include,,,,,,and,population,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,VB,subject,decrease,decrease,,,,of,,interest,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,fall,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,centers,,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,,or,sin,,,,,,,,,,because,,,singular,ambiguous,,countable,nonverdical
+crime,NN,VBZ,object,,,discusses,discuss,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,such_as,problems,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"of, of",enormity,verloc,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,came,come,,,,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,that,insisted,,,,,"il, ne, faut, pas, faire, un",,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"of, for","guilty, condemned",,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBZ,object,,,obviates,obviate,,,,,,,,,,,his,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,VBZ,subject,excludes,exclude,,,,to,admits,,a,,,,first,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,in,obviates,,the,,,,"telling, mats, quitte, notre, patrie, notre, fatal, premier",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,discourse,,,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,literature,,,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,underscoring,,,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,reveal,reveal,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,object,,,understand,understand,not,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,sentences,,,,,,political,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,network,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,type,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,became,become,,,,,,,,,,,,,my,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,convicted,,a,,,,sexual,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,,,,college,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,sexual,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,with,charged,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,including,read,,,"and, and","violence, hunger",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,know,know,,,,,what,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,than,more,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBN,subject,occurred,occur,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBZ,object,,,seems,seem,,in,,context,a,,,,small,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBG,object,,,addressing,address,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victim,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"for, in","feel, most",,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,"against, of",recognition,women,this,,,,particular,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,established,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,as,recognize,,a,,,,,,,,,,independent,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBD,object,,,were,be,,in,,law,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,for,blame,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,accusation,,a,,,,specific,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,punishment,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,rated,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,toward,measuring,,,"and, and","punishment, authority",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,toward,attitudes,,,"and, and","punishment, authorities",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,area,,,,,,,,,,,,singular,,,countable,unknown
+crime,NNP,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,rise,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,thought,think,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,went,go,,,,from,profit,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victim,,a,,,,violent,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,guilty,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,sources,,,and,terrorism,,international,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,with,charged,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,forgive,forgive,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,made,make,,,,,a,,,,"separate, federal",,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,object,,,become,become,,,,,a,,,,federal,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,production,,,and,drugs,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,against,,dignity,,,,,unspeakable,,,,,increases,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,was,be,,against,,state,the,,,,serious,,,,,,,,although,,,singular,ambiguous,,countable,nonverdical
+crime,NN,,,,,,,,such_as,maladies,,,,,,"increased, violent",,,,,,use,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,guilty,,,,,"misdemeanor, felony, hate",,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,flourishes,flourish,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,VBD,object,,,committed,commit,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,commission,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,dominated,dominate,,,,,,,,,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,roots,,,,,blame,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,displayed,display,,,,,,,,rates,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,tenderloin,,,and,vice,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,done,do,,,,"against, against",,"women, children",these,,,,particular,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,with,fascination,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,problems,,,and,deviance,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,familiar,,,and,disorder,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,most,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,classified,classify,,,,,,,,,,,many,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,disorder,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,and,conflicts,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,want,want,not,,,,,and,disorder,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,to,took,,,and,disorder,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,water,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,,,,ridden,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,VBP,object,,,include,include,,of,,indifference,,and,episodes,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, of",level,areas,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,accidents,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,rewards,reward,,,,,,and,laziness,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,costs,,,and,welfare,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,that,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,cases,,,and,inefficiency,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,mind,,,,,,,,,,,,church,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,with,starting,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,in,rise,,,and,corruption,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,,,groups,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,to,referred,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,handling,handle,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBN,object,,,suspected,suspect,,,,,,,,,electoral,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,federal,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,bill,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"of, in",defending,passion,a,,,,classic,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,traffic,,,,,singular,,,countable,verdical
+crime,NN,,,,,,,,of,victim,,a,,,,violent,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBZ,object,,,commits,commit,,against,,member,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,on,addressing,,,and,care,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,about,arguments,,the,and,system,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,turned,turn,,,,,a,,,california,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,"such, a",,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,create,create,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,scenes,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,at,left,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,subject,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,seem,seem,,,,,,,,and,fraud,,environmental,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,on,giving,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,that,a,unit,singular,singular,a+n,countable,verdical
+crime,NN,,,,,,,,npmod,even,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VB,object,,,thwart,thwart,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,object,,,,,,,,,a,and,terrifying,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,by,threatened,,,"or, or","hatred, intolerancc",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,about,say,,,"and, and","trials, justice",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,commits,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBN,subject,become,become,,,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,,,rates,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,prevent,prevent,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,fight,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,Fighting,Fighting,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,defining,define,,,,,,and,consequences,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,and,social,order,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,try,try,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,given,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"of, for","types, tried",,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,against,,peace,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,set,set,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,justifying,justify,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,,,,,,,war,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VB,object,,,excuse,excuse,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,guilty,,,and,crimes,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,guilty,,,and,crimes,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, in",inherent,count,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",code,"peace, security",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",code,"peace, security",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,carried,carry,,,,against,,humanity,,and,crimes,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,carried,carry,,,,,,,,and,crimes,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,support,support,,,,,,,,charges,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, for",responsible,book,every,,,war,,,,,,,,,,every,other,singular,,o-den,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,tribunal,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"in, with",charged,yugoslavia,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,with,deal,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,definitions,,,and,crimes,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,definitions,,,and,crimes,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,punishments,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,tribunal,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBG,object,,,prosecuting,prosecute,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,category,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",code,"peace, security",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,define,define,,,,,,,,,such,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,tried,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, of",most,humanity,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,source,,,,,,major,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,to,relate,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,to,relate,,,or,war,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, for",related,humanity,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,with,charged,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,tribunal,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"in, regarding",done,yugoslavia,the,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,found,,,,,,major,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, for",trying,peace,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,against,,peace,the,and,is,,very,,,,yet,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,defined,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,war,,,,,,,crimes,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,against,,humanity,,,,,,,,,,crimes,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,against,,peace,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"against, with",charge,peace,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,object,,,have,have,,against,,humanity,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VB,object,,,have,have,,of,,aggression,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VB,subject,stand,stand,,,not,against,,humanity,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crime,NN,VB,object,,,be,be,,such_as,,crime,some,,,,other,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"of, such_as",crime,aggression,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VB,object,,,cover,cover,,of,,genocide,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,prosecution,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,have,have,,,,,,,,war,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,for,trial,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,war,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",accused,france,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,capital,,,,,,drugs,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,information,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBN,subject,seen,see,,,,,,,,or,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,inducement,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,commits,commit,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,from,protect,,,and,enemies,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,put,put,,,,to,,morality,,and,everything,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"as, of",notion,resistance,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,known,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,help,help,,,,,,and,violence,problems,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,guilty,,every,,,,monstrous,,,,,,,,,every,other,singular,,o-den,countable,unknown
+crime,NN,VBP,object,,,prohibit,prohibit,,of,,sodomy,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,for,questioned,,the,and,witchcraft,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,in,,association,,,,,serious,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crimes,NNS,VBD,object,,,committed,commit,,,,,,,,,serious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,apollo,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,celebrated,celebrate,,,,,,,,and,adventures,,abominable,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,puts,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,amplifies,amplify,,,,,the,,,,"original, cultural",,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,"as, as, for",have,"tyrants, oppressors",,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,misunderstanding,misunderstand,,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,of,,problems,the,,,,originating,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,about,speak,,the,,,,,,,,,,"circumstances, circumstances",,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,describe,describe,,,,,,,,scene,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBZ,object,,,solves,solve,,in,,jail,,,,,,,,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,,,,,,,,for,time,,,,,,,,someone,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,disrupts,disrupt,,,,,,,an,,,,"unresolved, unresolvable",,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,solve,solve,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,suspect,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,implicates,,a,,,,,,,,,,"crime, sort",,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,against,,god,a,,,,,,,,,crime,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,fiction,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,reminds,remind,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,context,,,,,,,,his,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,scene,,,and,discomfort,veiled,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,become,become,,,,,,,,,,violent,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,frequency,,,,,,adolescent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,majority,,,,,,"violent, serious",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,"against, for",tests,persons,,and,delinquency,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"of, of, to",included,"assault, rape",the,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,of,scene,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,account,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,rest,rest,,,,,,,the,", and","both, solution",,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,since,punished,,the,,,,"primal, academic",,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,vicrims,,,,,,nazi,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,on,take,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,designate,designate,,"of, such_as",,"magnitude, murder",,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBD,object,,,called,call,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,the,,,,other,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,indicted,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,subject,,,,,"axis, war",,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,into,inquiry,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,unaware,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,did,do,,against,,jews,the,and,much,,wartime,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,swept,sweep,,,,,,,,,,,subject,,,"two, hundred",,,,,,Two,other,plural,ambiguous,o-den,countable,unknown
+crime,NN,VB,subject,appear,appear,,,not,with,charged,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBD,object,,,made,make,,to,,words,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,outbursts,,,and,lawlessness,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",carnival,which,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,and,parenthood,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,poverty,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,although,a,unit,singular,singular,a+n,countable,verdical
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,matter,,,,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,object,,,eradicate,eradicate,,,,,,and,poverty,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,and,addiction,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,conviction,,any,,,,specific,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,brutal,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,capital,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,involved,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,with,charged,,the,,,,same,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,linking,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,after,years,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,calls,call,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,to,linked,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,confess,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,to,confess,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,convicted,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,description,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,to,witnesses,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,occurred,occur,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,behavior,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,bandit,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,allow,allow,,,,,,,,,,,joab,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,had,have,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,hate,religious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,prosecution,,,,,,"any, all",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,called,,,and,aids,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,accused,,the,,,,"most, heinous",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"under, for",responsible,apartheid,the,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,acknowledgment,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,severity,,,,,,political,,their,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,control,control,,,,,,,,organizations,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,among,has,,the,and,drug,,highest,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,want,want,,,,,,,,prevention,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,of,abyss,,,"and, and, and","disease, darkness, nausea",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,spread,spread,,,,,,"and, and, and","terror, desperation, sickness",,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,illustrating,illustrate,,of,,imperialism,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,flees,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,evaporated,,a,,,,tragic,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,for,responsible,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,faces,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,rising,rise,,,,,,,,rates,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,on,charged,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,families,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,in,,america,,,,,serious,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,subject,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,object,,,,,,for,,negro,a,,,,greater,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,did,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,blamed,,,,,,,,commanders,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,vice,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,opportunities,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, on",reports,batavia,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,subject,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",news,batavia,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,stories,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,stories,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,perpetrator,,a,,,,,,,,,,pendjahat,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"on, of",amount,screens,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,about,books,,,,,,sensational,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,variety,,,,,,"violent, other, serious",,,,longer,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,terms,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,times,,,,,,multiple,,,,often,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,rearrested,,,or,violating,,new,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, for","waited, sentenced",,this,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,make,,,,,,"multiple, concurrent, consecutive",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,involve,involve,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,of,volume,,,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,subject,attract,attract,,,,,,,a,,,,few,,,,perhaps,,,,,a,unit,plural,ambiguous,,countable,unknown
+crime,NN,VB,subject,sustain,sustain,,,,,,,a,,,,rare,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,decisions,,,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,problem,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,in,,times,a,,,,,,,,itself,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,against,maintained,,,,,,,,our,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,criminals,,,,our,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,commensurate,,,,,,,,his,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,seriousness,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,categories,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,seriousness,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,construction,,rampant,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,place,,,and,disorder,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,such_as,outcomes,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",convicted,"whites, order",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,"little, real",,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,toward,attitude,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,investigations,,,,,,particular,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,from,stayed,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,growth,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,bill,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,dealing,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,notices,notice,,,,,,or,sex,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,pay,,,,,,,,one,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,object,,,considered,consider,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VB,subject,attempt,attempt,,,,,,,,,,tribunals,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,the,,,,atrocious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,war,committed,,,,,war,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,trial,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,than,worse,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,tribunal,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,proportions,,,and,trafficking,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,investigate,investigate,,,,,these,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBP,object,,,commit,commit,,,,,the,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,patterns,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,threaten,threaten,,,,,,,some,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,of,offspring,,any,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,the,,,,,,,,,judges,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,occurred,occur,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,occurred,occur,,,not,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,on,convicted,,,,,drug,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,launch,launch,,,,,,,,spree,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,served,,,,,,conventional,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,section,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,punish,punish,,,,,,,,computer,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,specializes,,,,,computer,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,over,jurisdiction,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,in,,society,,,,,,,,,,,,,because,,,plural,plural,,countable,nonverdical
+crime,NN,VBP,object,,,have,have,,,,,,,,experts,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,labs,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,charney,,,,,computer,,,department,,,,,,,,,plural,,,countable,unknown
+crime,NN,NN,object,,,is,be,,in,,majority,a,,,,,,,,,,,,that,a,unit,singular,ambiguous,a+n,countable,nonverdical
+crime,NN,VBZ,object,,,is,be,,,,,a,and,introduced,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBD,object,,,made,make,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBG,object,,,fighting,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,subject,become,become,,,,,,,,,,,teen,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,engendered,,,and,discipline,teen,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,curb,curb,,,,,,,,,teen,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,percent,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,subject,increased,increase,,,,,,,,,,,teen,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,epidemic,,,,,juvenile,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,reducing,reduce,,,,,,,,,juvenile,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,applied,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,break,break,not,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,"by, of",evidence,teenagers,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,percentage,,those,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,drop,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,repeat,repeat,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,on,tough,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,age,,the,,,sex,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,accounting,,the,,,sex,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,subject,fit,fit,,,,,,,,,,,"serial, meaningless",,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,time,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,been,be,,"in, for",,"europe, years",a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,found,,the,,,,double,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,imagined,imagine,,,,,,,every,,,,,,,,almost,,,,,every,other,singular,ambiguous,o-den,countable,unknown
+crime,NN,VBG,object,,,Balancing,Balancing,,,,,,and,budget,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,such_as,attention,,,and,costs,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,revealing,reveal,,,,,,,,functions,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,retribution,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,en,,aussi,,,,ce,dans,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,condemning,,,,,,,,his,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,complicity,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,elaboration,,,,,government,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,punished,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, such_as",themes,jews,the,and,ramifications,,nazi,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,facts,,this,,,,evil,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,involved,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,motives,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,gravity,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,subject,,,,,,,,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,of,,violence,a,,,,,,,,,,1993,,that,a,unit,singular,singular,a+n,countable,nonverdical
+crime,NN,VBN,subject,answered,answer,,,,against,,her,a,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, of",expansion,shantytowns,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,crackdown,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,viewed,view,,,,of,,poor,the,,,,,,,,,,thievery,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,in,engaging,,,,,,petty,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,subject,suspect,suspect,,,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,program,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,been,be,,,,,,,the,and,auditing,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,investigation,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,use,use,,,,,the,,,term,environmental,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,to,refer,,,,,,economic,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,shift,shift,,,,,,,these,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,environmental,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBD,object,,,explained,explain,,,,,,,,programs,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,investigation,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,object,,,explained,explain,,,,,,,,program,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,in,,states,a,and,found,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBZ,object,,,is,be,,in,,states,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,VBG,object,,,investigating,investigate,,under,,ucmj,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",rules,military,,,,,prosecutable,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,commission,,a,,,,26,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBG,object,,,involving,involve,,,,,,,,misdemeanor,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,accused,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, of",category,sample,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,,,,,,assault,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,exceed,exceed,,,,,,,some,,,drug,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,,,,the,,,,nonsex,,,,,four,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,true,,the,,,sex,,,,two,,,,,,two,other,plural,,o-den,countable,unknown
+crimes,NNP,,,,,,,,,,,,,,,,,,,,,,,,,,ambiguous,,,countable,unknown
+crimes,NNS,,,,,,,,for,true,,the,,,sex,,,,three,,,,,,three,other,plural,,o-den,countable,unknown
+crimes,NNS,,,,,,,,"of, in",predominate,violence,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,and,assault,sex,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,serious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,between,difference,,,and,sex,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,for,retribution,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,persecute,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, about",do,progress,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,DT,subject,is,be,,,,,,,the,,,,real,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, for",became,areas,every,and,misdemeanour,,,,,,,,,,,every,other,singular,,o-den,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,,,"health, anti",,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,more,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,of,some,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,applied,,,"and, and","discrimination, rearing",,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,against,laws,,,,,,victimless,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,against,protection,,,or,pollution,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,provide,provide,,,,,,,,,,syndicates,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,"in, of",kinds,neighborhoods,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,obtain,obtain,,,,,,,,,,kingpins,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,in,result,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,affect,affect,,,,,,,,,,,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,costs,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,reduces,reduce,,,,,,,,,,,violent,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,underworld,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,safety,,,"or, or, or, or","timeliness, crowding, care, civility",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,,,nation,,,,,,,,,plural,,,countable,unknown
+crime,NN,NN,subject,are,be,,,,,,,,and,rates,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,suicide,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,"and, and","suspension, expulsion",,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,encouraged,encourage,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,object,,,experienced,experience,,,,,,and,deprivation,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,problems,,,and,delinquency,"street, gang",,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,and,delinquency,"youth, gang",,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,of,prevention,,,,,gang,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,fluctuates,fluctuate,,,,,,,,,,gang,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,for,trend,,,,,gang,,,,,,,violence,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,reducing,reduce,,,,,,,,gang,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,induce,induce,,,,,,,,situations,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,engaged,,,,,property,more,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,obtained,obtain,,,,,,,,data,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,were,be,,,,,,,,,,patterns,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,involved,,,,,gang,serious,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,,,,,,,gang,most,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,gang,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,arrests,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,arrests,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",arrested,phase,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,for,arrests,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,discusses,discuss,,,,,,,,data,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,number,,,,,,"reported, total",,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,existed,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"on, of",number,average,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,had,,all,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,"violent, property",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,outcomes,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,for,arrests,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,arrests,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,differed,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"of, of, in",increase,"manufacture, delivery",the,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,indicated,indicate,,,,,,,,,,data,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,rates,,,,,gang,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,control,control,,,,,,,,gang,serious,,,,especially,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,drugs,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","poverty, babies",,juvenile,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,rates,,,,,,juvenile,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,rate,,,,,juvenile,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"including, including, including, for",juveniles,"assault, robbery, murder",,,,,"serious, violent",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,majority,,the,,,,"serious, violent",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,deal,,all,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,reduce,reduce,,,,,,,,,juvenile,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",presence,institutions,,or,corruption,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,addressed,,,and,education,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,reduction,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,had,have,,,,,,and,gang,problems,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,perceived,perceive,,,,,,,,and,activity,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,examine,examine,,,,,,,,victimization,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,subject,contribute,contribute,,,not,,,,,,,involvement,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,,,,,,,victimizatian,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victimization,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,becoming,become,,,,,,,,victim,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,involvement,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,for,whites,,some,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,rates,,,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,in,involved,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,report,report,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,viewed,,,,,,attractive,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,serve,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,occurred,occur,,,,,,,,or,robbery,,other,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,subject,risk,risk,,,,,,,,,,report,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,amount,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,use,use,,,,,,,,labels,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,of,measures,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,measures,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, by",victimized,mouths,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,,,,,violent,,,one,,,,,,one,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,property,,,,"one, more",,,,,,one,unit,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,involvement,,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victimization,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,involvement,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,related,relate,,,not,,,,,,,involvement,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,by,victimized,,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,occur,occur,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victimization,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,involvement,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,likelihood,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victimization,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,against,guardians,,,,,"property, violent",,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victimization,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,victimized,,,,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,form,,,,,collar,white,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,some,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,prison,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"of, including",variety,order,,and,theft,,nonviolent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBZ,subject,is,be,,,,,,,,,,,,,their,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,VB,object,,,do,do,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,represented,,a,,,,jewish,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,for,shakedowns,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,this,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,Is,Is,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,VB,object,,,believe,believe,,of,one,,those,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,reasserts,reassert,,against,,god,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,of,economy,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,been,be,,,,,,,,,,,,,my,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,costs,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,assign,assign,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victim,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,object,,,,,,,,,,,,victim,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,before,behaving,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,victim,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,surge,,,,,,black,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,reduces,reduce,,,,,,,a,,,,,,,,,son,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,of,costs,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,heinous,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,gravity,,the,,,,,,,,,,circumstances,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,ask,ask,,,,,,or,cowardice,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,severity,,,and,punishment,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,subject,,,,,,,,,,,,inspires,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,from,follows,,,,,,extreme,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,says,,,,,,discussing,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,"of, of, with",think,"brutality, horror",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,the,,,,,,,,itself,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,categories,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,leads,lead,,,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,to,leading,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,explanations,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,had,have,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,about,information,,the,,,,,,,,,,robbery,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,described,describe,,,,,the,and,instructions,,,,,,,,"robbery, circumstances",,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,surrounding,surround,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,related,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,described,describe,,,,,the,and,instructions,,,,,,,,"robbery, circumstances",,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,surrounding,surround,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victims,,a,,,,violent,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBN,subject,tried,try,,,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,mentioned,mention,,of,,indifference,,,,,the,,,,again,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,make,make,,,,,a,,,,federal,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VBG,object,,,solving,solve,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,subject,,,,,,,,,a,,,war,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,fighting,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,these,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,war,,,,,,force,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBN,subject,punished,punish,,,,against,,humanity,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,targeted,target,,,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,against,,humanity,,,,,,,,,,genocide,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,made,make,,,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,over,power,,,and,genocide,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,accept,accept,,,,,,,,coverage,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",prosecution,conflicts,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,guilty,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,tribunals,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,fighting,fight,,,,,,and,pollution,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,ignore,ignore,,,,,,,,,,,japan,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,upsurges,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,,,rates,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,become,become,,,,,a,,,,universal,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,,navigation,,,,,,,,,,hijacking,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, on",builds,diplomats,,and,developments,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",indicted,yugoslavia,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,indicted,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,abolished,abolish,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,guilty,,,and,treason,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,increase,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,obsessed,,,,,,past,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,epidemic,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,accused,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,"on, concerning",project,side,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,topic,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,criminal,behavior,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,version,,,,,,historical,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,colonialist,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBG,object,,,cheating,cheat,,,,,a,,,,great,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,a,,,,violent,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,subject,required,require,,,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,became,become,,,,,,or,infractions,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,of,elements,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,devoted,,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, as",named,decrees,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,and,association,subversive,"other, terrorist",,,,,arms,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,convicted,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,as,define,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,intensification,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,accompanied,accompany,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",level,suburbs,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"for, on",dependent,survival,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,wars,,less,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,intersection,,,and,politics,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,study,,,and,disorder,school,done,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,questioned,,,,,school,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,increase,,,and,disruption,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,wave,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,have,have,,,,,,,,rate,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,,,,schools,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,inside,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,people,,,,,,victimless,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,conditions,,,and,drugs,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"such_as, such_as, such_as, such_as, of",percent,"rape, robbery, assault, theft",all,,,,personal,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,reality,,,and,tendencies,,,,his,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,for,conviction,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,convicted,,some,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"to, to, from",nation,"illiteracy, homelessness",,and,drugs,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,pervade,pervade,,,,,,,,and,violence,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,to,accessory,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,dismissed,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,VBG,object,,,preventing,prevent,,,,,,,,,future,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,designed,,each,,,,,,,,,,,,,each,other,singular,,o-den,countable,unknown
+crime,NN,,,,,,,,from,gain,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,offenders,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,between,equivalence,,the,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,from,stemming,,,,,,more,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,deters,deter,,,,,,,,,further,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,fit,fit,,,,,the,and,criminal,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBN,subject,protected,protect,,,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,certain,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,reduction,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,considered,consider,,,,,,,,,,reduction,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,wrongfulness,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"on, of",impact,victim,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"since, of",victims,1965,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,prosecute,prosecute,,against,,humanity,,and,clusters,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,laws,,,and,war,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, to",guilty,humanity,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, for",allocate,humanity,,,,"genocide, other",,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, with",charged,humanity,,and,genocide,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,designed,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,list,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,or,crimes,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,or,crimes,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,"or, or","crimes, crimes",war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,against,,peace,,or,crimes,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,against,,humanity,,or,crimes,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,punishments,,,,,,international,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,compensating,compensate,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,compensated,compensate,,,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,object,,,see,see,,,,,,"and, and","unemployment, ills",,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,of,level,,,,,,other,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,had,have,,in,,part,any,,,,serious,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,deal,,,,,,serious,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,spree,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,spree,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,object,,,issued,issue,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,die,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"beyond, of",element,doubt,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,element,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,element,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,elements,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,between,distinction,,,,,intent,"general, specific",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,but,one,intent,general,,,,,,,may,,a,unit,singular,ambiguous,a+n,countable,nonverdical
+crime,NN,,,,,,,,of,time,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,including,used,,,"and, and, and","success, orientation, adultery",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,including,problems,,,,,,,,,,,,"delinquency, rolls",,,,,singular,,,countable,unknown
+crime,NN,,object,,,,,,,,,,,,"poverty, juvenile",,,,,,,,,whether,,,singular,,,countable,nonverdical
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,prosecution,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,investigate,investigate,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,object,,,investigate,investigate,,,,,an,,,,alleged,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,prosecution,,,,,,federal,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,"significant, federal",,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,types,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,to,limit,,,or,seeking,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,investigate,investigate,,,,,any,,,,federal,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,prosecutor,,,,,street,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",victims,states,,,,hate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","alcohol, drug",addiction,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,level,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"in, of",increase,neighborhood,,and,violence,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,verdical
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,serious,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,"of, as",perceives,dualism,the,,,,cartesian,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,"of, of",,"dualism, discrimination",the,,,,same,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,but,striking,,,,,,,,,,,a,unit,singular,singular,a+n,countable,verdical
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,as,drinking,,a,,,,serious,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,"in, of",list,seriousness,,,,,,,,17,,,,,,17,other,plural,,o-den,countable,unknown
+crimes,NNS,,,,,,,,in,increase,,,and,misdemeanors,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,subject,warrant,warrant,,,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,order,order,,,,,,,,,greatest,,his,,,,killing,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,another,,,,,,,,yngvildr,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,unwitting,,,,even,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBZ,object,,,constitutes,constitute,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,victim,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,as,view,,a,,,,violent,,,,,,act,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBG,object,,,avec,avec,,de,,humain,,,,,joie,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,movies,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,films,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,exemplify,exemplify,,,,,,,,,,films,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,invited,invite,,,,,,,,,,films,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,act,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,a,,,,,,,,,,,,that,a,unit,singular,ambiguous,a+n,countable,nonverdical
+crime,NN,,,,,,,,"against, as",did,beings,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,novels,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,environmental,abuses,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,brought,bring,,,,in,,general,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,incidence,,,,,,juvenile,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,incidence,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NNP,VBZ,subject,behaviors,behaviors,,,,,,,,,,and,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,life,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,commission,,,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,increased,increase,,,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,arrests,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,about,ask,,,"and, and","environment, disease",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,increasing,increase,,,,,,,,,,,,,,,morals,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,planet,,,"and, and","disease, hunger",,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,subject,plague,plague,,,,,,,,or,pilfering,,other,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,revelation,,,,,,,,her,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,syndicate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,,,,,,,my,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,catalogue,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,on,tried,,,and,charges,war,,,,,,,crimes,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,against,,humanity,,,,,,,,,,crimes,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,established,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,in,,country,,,,hate,reported,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,end,end,,,,,all,,,hate,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBZ,subject,includes,include,,,,,,,,,,bill,,,,,,,,,,,,plural,singular,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,law,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,deterrent,,,and,dishonesty,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,fallen,fall,,,,,,,,,,rates,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,threats,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,punish,punish,,,,,,,,thought,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"of, in",engaged,coveting,this,,,,covert,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,implications,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,guilt,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",held,sense,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,choices,,,and,generation,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,enormity,,the,and,list,,committed,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"during, of",convicted,months,,,,,,,his,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,prevalence,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,enormity,,,,,apartheid,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,fact,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,assumes,assume,,,,,,,,,,,violent,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,demonstrates,demonstrate,,,,,,,the,,,,violent,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,for,responsible,,the,and,rights,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,regret,regret,,,,,,,,,"his, her",,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,community,,a,,,war,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,,,,war,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,VBZ,object,,,constitutes,constitute,,,,,a,,,war,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,VBG,object,,,combating,combat,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,zombies,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"as, as, of",accused,"juvenile, adult",a,,,,serious,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,a,,,,violent,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,and,peacekeeping,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,such_as,threats,,,and,conflict,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,coexisted,coexist,,,,,,,,and,violence,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,interpretation,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,in,complicity,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,by,overwhelmed,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,diagnosis,,the,,,,,,,million,,,,,,million,other,plural,,o-den,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,,,,,"many, serious",,,,,,,,,many,fuzzy,plural,,f+ns,countable,unknown
+crime,NN,,,,,,,,,,,,,,wave,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,wave,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,than,worse,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,a,"and, but","live, mistake",,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,,,,,"such, heinous",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,in,conspire,,any,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,from,escalated,,,and,fights,street,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,incidence,,,and,terrorism,street,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,gang,fights,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,government,,,and,disorder,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,problem,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,adopts,adopt,,,,,,,,problems,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,help,help,,,,,,,,breed,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,moderate,,,,,,political,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,poverty,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,victim,,a,,,,horrible,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,for,sentences,,,,,,similar,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,an,,,,ordinary,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,repression,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,justice,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,have,have,,,,,,,,,,,such,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,in,ministers,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,defined,,the,,,,military,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, against, of",repression,"security, institutions",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,in,judge,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,judge,judge,,,,,the,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,try,try,,,,,,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,,,,military,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,as,consider,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,during,consider,,,,,peacetime,only,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"outside, of",type,area,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,court,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,object,,,considered,consider,,,,,,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,subject,became,become,,,,,,,,and,crime,,military,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,became,become,,,,,,,,and,crime,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,courts,,,,,,"civil, political",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,military,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,"in, for",answer,courts,the,,,,"civil, military",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,cover,cover,not,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,"of, for",answer,murder,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",answer,court,,,,,,,,two,,,,,,two,other,plural,,o-den,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,military,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,,,,civil,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,accused,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBZ,object,,,is,be,,"according_to, without",,"article, bail",a,,,,,,,,,,,,because,a,unit,singular,singular,a+n,countable,nonverdical
+crimes,NNS,,,,,,,,"with, as",charged,penalties,,,,,different,,,two,,,,,,two,other,plural,,o-den,countable,unknown
+crime,NN,,,,,,,,of,handling,,the,,,,same,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,definition,,this,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,existence,,a,,,,military,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,of,inquiry,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,cases,,,or,transgression,,military,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,brought,bring,,,,,,,the,,,,,,,,even,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,VBD,subject,charged,charge,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,subject,,,,,,,,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBG,object,,,judging,judge,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,try,try,,,,,any,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,tried,try,,,not,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,of,case,,,,,,intentional,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,investigate,investigate,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,investigating,investigate,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,except_for,investigate,,,,,,military,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,considered,consider,,,not,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,of,investigation,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,subject,be,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBZ,subject,is,be,,,,,,,,,,,premeditated,,,,only,,n50,,,,,plural,singular,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,investigation,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,making,make,,,,,,,,manslaughter,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,making,make,,,,,a,negcc,manslaughter,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,considered,consider,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,object,,,considered,consider,,,,,,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,considered,consider,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,considered,consider,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBN,object,,,considered,consider,,,,,a,,,,military,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,definition,,,,,,military,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,,,,a,,,,military,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,,,,civil,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,"against, of",cases,lives,,,,,intentional,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBZ,object,,,allows,allow,,,,,,,,,"civil, intentional, not",,,,,,,,,,,plural,singular,,countable,unknown
+crimes,NNS,,,,,,,,to,sought,,,,,,separate,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,object,,,commit,commit,,against,,life,an,,,,intentional,,,,,,,,,an,unit,singular,plural,"a+n, ex-pl",countable,unknown
+crimes,NNS,VB,object,,,remove,remove,,,,,,,,,intentional,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,tried,try,,,,,,,,,,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,tried,try,,,,,,,,,,police,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,activities,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,committed,commit,,,,,,,,,intentional,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,be,be,,,,,,and,stipulated,,military,,,,longer,,,would,,,,plural,ambiguous,,countable,nonverdical
+crime,NN,VBG,object,,,committing,commit,,,,,an,,,,intentional,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,and,organization,,military,,,,,,"forms, procedures",,,a,unit,singular,singular,a+n,countable,unknown
+crimes,NNS,,,,,,,,between,incompatibility,,,,,,civil,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,considered,consider,,,,,,and,existence,,military,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,,such,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VBZ,object,,,judges,judge,,,,,,", and","only, crimes",,military,,,,,,,,,,,plural,singular,,countable,unknown
+crimes,NNS,VBZ,object,,,judges,judge,,,,,,and,crimes,,civil,,,,also,,,,,,,plural,singular,,countable,unknown
+crimes,NNS,,,,,,,,to,assigned,,,,,justice,"civil, only, intentional",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,object,,,commit,commit,,against,,life,an,,,,intentional,,,,,,,,,an,unit,singular,plural,"a+n, ex-pl",countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,an,,,,intentional,,,,,,,,,an,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,with,coping,,,and,gangs,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,presence,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","violence, groups",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"at, of",past,margins,,"and, and","violence, existence",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,environment,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,and,unemployment,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,reduced,reduce,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,between,realm,,,and,protest,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,thieves,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,avenge,avenge,,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,to,tied,,,and,feuds,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,object,,,repented,repent,,,,,,,,,,,his,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,subject,lead,lead,,,,of,capable,,every,,,,,,,,,,,,,every,other,singular,ambiguous,o-den,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,the,,,,"most, unspeakable",,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,perpetrators,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,lesser,,,,even,,crimes,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,involve,involve,,,,,,,,,,,,,,,,crimes,,,,,,plural,plural,,countable,unknown
+crimes,NNS,VB,object,,,be,be,,,,,,,,,,,,,,,,should,that,,,plural,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,to,needed,,,,,,censor,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victim,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,provide,provide,,,,,,,,,,statistics,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,estimates,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,an,,,,underreported,,,,already,,,,,an,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,of,suspicion,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,weight,,,and,conflict,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,punish,punish,,,,,these,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,stained,stain,,,,of,,genocide,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,from,distinguishable,,all,,,,other,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,has,have,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,precedents,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,arose,arise,,,,of,motive,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,defined,define,,,,,,,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,subject,required,require,,,,of,,genocide,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,npmod,only,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,against,,humanity,a,but,rule,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,that,a,unit,singular,singular,a+n,countable,verdical
+crimes,NNS,VB,object,,,prosecute,prosecute,,against,,humanity,,and,clusters,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"against, with",charged,humanity,,and,genocide,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,nature,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"of, over",work,trafficking,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,definitions,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,subject,prohibited,prohibit,,,,of,,genocide,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,as,recognized,,the,,,,ultimate,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,unit,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"as, of",nature,rationale,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,the,,,,,nature,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,nature,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,,impact,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,problem,,,,,"computer, sex",,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,types,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,nature,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,calling,call,,,,,,,,victimless,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,cases,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,cases,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,chairs,chair,,,,,,,,group,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,to,comes,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,assigning,,every,,,,federal,,,,,,,,,every,other,singular,,o-den,countable,unknown
+crimes,NNS,VB,subject,unfold,unfold,,,,,,,a,,,"bank, robbery",,,,,,,,,,a,unit,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,charge,charge,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,according_to,classified,,,,,,,,their,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,than,offense,,the,,,,same,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,defendant,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,,,victims,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,of,rate,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,juvenile,,,,nationwide,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,in,rise,,,,,,"suburban, teen",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,been,be,,,,,,,,,,juvenile,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",arrests,areas,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,contribute,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,attacks,attack,,,,,,,,,juvenile,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,indicative,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,reached,reach,,,,,,,,,,juvenile,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,confessed,confess,,,,,,,,,,,their,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,federal,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,established,establish,,,,,,,,tribunal,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,investigating,investigate,,in,,rwanda,,,,war,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,to,confess,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,confess,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,to,confess,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,confess,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,about,details,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,confessed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,confessed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,account,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,connecting,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,and,illegal,"immigrants, drugs",,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,trials,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,outfits,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,provide,provide,,,,,,and,cartels,,organized,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,in,reducing,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,perpetrators,,,,,,,,,,,,perry,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,incidents,,,and,racism,hate,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,convicted,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,determine,determine,,,,,the,,,,committed,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,in,difference,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,object,,,asserted,assert,,of,list,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"among, among, of",occurrence,"males, females",the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,list,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,frequency,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,the,,,,committed,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,the,,,,committed,,,,also,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,attracted,attract,,,,,,,,,,drug,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,,,,the,,,,,,,three,,,,,that,three,other,plural,plural,o-den,countable,nonverdical
+crimes,NNS,VBP,subject,range,range,,,,,,,,,,,,,the,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,of,degree,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,degree,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,pruned,,,,,,,,,"committing, females",,,,,,committing,other,plural,,o-den,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,among,,students,the,,,,committed,,,three,,,,,that,three,other,plural,plural,o-den,countable,nonverdical
+crimes,NNS,VB,object,,,note,note,,,,,these,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,npmod,above,,these,,,,,,,three,,,,,,three,other,plural,,o-den,countable,unknown
+crime,NN,,,,,,,,of,type,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,frequency,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,fosters,foster,,,,,,and,abuse,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,at,conceived,,the,,,,"perfect, historical",,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,are,be,,against,,man,,,,,absolute,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,object,,,committed,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"in, of",image,mirandola,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,like,feel,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,subject,,,,,,,,,,,,,real,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,brott,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,an,,,,unconscious,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+crime,NN,VBD,object,,,committed,commit,,,,,a,,,,certain,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,,,,,,,,of,list,,,,,chekist,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,labeling,label,,,,,,,,scene,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"against, including, including, of",guilty,"members, murder, incest",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, of",comparisons,states,,,,,juvenile,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,arrests,,,,,,"juvenile, violent",,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,males,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,,,,,,,,violent,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,"in, of",pervasiveness,society,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,increase,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,types,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,in,difference,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,nonviolent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,incidents,,,,,,actual,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,details,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,details,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,reduction,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,type,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,such_as,type,,,,,property,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,variety,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,"and, and","unemployment, discrimination",,,,,,,poverty,,,,,,singular,,,countable,unknown
+crime,NN,VBN,object,,,committed,commit,,against,,a,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,in,partners,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBN,subject,used,use,,,,,,,,and,cruelties,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VB,subject,pay,pay,,,not,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crime,NN,,,,,,,,of,way,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,fighters,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,issue,,,,,,"international, environmental",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,such_as,characteristics,,,and,weather,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,included,include,,,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,suffered,suffer,,,,,,,,,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,continue,continue,,,,,,,,,,rate,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,rising,rise,,in,,cities,,and,pollution,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,subject,be,be,,,,,,,each,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VB,object,,,count,count,,,,,,and,piece,,political,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,collaborated,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,PRP,object,,,is,be,,under,,law,a,and,has,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,lives,,,,,,heinous,,,billion,,,,,,billion,other,singular,,o-den,countable,unknown
+crime,NN,,,,,,,,than,seem,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,had,have,,,,,,"and, and, and, and, and, and","corruption, scandal, disease, homelessness, prostitution, share",,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,to,extend,,,,,,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,stories,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,subject,be,be,,,,,,,,,,thought,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,object,,,commits,commit,,,,,some,,,,unspecified,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,real,,man,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBZ,object,,,commits,commit,,,,,,,,,imperial,,its,,,,,,,,,plural,singular,,countable,unknown
+crime,NN,,,,,,,,about,concerned,,,and,money,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,castrated,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,are,be,,,,,,,,and,drugs,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VB,object,,,ensure,ensure,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,"as, of",rates,ones,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,increase,increase,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,committing,commit,,,,,,,,capital,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,explanation,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,,,,nazi,,,,only,,,could,that,a,unit,singular,ambiguous,a+n,countable,nonverdical
+crime,NN,,,,,,,,for,time,,another,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,subject,reconstruct,reconstruct,,,,,,,,,,victims,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,prevention,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,hanged,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,stood,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,his,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,record,,,and,taxes,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,follow,follow,,,,,,,,,sensational,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,sex,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,around,swirling,,,and,punishment,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,link,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,deploring,deplore,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,face,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,make,make,,,,,,,,bias,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,subject,be,be,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,subject,occur,occur,,,not,,,,,,,,"such, heinous",,,,,,,,,,,plural,ambiguous,,countable,verdical
+crime,NN,,,,,,,,of,playgrounds,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,mayor,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,effect,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,brunt,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBG,object,,,alleging,allege,,,,,,,,,serious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crimes,NNS,,,,,,,,on,frowns,,,,,status,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"of, of",equivalent,hooliganism,the,,,,soviet,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,infiltration,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,,case,the,,,,alleged,,,,only,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBD,object,,,were,be,,,,,,,,,obvious,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,subject,,,,,,,,,,,,,,,milken,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,with,committed,,any,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,be,be,,,,,a,,,,,,,,,,,would,,a,unit,singular,ambiguous,a+n,countable,nonverdical
+crime,NN,VBN,subject,linked,link,,,,,,,,,,,organized,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,between,link,,,and,milken,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,object,,,suspect,suspect,,,,,a,,,,,,,,,,,,,a,unit,singular,plural,"a+n, ex-pl",countable,unknown
+crime,NN,VB,object,,,light,light,,of,,years,the,,,,real,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,about,worry,,,and,emergence,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,against,prohibitions,,,and,gratification,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,deter,deter,,,,,,and,criminals,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,punishment,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,violent,,,,particularly,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,reduce,reduce,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,profession,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,fear,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rate,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,reprimanded,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,toward,attitude,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,comes,,,,,bias,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,and,social,chaos,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,percent,,,,,,violent,,city,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,black,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBD,object,,,had,have,,,,,,,,problem,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBD,object,,,incidents,incidents,,,,,,,,bias,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"against, for",provide,people,,,,bias,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,discussion,,,,,,black,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,limits,,,and,sports,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,object,,,,,,,,,a,,,,,,,,where,,,,,a,unit,singular,,a+n,countable,verdical
+crime,NN,,,,,,,,"by, to",given,default,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,points,,,and,use,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,touches,touch,,,,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,put,put,,in,,context,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,victims,,,,,,motivated,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VB,object,,,diminish,diminish,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,grounds,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,fighting,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,rising,rise,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,accused,,,or,sedition,,"other, political",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,dropped,,,,,watergate,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBZ,subject,seems,seem,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,,organized,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,pays,pay,,,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBZ,subject,goes,go,,,,,,,,and,life,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,of,account,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,bumping,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,boss,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,from,blames,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,filling,fill,,,,,,,,reports,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,against,war,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,stop,stop,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,deter,deter,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,reduce,reduce,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,shortages,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,solution,,,,,i,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,causes,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,have,have,,,,,,,,and,tension,,spiraling,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,VBG,object,,,deterring,deter,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,prevent,prevent,,,,,,and,dealing,,violent,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,before,inviting,,the,,,,alleged,,,,shortly,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,bill,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,with,get,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,in,rise,,,,,sex,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,brutal,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,incidence,,,,,sex,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"during, of",targets,lives,,,,,violent,,,one,,,,,,one,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,family,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,with,doing,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,free,,,or,fates,,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,terrain,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,levels,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,following,follow,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBZ,subject,breaks,break,,,,,,,,,,drama,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,VB,object,,,solve,solve,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"of, regardless_of",ask,poachers,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,to,admitted,,,and,consorting,,past,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,casting,,a,and,trees,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,wave,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VB,object,,,investigate,investigate,,,,,,,,,archaeological,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,learn,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,confessed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,scene,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,on,lingering,,the,and,arrest,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,escaped,,that,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,reconstruct,reconstruct,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBG,object,,,covering,cover,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,celebration,,,,,,,,her,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,from,holiday,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,were,be,,,,,,,,,,novels,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,riven,,,"and, and","drugs, poverty",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,rose,rise,,,,,,,,,,,"reported, violent",,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,much,,the,,,,"violent, urban",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,in,,areas,,,,,exploding,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,affect,affect,,,,,,,,rates,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,reported,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,jumped,jump,,,,,,,,,,,reported,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,,,,,,,levels,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,stop,stop,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,"in, of",victims,1989,,,,,serious,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,increased,increase,,,,,,,,,,,"reported, violent",,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,rate,,,,,,serious,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,for,,persons,,,,,,,,103,,rate,,,,103,other,plural,,o-den,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBP,object,,,have,have,,,,,,,,rates,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,on,cities,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"including, including, on",based,"murder, theft",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBN,subject,calculated,calculate,,,,,,,,,,rate,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,under,activity,,,,,"fire, violent",,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,followed,follow,,,,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"such_as, such_as, for",exceeded,"murder, robbery",some,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,arrested,,,,,,,,,all,,,,,,all,other,plural,,o-den,countable,unknown
+crimes,NNS,,,,,,,,for,soared,,all,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,victims,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,fall,,,,,,certain,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,subject,fluctuate,fluctuate,,,,,,,,,,rates,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,of,kinds,,,,,,"personal, household",,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,end,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,between,complicity,,,and,politicians,,organized,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"such_as, such_as, such_as, with",charged,"corruption, bribery, racketeering",,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,on,tough,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,requiring,,,,,,more,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,fighting,fight,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,occurred,occur,,,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBG,object,,,solving,solve,,,,,these,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBD,subject,were,be,,,,,,,,only,convictions,,serious,,,974,,,,,,974,other,plural,ambiguous,o-den,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,on,,reservations,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,for,serve,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,the,,,,same,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,victims,,,,,,violent,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,over,jurisdiction,,,,,,major,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,these,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,over,limited,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,investigation,,a,,,,single,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBN,subject,handled,handle,,,,,,,that,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,over,jurisdiction,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,over,jurisdiction,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,rate,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,major,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VB,object,,,prosecute,prosecute,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,prosecuted,prosecute,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,of,volume,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,committed,commit,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,because,had,,the,,,,alleged,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,prosecution,,,,,,violent,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,"violent, indian",,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,object,,,commit,commit,,on,,reservation,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,about,concern,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,singular,a+n,countable,verdical
+crime,NN,,,,,,,,,,,,,,areas,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,indifference,,the,,,,rich,,,,elsewhere,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,"of, by",besieged,drugs,,and,manufacturers,,chronic,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,at,express,,,"and, and","taxes, insurance",,rampant,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,answer,,,,,street,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,evidence,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,to,put,,,,,,urban,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"including, to",led,smuggling,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"toward, of",fear,doctors,,and,resentment,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,create,create,,,,,,,,,major,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,need,need,,,,,any,,,,more,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,ran,run,,,,,the,,,tobacco,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBZ,subject,shows,show,,,,,,,,,,,organized,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VB,object,,,create,create,,,,,,,,,major,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,deal,,,"and, and","drugs, problems",,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,source,,,,,street,random,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,to,responding,,,and,problems,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,"against, on",write,seniors,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBP,subject,are,be,,,,,,,,,,homemaker,,,,,,,,,,,,plural,plural,,countable,unknown
+crimes,NNS,,,,,,,,of,number,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBD,subject,lay,lay,,,,,,,,,,,many,,,,,,,,,many,fuzzy,plural,ambiguous,f+ns,countable,unknown
+crime,NN,VBP,object,,,view,view,,,,,,,,,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,about,think,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,object,,,deters,deter,,,,,,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,,,,,,,,against,war,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,view,view,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,amount,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,backdrop,,,"and, and, and, and, and","abuse, aids, homelessness, cutbacks, budgets",,urban,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,object,,,involve,involve,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,VBZ,subject,is,be,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crime,NN,VBD,subject,were,be,,,,,,,,and,use,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,commit,commit,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBN,subject,punished,punish,,,,,,,a,and,people,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VB,subject,apply,apply,,,not,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,verdical
+crime,NN,VB,object,,,shield,shield,not,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+crimes,NNS,,,,,,,,for,jail,,,,,drug,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,VBN,subject,convicted,convict,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,VBN,subject,been,be,,,,,,,,,,,great,,petri,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,collared,collar,,,,,,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,figure,,,,,,unreported,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,case,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,"in, of",view,england,,,,,aristocratic,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,stories,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,"in, for",years,1948,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,"such, a",,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,a,and,served,,bloody,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,,,,,,,rates,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,subject,,,,,,,,,"all, this",,,property,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,,only,,their,,,,,,,,,singular,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,into,conduct,,,,,war,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,conceal,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,for,pardoned,,all,,,,,,,,,,,,,,,plural,,,countable,unknown
+crimes,NNS,,,,,,,,of,investigations,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,,,,,,,,"poverty, drugs",,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,but,wish,,,,,,,,,,,,,singular,,,countable,verdical
+crimes,NNS,VBN,subject,denounced,denounce,,,,"of, of, of",,"espionage, treason, corruption",,,,,alleged,,victims,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,,,,,,,,,,,,,,,economic,,,,,,embezzlement,,,,,plural,,,countable,unknown
+crime,NN,VBG,object,,,rising,rise,,,,,,and,streetpeople,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBD,object,,,was,be,,,,,,,,boss,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,like,issues,,,"and, and, and","drugs, education, abortion",,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NN,,,,,,,,,,,,,,,other,,its,,,,,,,,,ambiguous,,,countable,unknown
+crime,NN,VBG,object,,,falling,fall,,,,,,,,wave,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,DT,object,,,is,be,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,of,scene,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,as,describes,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,indicted,,some,,,,"obscure, petty",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,world,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,take,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,subject,was,be,,,,,,,,,,fighting,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBG,object,,,cracking,crack,,,,,,,,case,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VBP,subject,change,change,,,,,,,,,,arsenals,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,VB,subject,stop,stop,,,,,,,,and,muggings,street,other,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VB,subject,remain,remain,,,,of,,passion,,and,drugs,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crimes,NNS,VBN,subject,oriented,orient,,,,,,,,,,,most,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scenes,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,fighting,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,began,begin,,,,,,,,,computerized,,its,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,VB,object,,,analyze,analyze,,,,,,,,patterns,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,,,,investigations,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,investigations,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,VBP,subject,include,include,,,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+crime,NN,,,,,,,,,,,,,,labs,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,scene,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VB,object,,,spot,spot,,,,,,,,trends,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,of,investigations,,,and,racketeering,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,by,uncovered,,,,,,organized,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBP,subject,use,use,,,,,,,,,,figures,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crimes,NNS,,,,,,,,of,array,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,VBP,subject,reflect,reflect,,,,,,,,,,demographics,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+crime,NN,,,,,,,,,,,,,,world,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,for,opportunities,,,,,computer,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,of,percent,,,,,computer,such,,,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,,,,,,,fighters,,,,,,,,,,,,singular,,,countable,unknown
+crimes,NNS,,,,,,,,for,pleas,,,,,,environmental,,,,,,increase,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,against,,nature,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,to,leads,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBZ,subject,rises,rise,,,,,,,,,,rate,,,,,,,,,,,,singular,singular,,countable,unknown
+crimes,NNS,,,,,,,,for,motivation,,,,,,,,their,,,,,,,,,plural,,,countable,unknown
+crime,NN,,,,,,,,of,era,,,and,improvidence,,"equal, human",,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,traces,,that,and,improvidence,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NNS,VBD,subject,lay,lay,,,,,,,,,,,,,citizens,,,,,,,,,ambiguous,ambiguous,,countable,unknown
+crime,NN,,,,,,,,for,people,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,by,ravaged,,,,,,,,,,,,"poverty, population, base",,,,,singular,,,countable,unknown
+crime,NN,,,,,,,,of,victim,,a,,,,"brutal, senseless",,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBD,object,,,etched,etch,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,,,,a,,,,"monstrous, abominable",,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,VBN,subject,committed,commit,,,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crime,NN,,,,,,,,"of, for",condemned,abortions,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBD,object,,,termed,term,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+crime,NN,,,,,,,,with,charged,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+crime,NN,,,,,,,,about,assumptions,,,and,race,,,,,,,,,,,,,singular,,,countable,unknown
+crime,NN,VBG,object,,,committing,commit,,,,,"such, a",,,,heinous,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+crimes,NNS,VBN,subject,stabilized,stabilize,,,,"with, like, like",,"firearms, assault, robbery",,,,,violent,,,,,,,,,,,plural,ambiguous,,countable,unknown
+crime,NN,,,,,,,,to,confessed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown

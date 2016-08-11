@@ -1,0 +1,103 @@
+Noun,Noun Tag,Verb Tag,Relation to Verb,Verb Subject,Verb Subject Lemma,Verb Object,Verb Object Lemma,Verb Negation,Prepositions,Prepositional Subjects,Prepositional Objects,Determiners,Conjunctions,Conjoined,Compounds,Adjectival Modifiers,Possesed owned by noun,Possesive owner of noun,Numeric Modifiers,Adverbial Modifiers,Appositional Modifiers,Modified Appositives,Modality,Conditional,Denumerator,Type of Denumerator,Plurality of Noun,Plurality of Verb,Allan Tests Passed,Countability,Verdicality
+carrots,NNS,,,,,,,,such_as,fruits,,,and,radishes,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,of,,assistance,,,,the,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,VB,object,,,Add,Add,,,,,,and,onion,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrots,NNS,,,,,,,,to,analogy,,,"and, and","parsnips, turnips",,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,as,citing,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+carrots,NNS,VBN,subject,flaked,flake,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBD,subject,was,be,,,,of,,mfn,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrot,NN,VB,object,,,take,take,,,,,a,,,,coercive,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+carrots,NNS,,,,,,,,like,look,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,VBZ,object,,,seems,seem,,,,,,and,stick,,,,,,,,,,,,,singular,singular,,countable,verdical
+carrot,NN,,,,,,,,as,used,,a,,,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+carrots,NNS,VBG,object,,,obtaining,obtain,,of,,assistance,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBD,object,,,took,take,,,,,a,,,,total,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+carrot,NN,,,,,,,,,,,,,,,,,west,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,,,,,and,potatoes,,,,,,,this,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,of,size,,the,or,stick,,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,of,producers,,,and,cabbages,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,"of, of, of",stick,"purchases, assistance",a,and,market,,,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+carrot,NN,,,,,,,,,,,a,,,,"big, enough",,,,,,,,,a,unit,singular,,a+n,countable,unknown
+carrots,NNS,,,,,,,,such_as,field,,,"and, and","rabbits, wolves",,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,VB,object,,,release,release,,,,,the,,,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrots,NNS,VBG,object,,,mixing,mix,,,,,,and,sticks,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBN,subject,been,be,,,,,,,the,,,aid,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrots,NNS,,,,,,,,on,reach,,the,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,VBP,object,,,are,be,,,,,the,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,,,,,,,,,,,,and,research,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,seed,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VBN,object,,,produced,produce,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,research,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VBP,subject,provide,provide,,,,,,,,,,,,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,VBN,subject,valued,value,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,VBG,object,,,improving,improve,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,VBP,subject,contain,contain,,,,,,,,,,,grown,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,VB,object,,,eat,eat,,,,,,,,,more,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,market,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,products,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,market,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,acreage,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,of,percent,,all,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,VB,subject,be,be,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBZ,object,,,prepares,prepare,,,,,,,,flowers,,,,,,,,,,,,singular,singular,,countable,unknown
+carrots,NNS,VBP,subject,contain,contain,,,,with,,tops,the,,,,harvested,,,,,,,,,,,plural,plural,,countable,unknown
+carrot,NN,VBZ,object,,,adds,add,,of,,incentive,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+carrot,NN,,,,,,,,of,version,,,and,stick,,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VBG,object,,,providing,provide,,,,,the,,,,appropriate,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBD,subject,was,be,,,,,,,,,,downstream,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrot,NN,VBZ,subject,sticks,stick,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+carrots,NNS,,,,,,,,to,cited,,,,,,raw,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,VBP,subject,have,have,,,,,,,,and,cigarettes,,,,,,,,,,,,,plural,plural,,countable,unknown
+carrot,NN,,,,,,,,of,favor,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,of,combination,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,VB,object,,,include,include,,,,,,"and, and, and, and","leeks, cucumbers, peppers, kale",,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,,,,,,,,of,form,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,,,,,,,,such_as,foods,,,or,meat,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,by,followed,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,of,display,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,,,,,,,,of,configurations,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,tops,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VBN,subject,harvested,harvest,,,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VB,subject,name,name,,,not,,,,,,,sellers,,,,,,,,,,,,singular,ambiguous,,countable,verdical
+carrots,NNS,VBN,subject,washed,wash,,,,,,,the,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,tops,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,VBD,subject,took,take,,,,,,,,,,sellers,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,"for, as",hypostasizing,those,an,,,,intellectual,,,,,,,,,an,unit,singular,,a+n,countable,unknown
+carrots,NNS,VBP,object,,,include,include,,,,,,and,spinach,,,,,,,,,,,,,plural,plural,,countable,unknown
+carrot,NN,,,,,,,,in,flowers,,the,"and, and","mustard, families",,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,VB,object,,,saute,saute,,,,,,and,onion,,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,top,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VB,object,,,Add,Add,,,,,,,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,,,,,,,,to,refusing,,,or,radishes,,"thin, crowded",,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,VBG,object,,,munching,munch,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+carrot,NN,,,,,,,,of,admirer,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
+carrot,NN,VBZ,object,,,drinks,drink,,,,,,,,juice,,,,,,,,,,,,singular,singular,,countable,unknown
+carrots,NNS,,,,,,,,,,,,,,,,,,,,bananas,,,,,,plural,,,countable,unknown
+carrots,NNS,,,,,,,,of,combination,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,VBG,object,,,chasing,chase,,,,,a,,,,,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+carrot,NN,VBZ,subject,is,be,,,,,,,the,,,,,,,,,,,,,,,singular,singular,,countable,unknown
+carrots,NNS,VBP,object,,,are,be,,,,,,"and, and, and, and, and, and","potatoes, cantaloupes, pumpkins, peppers, squash, vegetables",,,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,,,,,,,,,,,,and,apricots,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NNS,VB,object,,,Add,Add,,,,,,and,onions,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,VB,object,,,combine,combine,,,,,,and,stock,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,bars,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,,,,,,,,from,fiber,,,and,oats,,,,,,,,,,,,,plural,,,countable,unknown
+carrot,NN,VB,object,,,combine,combine,,,,,the,"and, and, and, and, and","syrup, whites, oil, ginger, vanilla",,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrot,NN,VBD,subject,beat,beat,,,,,,,,,,bars,,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrots,NNS,VB,object,,,Add,Add,,,,,,and,onions,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VBP,subject,bring,bring,,,,,,,,and,water,,sliced,,,1,,,,,,1,unit,singular,plural,"a+n, ex-pl",countable,unknown
+carrots,NNS,VBP,subject,wash,wash,,,,,,,,,,"wash, scrape",,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,VB,object,,,Combine,Combine,,,,,,and,peas,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,,,,,,,,over,syrup,,,,,,,,,,,,,,,,,plural,,,countable,unknown
+carrots,NN,,,,,,,,,,,,and,water,,,,,,,peas,,,,,,ambiguous,,,countable,unknown
+carrot,NN,VBP,object,,,TABLE,TABLE,,,,,,,,strips,,,,,,,,,,,,singular,plural,ex-pl,countable,unknown
+carrots,NNS,VB,object,,,Add,Add,,,,,,and,garlic,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,VB,object,,,offer,offer,,,,,a,,,,credible,,,,,,,,,a,unit,singular,ambiguous,a+n,countable,unknown
+carrot,NN,,,,,,,,like,looks,,a,,,,big,,,,,,,,,a,unit,singular,,a+n,countable,unknown
+carrot,NN,VBG,object,,,unenthusiastic,unenthusiastic,,,,,,,,,white,,,,,,,,,,,singular,ambiguous,,countable,unknown
+carrots,NNS,VBP,subject,are,be,,,,,,,,,,,wild,,,,,,,,,,,plural,plural,,countable,unknown
+carrots,NNS,VBP,object,,,carry,carry,,,,,,,,,white,,,,,,,,,,,plural,plural,,countable,unknown
+carrot,NN,,,,,,,,,,,,,,,,,,,,,,,,,,singular,,,countable,unknown
+carrots,NNS,VBN,subject,eaten,eat,,,,,,,"all, the",,,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrots,NNS,VB,object,,,grow,grow,,,,,,and,onions,,,,,,,,,,,,,plural,ambiguous,,countable,unknown
+carrot,NN,,,,,,,,of,use,,the,,,,,,,,,,,,,,,singular,,,countable,unknown
