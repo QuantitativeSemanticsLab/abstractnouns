@@ -348,8 +348,8 @@ def allanTests(dent, det, pluN, pluV):
 
 #looks at sentence to determine whether the noun is countable in the given context based on the allan tests
 def isCountable(tests):
-	if tests != "":
-		if tests == "All+N":
+	if tests != []:
+		if 'All+N' in tests:
 			return "uncountable"
 		else:
 			return "countable"
