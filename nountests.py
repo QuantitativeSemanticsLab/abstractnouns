@@ -171,11 +171,27 @@ def getPrepOfN(dep, noun, index):
 			
 	return preplist, preps, subjs, objs
 
+indef_articles = ['a','an','some']
+def_articles = ['the']
+demonstratives = ['this','that','those','these','which']
+quantifiers = ['each','every','few','a few','many','much','some','any','all']
 
 #determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s)
 def getDetOfN(dep, noun, index):
 	det = re.findall(r'det\:*\w*\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
-	return det
+	dettype = ''
+	for i in det:
+		if i in indef_articles:
+			dettype ='indefinite article'
+		elif i in def_articles:
+			dettype ='definite article'
+		elif i in demonstratives:
+			dettype ='demonstrative'
+		elif i in quantifiers:
+			dettype ='quantifier'
+		else:
+			dettype ='other'
+	return det, dettype
 
 #determines whether the noun is compounded with another word, then returns the word it's compounded to 
 def getCompOfN(dep, noun, index):
@@ -314,6 +330,14 @@ def isPluralN(noun, lemma, ntag):
 		else:
 			return "ambiguous"
 
+def isBareN(plurality, dets):
+	if plurality == 'plural' and dets == []:
+		return 'bare plural'
+	elif plurality == 'singluar' and dets == []:
+		return 'bare singular'
+	else:
+		return 'linked'
+
 #determines whether a verb is concretely plural, concretely singular, or ambiguous(in the past tense) and returns the plurality of the verb
 def isPluralV(vtag):
 	if vtag == 'VBP':
@@ -400,7 +424,9 @@ def returnNounTests(sentence, lemma, nountup):
 	preps = preptup[1]
 	prepsubjs = preptup[2]
 	prepobjs = preptup[3]
-	dets = getDetOfN(dep, noun, index)
+	dettup = getDetOfN(dep, noun, index)
+	dets = dettup[0]
+	dettype = dettup[1]
 	conj = getConjOfN(dep, noun, index)
 	conjp = conj[0]
 	conjs = conj[1]
@@ -422,11 +448,12 @@ def returnNounTests(sentence, lemma, nountup):
 	den = dens[0]
 	dentype = dens[1]
 	pluN = isPluralN(noun, lemma, nountag)
+	bareplu = isBareN(pluN, dets)
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
 	verdical = isVerdical(modl, cond, neg, verbneg)
-	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, conjp, conjs, conjd, comps,  adjs, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, pluV, passedT, countable, verdical]
+	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -492,7 +519,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Determiner Type', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Bareness of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:

@@ -64,8 +64,20 @@ def lowerCol(row):
 	else:
 		return row[columnname].lower()
 
+def getPercent(num, den):
+	if num is None or den is None:
+		return '0%'
+	num = float(num)
+	den = float(den)
+	if den != 0:
+		pct = (num/den) * 100
+		trim = "%.2f" % pct
+		return str(trim) + '%'
+	else:
+		return '0%'
 nonlists = []
 lowerlist = []
+results = []
 
 #do nothing to sent
 #delete tags, parse
@@ -74,9 +86,9 @@ df = df.drop('parse', 1)
 
 #Noun: use to count number of occurances
 Noun = word
-# print 'Noun:' + Noun
+results.append(Noun)
 Noun_Count = len(df['Noun'])
-# print 'Noun Count:',  Noun_Count
+results.append(Noun_Count)
 
 #delete index 
 df = df.drop('Index', 1)
@@ -90,31 +102,45 @@ df = df.drop('Sentence Fragment', 1)
 columnname = 'Noun Tag'
 nonlists.append(columnname)
 nountag = freqCol(columnname)
-# print nountag
 NN_Count = nountag.get('NN')
-# print 'NN Count:', NN_Count
+NN_Percentage = getPercent(NN_Count, Noun_Count)
 NNS_Count = nountag.get('NNS')
-# print 'NNS Count:', NNS_Count
+NNS_Percentage = getPercent(NNS_Count, Noun_Count)
 NNP_Count = nountag.get('NNP')
-# print 'NNP Count:', NNP_Count
+NNP_Percentage = getPercent(NNP_Count, Noun_Count)
 NNPS_Count = nountag.get('NNPS')
-# print 'NNPS Count:', NNPS_Count
+NNPS_Percentage = getPercent(NNPS_Count, Noun_Count)
+results.extend([NN_Count, NN_Percentage, NNS_Count, NNS_Percentage, NNP_Count, NNP_Percentage, NNPS_Count, NNPS_Percentage])
 
 #Plurality of Noun: use to get plural and singular counts
 columnname = 'Plurality of Noun'
 nonlists.append(columnname)
 pluN = freqCol(columnname)
 Plural_Noun_Count = pluN.get('plural')
-# print 'Plural Noun Count:', Plural_Noun_Count
+Plural_Noun_Percentage = getPercent(Plural_Noun_Count, Noun_Count)
 Singular_Noun_Count = pluN.get('singular')
-# print 'Singular Noun Count:', Singular_Noun_Count
+Singular_Noun_Percentage = getPercent(Singular_Noun_Count, Noun_Count)
+results.extend([Plural_Noun_Count, Plural_Noun_Percentage, Singular_Noun_Count, Singular_Noun_Percentage])
+
+#Bareness of Noun: use to get bare singular, bare plural, or linked counts
+columnname = 'Bareness of Noun'
+nonlists.append(columnname)
+bareN = freqCol(columnname)
+Bare_Plural_Noun_Count = bareN.get('bare plural')
+Bare_Plural_Noun_Percentage = getPercent(Bare_Plural_Noun_Count, Noun_Count)
+Bare_Singular_Noun_Count = bareN.get('bare singular')
+Bare_Singular_Noun_Percentage = getPercent(Bare_Singular_Noun_Count, Noun_Count)
+Linked_Noun_Count = bareN.get('linked')
+Linked_Noun_Percentage = getPercent(Linked_Noun_Count, Noun_Count)
+results.extend([Bare_Plural_Noun_Count, Bare_Plural_Noun_Percentage, Bare_Singular_Noun_Count, Bare_Singular_Noun_Percentage, Linked_Noun_Count, Linked_Noun_Percentage])
 
 #Negation: convert from string to list, use to get negation count, strip of list formatting
 columnname = 'Negation'
 df[columnname] = df.apply(listCol, axis = 1)
 nounNeg = freqCol(columnname)
 Noun_Negation_Count = sum(nounNeg.values())
-# print 'Noun Negation Count:', Noun_Negation_Count
+Noun_Negation_Percentage = getPercent(Noun_Negation_Count, Noun_Count)
+results.extend([Noun_Negation_Count, Noun_Negation_Percentage])
 df[columnname] = df.apply(stripCol, axis = 1)
 
 #delete Verb Reference
@@ -127,19 +153,21 @@ nonlists.append(columnname)
 verbtag = freqCol(columnname)
 del verbtag['']
 Verb_Construction_Count = sum(verbtag.values()) 
-# print 'Verb Construction Count:', Verb_Construction_Count
+Verb_Construction_Percentage = getPercent(Verb_Construction_Count, Noun_Count)
 VB_Count = verbtag.get('VB')
-# print 'VB Count:', VB_Count
+VB_Percentage = getPercent(VB_Count, Verb_Construction_Count)
 VBD_Count = verbtag.get('VBD')
-# print 'VBD Count:', VBD_Count
+VBD_Percentage = getPercent(VBD_Count, Verb_Construction_Count)
 VBG_Count = verbtag.get('VBG')
-# print 'VBG Count:', VBG_Count
+VBG_Percentage = getPercent(VBG_Count, Verb_Construction_Count)
 VBN_Count = verbtag.get('VBN')
-# print 'VBN Count:', VBN_Count
+VBN_Percentage = getPercent(VBN_Count, Verb_Construction_Count)
 VBP_Count = verbtag.get('VBP')
-# print 'VBP Count:', VBP_Count
+VBP_Percentage = getPercent(VBP_Count, Verb_Construction_Count)
 VBZ_Count = verbtag.get('VBZ')
-# print 'VBZ Count:', VBZ_Count
+VBZ_Percentage = getPercent(VBZ_Count, Verb_Construction_Count)
+results.extend([Verb_Construction_Count, Verb_Construction_Percentage, VB_Count, VB_Percentage, VBD_Count, VBD_Percentage, VBG_Count, VBG_Percentage, VBN_Count, VBN_Percentage, VBP_Count, VBP_Percentage, VBZ_Count, VBZ_Percentage])
+
 
 #Plurality of Verb: fix column to include empty strings, use to get singular and plural counts
 columnname = 'Plurality of Verb'
@@ -147,9 +175,10 @@ df[columnname] = df.apply(fixEmpty, axis = 1)
 nonlists.append(columnname)
 pluV = freqCol(columnname)
 Plural_Verb_Count = pluV.get('plural')
-# print 'Plural Verb Count:', Plural_Verb_Count
+Plural_Verb_Percentage = getPercent(Plural_Verb_Count, Verb_Construction_Count)
 Singular_Verb_Count = pluV.get('singular')
-# print 'Singular Verb Count:', Singular_Verb_Count
+Singular_Verb_Percentage = getPercent(Singular_Verb_Count, Verb_Construction_Count)
+results.extend([Plural_Verb_Count, Plural_Verb_Percentage, Singular_Verb_Count, Singular_Verb_Percentage])
 
 #delete Relation to Verb
 df = df.drop('Relation to Verb', 1)
@@ -164,14 +193,14 @@ nonlists.append(columnname)
 verbsubj = freqCol(columnname)
 del verbsubj['']
 Verb_Subject_Count = sum(verbsubj.values()) 
-# print 'Verb Subject Count:', Verb_Subject_Count
+Verb_Subject_Percentage = getPercent(Verb_Subject_Count, Verb_Construction_Count)
 Unique_Verb_Subject_Count = len(verbsubj) 
-# print 'Unique Verb Subject Count:', Unique_Verb_Subject_Count
 for l in list(verbsubj):
 	if verbsubj[l] <= (Unique_Verb_Subject_Count * .10):
 		del verbsubj[l]
 Significant_Verb_Subjects = verbsubj 
-# print 'Significant Verb Subjects:', Significant_Verb_Subjects
+Significant_Verb_Subject_Count = len(verbsubj)
+results.extend([Verb_Subject_Count, Verb_Subject_Percentage, Unique_Verb_Subject_Count, Significant_Verb_Subjects, Significant_Verb_Subject_Count])
 
 #Verb Object Lemma: fix column to include empty strings, strip to lowercase, adjust for nonlist frequency,use to get verb object count, unique count, frequency list
 columnname = 'Verb Object Lemma'
@@ -181,22 +210,23 @@ nonlists.append(columnname)
 verbobj = freqCol(columnname)
 del verbobj['']
 Verb_Object_Count = sum(verbobj.values()) 
-# print 'Verb Object Count:', Verb_Object_Count
+Verb_Object_Percentage = getPercent(Verb_Object_Count, Verb_Construction_Count)
 Unique_Verb_Object_Count = len(verbobj) 
-# print 'Unique Verb Object Count:', Unique_Verb_Object_Count
 for l in list(verbobj):
 	if verbobj[l] <= (Unique_Verb_Object_Count * .10):
 		del verbobj[l]
 Significant_Verb_Objects = verbobj 
-# print 'Significant Verb Objects:', Significant_Verb_Objects
+Significant_Verb_Object_Count = len(verbobj)
+results.extend([Verb_Object_Count, Verb_Object_Percentage, Unique_Verb_Object_Count, Significant_Verb_Objects, Significant_Verb_Object_Count])
 
 #Verb Negation: convert from string to list, use to get negation count, strip of list formatting
 columnname = 'Verb Negation'
 df[columnname] = df.apply(listCol, 1)
 verbNeg = freqCol(columnname)
 Verb_Negation_Count = sum(verbNeg.values())
-# print 'Verb Negation Count:', Verb_Negation_Count
+Verb_Negation_Percentage = getPercent(Verb_Negation_Count, Verb_Construction_Count)
 df[columnname] = df.apply(stripCol, 1)
+results.extend([Verb_Negation_Count, Verb_Negation_Percentage])
 
 #Prepositional Phrases: simplify tuples to strings, strip to lowercase, get prep phrase count, strip of list formatting
 columnname = 'Prepositional Phrases'
@@ -204,9 +234,9 @@ df[columnname] = df.apply(listCol, axis = 1)
 preps = freqCol(columnname)
 del preps['']
 Prepositional_Phrase_Count = sum(preps.values())
-# print 'Prepositional Phrase Count:', Prepositional_Phrase_Count
+Prepositional_Phrase_Percentage = getPercent(Prepositional_Phrase_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
-
+results.extend([Prepositional_Phrase_Count, Prepositional_Phrase_Percentage])
 
 #Prepositions: strip to lowercase, strip of list format
 columnname = 'Prepositions'
@@ -223,15 +253,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 prepsubj = freqCol(columnname)
 del prepsubj['']
 Prepositional_Subject_Count = sum(prepsubj.values())
-# print 'Prepositional Subject Count:', Prepositional_Subject_Count
+Prepositional_Subject_Percentage = getPercent(Prepositional_Subject_Count, Prepositional_Phrase_Count)
 Unique_Prepositional_Subject_Count = len(prepsubj)
-# print 'Unique Prepositional Subject Count:', Unique_Prepositional_Subject_Count
 for l in list(prepsubj):
 	if prepsubj[l] <= (Unique_Prepositional_Subject_Count * .10):
 		del prepsubj[l]
 Significant_Prepositional_Subjects = prepsubj
-# print 'Significant Prepositional Subjects:', Significant_Prepositional_Subjects
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Prepositional_Subject_Count, Prepositional_Subject_Percentage, Unique_Prepositional_Subject_Count, Significant_Prepositional_Subjects])
 
 
 #Prepositional Objects: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
@@ -242,15 +271,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 prepobj = freqCol(columnname)
 del prepobj['']
 Prepositional_Object_Count = sum(prepobj.values())
-# print 'Prepositional Object Count:', Prepositional_Object_Count
+Prepositional_Object_Percentage = getPercent(Prepositional_Object_Count, Prepositional_Phrase_Count)
 Unique_Prepositional_Object_Count = len(prepobj)
-# print 'Unique Prepositional Object Count:', Unique_Prepositional_Object_Count
 for l in list(prepobj):
 	if prepobj[l] <= (Unique_Prepositional_Object_Count * .10):
 		del prepobj[l]
 Significant_Prepositional_Objects = prepobj
-# print 'Significant Prepositional Objects:', Significant_Prepositional_Objects
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Prepositional_Object_Count, Prepositional_Object_Percentage, Unique_Prepositional_Object_Count, Significant_Prepositional_Objects])
 
 
 #Determiners: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
@@ -261,16 +289,30 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 det = freqCol(columnname)
 del det['']
 Determiner_Count = sum(det.values())
-# print 'Determiner Count:', Determiner_Count
+Determiner_Percentage = getPercent(Determiner_Count, Noun_Count)
 Unique_Determiner_Count = len(det)
-# print 'Unique Determiner Count:', Unique_Determiner_Count
 for l in list(det):
 	if det[l] <= (Unique_Determiner_Count * .10):
 		del det[l]
 Significant_Determiners = det
-# print 'Significant Determiners:', Significant_Determiners
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Determiner_Count, Determiner_Percentage, Unique_Determiner_Count, Significant_Determiners])
 
+#Determiner Type: fix column to include empty strings, adjust for nonlist frequency, use to get verb type counts
+columnname = 'Determiner Type'
+nonlists.append(columnname)
+dettype = freqCol(columnname)
+Indefinite_Article_Count = dettype.get('indefinite article')
+Indefinite_Article_Percentage = getPercent(Indefinite_Article_Count, Determiner_Count)
+Definite_Article_Count = dettype.get('definite article')
+Definite_Article_Percentage = getPercent(Definite_Article_Count, Determiner_Count)
+Demonstrative_Pronoun_Count = dettype.get('demonstrative')
+Demonstrative_Pronoun_Percentage = getPercent(Demonstrative_Pronoun_Count, Determiner_Count)
+Quantifier_Count = dettype.get('quantifier')
+Quantifier_Percentage = getPercent(Quantifier_Count, Determiner_Count)
+Other_Determiner_Count = dettype.get('other')
+Other_Determiner_Percentage = getPercent(Other_Determiner_Count, Determiner_Count)
+results.extend([Indefinite_Article_Count, Indefinite_Article_Percentage, Definite_Article_Count, Definite_Article_Percentage, Demonstrative_Pronoun_Count, Demonstrative_Pronoun_Percentage, Quantifier_Count, Quantifier_Percentage, Other_Determiner_Count, Other_Determiner_Percentage])
 
 #delete Conjunction Phrases
 df = df.drop('Conjunction Phrases', 1)
@@ -290,15 +332,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 conj = freqCol(columnname)
 del conj['']
 Conjoined_Count = sum(conj.values())
-# print 'Conjunction Count:', Conjoined_Count
+Conjoined_Percentage = getPercent(Conjoined_Count, Noun_Count)
 Unique_Conjoined_Count = len(conj)
-# print 'Unique Conjoined Count:', Unique_Conjoined_Count
 for l in list(conj):
 	if conj[l] <= (Unique_Conjoined_Count * .10):
 		del conj[l]
 Significant_Conjoined = conj
-# print 'Significant Conjoined:', Significant_Conjoined
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Conjoined_Count, Conjoined_Percentage, Unique_Conjoined_Count, Significant_Conjoined])
 
 #Compounds: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
 columnname = 'Compounds'
@@ -308,15 +349,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 comp = freqCol(columnname)
 del comp['']
 Compound_Count = sum(comp.values())
-# print 'Compound Count:', Compound_Count
+Compound_Percentage = getPercent(Compound_Count, Noun_Count)
 Unique_Compound_Count = len(comp)
-# print 'Unique Compound Count:', Unique_Compound_Count
 for l in list(comp):
 	if comp[l] <= (Unique_Compound_Count * .10):
 		del comp[l]
 Significant_Compounds = comp
-# print 'Significant Compounds:', Significant_Compounds
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Compound_Count, Compound_Percentage, Unique_Compound_Count, Significant_Compounds])
 
 #Adjectival Modifiers: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
 columnname = 'Adjectival Modifiers'
@@ -326,15 +366,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 adj = freqCol(columnname)
 del adj['']
 Adjective_Count = sum(adj.values())
-# print 'Adjective Count:', Adjective_Count
+Adjective_Percentage = getPercent(Adjective_Count, Noun_Count)
 Unique_Adjective_Count = len(adj)
-# print 'Unique Adjective Count:', Unique_Adjective_Count
 for l in list(adj):
 	if adj[l] <= (Unique_Adjective_Count * .10):
 		del adj[l]
 Significant_Adjectives = adj
-# print 'Significant Adjectives:', Significant_Adjectives
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Adjective_Count, Adjective_Percentage, Unique_Adjective_Count, Significant_Adjectives])
 
 #Possesed owned by noun: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
 columnname = 'Possesed owned by noun'
@@ -344,15 +383,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 possd = freqCol(columnname)
 del possd['']
 Possesed_Count = sum(possd.values())
-# print 'Possesed Count:', Possesed_Count
+Possesed_Percentage = getPercent(Possesed_Count, Noun_Count)
 Unique_Possesed_Count = len(possd)
-# print 'Unique Possesed Count:', Unique_Possesed_Count
 for l in list(possd):
 	if possd[l] <= (Unique_Possesed_Count * .10):
 		del possd[l]
 Significant_Possesed = possd
-# print 'Significant Possesed:', Significant_Possesed
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Possesed_Count, Possesed_Percentage, Unique_Possesed_Count, Significant_Possesed])
 
 #Possesive owner of noun: convert from string to list, strip to lowercase, get count,  strip of list formatting 
 columnname = 'Possesive owner of noun'
@@ -362,8 +400,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 possv = freqCol(columnname)
 del possv['']
 Possesive_Count = sum(possv.values())
-# print 'Possesive Count:', Possesive_Count
+Possesive_Percentage = getPercent(Possesive_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Possesive_Count, Possesive_Percentage])
 
 #Numeric Modifiers: convert from string to list, strip to lowercase, get count, strip of list formatting 
 columnname = 'Numeric Modifiers'
@@ -373,8 +412,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 num = freqCol(columnname)
 del num['']
 Numeric_Count = sum(num.values())
-# print 'Numeric Count:', Numeric_Count
+Numeric_Percentage = getPercent(Numeric_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Numeric_Count, Numeric_Percentage])
 
 #delete Case Modifiers
 df = df.drop('Case Modifiers', 1)
@@ -387,8 +427,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 adv = freqCol(columnname)
 del adv['']
 Adverb_Count = sum(adv.values())
-# print 'Adverb Count:', Adverb_Count
+Adverb_Percentage = getPercent(Adverb_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Adverb_Count, Adverb_Percentage])
 
 #Appositionals: convert from string to list, strip to lowercase, get count, strip of list formatting 
 columnname = 'Appositionals'
@@ -398,8 +439,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 appos = freqCol(columnname)
 del appos['']
 Appositive_Count = sum(appos.values())
-# print 'Appositive Count:', Appositive_Count
+Appositive_Percentage = getPercent(Appositive_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Appositive_Count, Appositive_Percentage])
 
 #Appositional Modifiers: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
 columnname = 'Appositional Modifiers'
@@ -409,15 +451,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 apposmod = freqCol(columnname)
 del apposmod['']
 Appositional_Modifier_Count = sum(apposmod.values())
-# print 'Appositional Modifier Count:', Appositional_Modifier_Count
+Appositional_Modifier_Percentage = getPercent(Appositional_Modifier_Count, Appositive_Count)
 Unique_Appositional_Modifier_Count = len(apposmod)
-# print 'Unique Appositional Modifier Count:', Unique_Appositional_Modifier_Count
 for l in list(apposmod):
 	if apposmod[l] <= (Unique_Appositional_Modifier_Count * .10):
 		del apposmod[l]
 Significant_Appositional_Modifiers = apposmod
-# print 'Significant Appositional Modifiers:', Significant_Appositional_Modifiers
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Appositional_Modifier_Count, Appositional_Modifier_Percentage, Unique_Appositional_Modifier_Count, Significant_Appositional_Modifiers])
 
 
 #Modified Appositives: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
@@ -428,15 +469,14 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 modappos = freqCol(columnname)
 del modappos['']
 Modified_Appositive_Count = sum(modappos.values())
-# print 'Modified Appositive Count:', Modified_Appositive_Count
+Modified_Appositive_Percentage = getPercent(Modified_Appositive_Count, Appositive_Count)
 Unique_Modified_Appositive_Count = len(modappos)
-# print 'Unique Modified Appositive Count:', Unique_Modified_Appositive_Count
 for l in list(modappos):
 	if modappos[l] <= (Unique_Modified_Appositive_Count * .10):
 		del modappos[l]
 Significant_Modified_Appositives = modappos
-# print 'Significant Modified Appositives:', Significant_Modified_Appositives
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Modified_Appositive_Count, Modified_Appositive_Percentage, Unique_Modified_Appositive_Count, Significant_Modified_Appositives])
 
 #Modality: convert from string to list, strip to lowercase, get count, strip of list formatting 
 columnname = 'Modality'
@@ -446,8 +486,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 modl = freqCol(columnname)
 del modl['']
 Modal_Count = sum(modl.values())
-# print 'Modal Count:', Modal_Count
+Modal_Percentage = getPercent(Modal_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Modal_Count, Modal_Percentage])
 
 #Conditional: convert from string to list, strip to lowercase, get count, strip of list formatting 
 columnname = 'Conditional'
@@ -457,8 +498,9 @@ df[columnname] = df.apply(lowerCol, axis = 1)
 condl = freqCol(columnname)
 del condl['']
 Conditional_Count = sum(condl.values())
-# print 'Conditional Count:', Conditional_Count
+Conditional_Percentage = getPercent(Conditional_Count, Noun_Count)
 df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Conditional_Count, Conditional_Percentage])
 
 #Denumerator: strip to lowercase
 columnname = 'Denumerator'
@@ -472,13 +514,15 @@ nonlists.append(columnname)
 dentype = freqCol(columnname)
 del dentype['']
 Denumerator_Count = sum(dentype.values()) 
-# print 'Denumerator Count:', Denumerator_Count
-Unit_Count = dentype.get('unit')
-# print 'Unit Denumerator Count:', Unit_Count
-Fuzzy_Count = dentype.get('fuzzy')
-# print 'Fuzzy Denumerator Count:', Fuzzy_Count
-Other_Count = dentype.get('other')
-# print 'Other Denumerator Count:', Other_Count
+Denumerator_Percentage = getPercent(Denumerator_Count, Noun_Count)
+Unit_Denumerator_Count = dentype.get('unit')
+Unit_Denumerator_Percentage = getPercent(Unit_Denumerator_Count, Denumerator_Count)
+Fuzzy_Denumerator_Count = dentype.get('fuzzy')
+Fuzzy_Denumerator_Percentage = getPercent(Fuzzy_Denumerator_Count, Denumerator_Count)
+Other_Denumerator_Count = dentype.get('other')
+Other_Denumerator_Percentage = getPercent(Other_Denumerator_Count, Denumerator_Count)
+results.extend([Denumerator_Count, Denumerator_Percentage, Unit_Denumerator_Count, Unit_Denumerator_Percentage, Fuzzy_Denumerator_Count, Fuzzy_Denumerator_Percentage, Other_Denumerator_Count, Other_Denumerator_Percentage])
+
 
 #Allan Tests Passed: convert from string to list, get frequency list
 columnname = 'Allan Tests Passed'
@@ -486,35 +530,39 @@ df[columnname] = df.apply(listCol, axis = 1)
 allan = freqCol(columnname)
 del allan['']
 Allan_Count = sum(allan.values())
-# print 'Allan Count:', Allan_Count
+Allan_Percentage = getPercent(Allan_Count, Noun_Count)
 A_N_Count = allan.get('A+N')
-# print 'A+N Count:', A_N_Count
-F_NS_Count = allan.get('F+Ns')
-# print 'F+NS Count:', F_NS_Count
+A_N_Percentage = getPercent(A_N_Count, Allan_Count)
+F_Ns_Count = allan.get('F+Ns')
+F_Ns_Percentage = getPercent(F_Ns_Count, Allan_Count)
 Ex_Pl_Count = allan.get('EX-PL')
-# print 'Ex-Pl Count:', Ex_Pl_Count
+Ex_Pl_Percentage = getPercent(Ex_Pl_Count, Allan_Count)
 O_Den_Count = allan.get('O-DEN')
-# print 'O-Den Count:', O_Den_Count
+O_Den_Percentage = getPercent(O_Den_Count, Allan_Count)
 All_N_Count = allan.get('All+N')
-# print 'All+N Count:', All_N_Count
+All_N_Percentage = getPercent(All_N_Count, Allan_Count)
+df[columnname] = df.apply(stripCol, axis = 1)
+results.extend([Allan_Count, Allan_Percentage, A_N_Count, A_N_Percentage, F_Ns_Count, F_Ns_Percentage, Ex_Pl_Count, Ex_Pl_Percentage, O_Den_Count, O_Den_Percentage, All_N_Count, All_N_Percentage])
 
 #Countability: adjust for nonlist frequency, get countable, uncountable counts
 columnname = 'Countability'
 nonlists.append(columnname)
 county = freqCol(columnname)
 Countable_Count = county.get('countable')
-# print 'Countable Count:', Countable_Count
+Countable_Percentage = getPercent(Countable_Count, Noun_Count)
 Uncountable_Count = county.get('uncountable')
-# print 'Uncountable Count:', Uncountable_Count
+Uncountable_Percentage = getPercent(Uncountable_Count, Noun_Count)
+results.extend([Countable_Count, Countable_Percentage, Uncountable_Count, Uncountable_Percentage])
 
 #Verdicality: adjust for nonlist frequency, get countable, uncountable counts
 columnname = 'Verdicality'
 nonlists.append(columnname)
 verd = freqCol(columnname)
 Verdical_Count = verd.get('verdical')
-# print 'Verdical Count:', Verdical_Count
+Verdical_Percentage = getPercent(Verdical_Count, Noun_Count)
 NonVerdical_Count = verd.get('nonverdical')
-# print 'NonVerdical Count:', NonVerdical_Count
+NonVerdical_Percentage = getPercent(NonVerdical_Count, Noun_Count)
+results.extend([Verdical_Count, Verdical_Percentage, NonVerdical_Count, NonVerdical_Percentage])
 
 
 outfile = 'postfiles/' + word + 'Post.csv'
@@ -523,15 +571,14 @@ df.to_csv(outfile, index = False)
 
 master = 'master.csv'
 f = open(master, 'a')
-row = [Noun, Noun_Count, NN_Count, NNS_Count, NNP_Count, NNPS_Count, Plural_Noun_Count, Singular_Noun_Count, Noun_Negation_Count, Verb_Construction_Count, VB_Count, VBD_Count, VBG_Count, VBN_Count, VBP_Count, VBZ_Count, Plural_Verb_Count, Singular_Verb_Count, Verb_Subject_Count, Unique_Verb_Subject_Count, Significant_Verb_Subjects, Verb_Object_Count, Unique_Verb_Object_Count, Significant_Verb_Objects, Verb_Negation_Count, Prepositional_Phrase_Count, Prepositional_Subject_Count, Unique_Prepositional_Subject_Count, Significant_Prepositional_Subjects, Prepositional_Object_Count, Unique_Prepositional_Object_Count, Significant_Prepositional_Objects, Determiner_Count, Unique_Determiner_Count, Significant_Determiners, Conjoined_Count, Unique_Conjoined_Count, Significant_Conjoined, Compound_Count, Unique_Compound_Count, Significant_Compounds, Adjective_Count, Unique_Adjective_Count, Significant_Adjectives, Possesed_Count, Unique_Possesed_Count, Significant_Possesed, Possesive_Count, Numeric_Count, Adverb_Count, Appositive_Count, Appositional_Modifier_Count, Unique_Appositional_Modifier_Count, Significant_Appositional_Modifiers, Modified_Appositive_Count, Unique_Modified_Appositive_Count, Significant_Modified_Appositives, Modal_Count, Conditional_Count, Denumerator_Count, Unit_Count, Fuzzy_Count, Other_Count, Allan_Count, A_N_Count, F_NS_Count, Ex_Pl_Count, O_Den_Count, All_N_Count, Countable_Count, Uncountable_Count, Verdical_Count, NonVerdical_Count]
-for r in range(len(row)):
-	if row[r] == None:
-		row[r] = 0
-	if isinstance(row[r], dict):
+for r in range(len(results)):
+	if results[r] == None:
+		results[r] = 0
+	if isinstance(results[r], dict):
 		freqdict = {}
-		for d in row[r]:
-			freqdict[d] = row[r].get(d)
-		row[r] = freqdict
+		for d in results[r]:
+			freqdict[d] = results[r].get(d)
+		results[r] = freqdict
 writer = csv.writer(f)
-writer.writerow(row)
+writer.writerow(results)
 print 'wrote to master.csv'
