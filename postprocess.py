@@ -66,15 +66,15 @@ def lowerCol(row):
 
 def getPercent(num, den):
 	if num is None or den is None:
-		return '0%'
+		return 0
 	num = float(num)
 	den = float(den)
 	if den != 0:
-		pct = (num/den) * 100
+		pct = (num/den) 
 		trim = "%.2f" % pct
-		return str(trim) + '%'
+		return trim
 	else:
-		return '0%'
+		return 0
 nonlists = []
 lowerlist = []
 results = []

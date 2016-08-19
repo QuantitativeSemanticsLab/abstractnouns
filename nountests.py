@@ -79,8 +79,11 @@ def getVerb(tagged, dep, noun, index):
 		#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
 		elif stype == 'VBG':
 			verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
+			neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
 			if len(verb) >= 1:
 				vtag = getTag(tagged, verb[0])
+				vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+				return verb[0], vtag, 'subject', neg, vlemma
 			else:
 				verb = ['']
 				vtag = ''
@@ -105,8 +108,11 @@ def getVerb(tagged, dep, noun, index):
 		#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
 		elif stype == 'VBG':
 			verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nobj[0], dep)
+			neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
 			if len(verb) >= 1:
 				vtag = getTag(tagged, verb[0])
+				vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+				return verb[0], vtag, 'object', neg, vlemma
 			else:
 				verb = ['']
 				vtag = ''
@@ -330,10 +336,10 @@ def isPluralN(noun, lemma, ntag):
 		else:
 			return "ambiguous"
 
-def isBareN(plurality, dets):
-	if plurality == 'plural' and dets == []:
+def isBareN(plurality, dets, poss, nums):
+	if plurality == 'plural' and dets == [] and poss == [] and nums == []:
 		return 'bare plural'
-	elif plurality == 'singluar' and dets == []:
+	elif plurality == 'singluar' and dets == [] and poss == [] and nums == []:
 		return 'bare singular'
 	else:
 		return 'linked'
@@ -448,7 +454,7 @@ def returnNounTests(sentence, lemma, nountup):
 	den = dens[0]
 	dentype = dens[1]
 	pluN = isPluralN(noun, lemma, nountag)
-	bareplu = isBareN(pluN, dets)
+	bareplu = isBareN(pluN, dets, possv, num)
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
