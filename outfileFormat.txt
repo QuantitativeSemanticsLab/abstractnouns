@@ -1,0 +1,143 @@
+CSV format: {sent, tags, parse, Noun, Index, Relevant Dependencies, Sentence Fragment, Noun Tag, Negation, Verb Reference, Verb Tag, Relation to Verb, Verb Subject, Verb Subject Lemma, Verb Object, Verb Object Lemma, Verb Negation, Prepositional Phrases, Prepositions, Prepositional Subjects, Prepositional Objects, Determiners, Determiner Type, Conjunction Phrases, Conjunctions, Conjoined, Compounds, Adjectival Modifiers, Possesed owned by noun, Possesive owner of noun, Numeric Modifiers, Case Modifiers, Adverbial Modifiers, Appositionals, Appositional Modifiers, Modified Appositives, Modality, Conditional, Denumerator, Type of Denumerator, Plurality of Noun, Bareness of Noun, Plurality of Verb, Allan Tests Passed, Countability, Verdicality }
+
+*** CSVs are categorized by noun lemmas (ex: 'dog' and 'dogs' are in the same CSV), so the lemma is universal throughout the CSV ***
+
+Sent (sent)
+	full sentence in string form
+	comes from COCA, stored in infile
+Tags (tagged)
+	string of sentence with tags for each word
+	comes from stanford parser in string format, stored in infile
+Parse (extdep)
+  string of dependency relations between words
+	also from stanford parser in string format, stored in infile
+Noun (noun)
+	string of the non-lemmatized version of the noun; can be plural, possesive, etc.
+	uses getNouns(tagged, lemma)[0]
+Index (index)
+	int of the position of the noun in the sentence (indexing starts at 1)
+	uses getNouns(tagged, lemma)[1]
+Relevant Dependencies (dep)
+  string of the dependency relations that include the given noun
+  uses getRelDeps(extdep, noun, index)
+Sentence Fragment (sfrag)
+  string of the 10 words surrounding the given noun in the sentence
+  uses getSentFrag(sent, index)
+Noun Tag (nountag)
+  string of the tag of the useage of the given noun
+  uses getNouns(tagged, lemma)[2]
+Negation (neg)
+  list of the words that negate the given noun, empty list if no negation exists
+  uses getNeg(dep, noun, index)
+Verb Reference (verbref)
+  string of the verb used with the given noun, empty if noun not in verb construction
+  uses getVerb(tagged, extdep, noun, index)[0]
+Verb Tag (verbtag)
+  string of the tag of the verb used with the given noun, empty if noun not in verb construction
+  uses getVerb(tagged, extdep, noun, index)[1]
+Relation to Verb (verbrel)
+  subject or object classifier for the verb used with the given noun, empty if noun not in verb construction
+  based on structure of dependency, if the noun acts on the verb, classify as subject, if noun is acted on, classify as object *note that these are verb classifications in relation to the noun (subject construction, object construction) not noun classifications
+  uses getVerb(tagged, extdep, noun, index)[2]
+Verb Subject (verbsubj)
+  string of the verb if used in an subject construction, empty if given noun is not used in a verb construction or if in an object construction
+  copies verbref if verbrel is "subject", empty string otherwise
+Verb Subject Lemma (verbsubj)
+  string of the lemmatization of the verb subject, empty if given noun is not used in a verb construction or if in an object construction *used to determine common subject-verb constructions w/out tense
+  uses getVerb(tagged, extdep, noun, index)[4] if verbrel is "subject", empty string otherwise
+Verb Object (verbobj)
+  string of the verb if used in an object construction, empty if given noun is not used in a verb construction or if in a subject construction
+  copies verbref if verbrel is "object", empty string otherwise
+Verb Object Lemma (verbobjlemma)
+  string of the lemmatization of the verb object, empty if given noun is not used in a verb construction or if in an object construction *used to determine common verb-object constructions w/out tense
+  uses getVerb(tagged, extdep, noun, index[4] if verbrel is "object", empty string otherwise
+Verb Negation (verbneg)
+  list of the words that negate the verb used with the given noun, empty list if no verb negation, empty if no verb construction
+  uses getVerb(tagged, extdep, noun, index)[3]
+Prepositional Phrases (prepphrs)
+  list of tuples of prepositions and nouns that represent prepositional phrase constructions with the given noun, empty list if none exist
+  uses getPrepOfN(dep, noun, index)[0]
+Prepositions (preps)
+  list of prepositions extracted from prepositional phrase constructions with given noun, empty list if no prep phrase
+  uses getPrepOfN(dep, noun, index)[1]
+Prepositional Subjects (prepsubjs)
+  list of the subject of the prepostition where the given noun is the object of the preposition, emtpy list if no prep phrase
+  uses getPrepOfN(dep, noun, index)[2]
+Prepositional Objects (prepobjs)
+  list of the object of the preposition where the given noun is the subject of the preposiiton, empty list if no prep phrase
+  uses getPrepOfN(dep, noun, index)[3]
+Determiners (dets)
+  list of the determiners that modify the given noun, empty list if no determiner
+  uses getDetOfN(dep, noun, index)[0]
+Determiner Type (dettype)
+  classifier of determiner as definite article, indefinite article, quantifier, or other, empty if no determiner
+  uses getDetOfN(dep, noun, index)[1]
+Conjunction Phrases (conjp)
+  list of tuples of conjunction and nouns that represent the phrases in which the given noun is conjoined with another phrase, empty list if no conjunction phrases
+  uses getConjOfN(dep, noun, index)[0]
+Conjunctions (conjs)
+  list of the conjunctions used with the given noun and another noun, empty list if no conjunction phrases
+  uses getConjOfN(dep, noun, index)[1]
+Conjoined (conjd)
+  list of the nouns conjoined with the given noun in a conjunction phrase, empty list if no conjunction phrases *conjoined words usually fall within a similar class as the given noun
+  uses getConjOfN(dep, noun, index)[2]
+Compounds (comps)
+  list of words compounded with the given noun, empty list otherwise
+  uses getCompOfN(dep, noun, index)
+Adjectival Modifiers (adjs)
+  list of adjectives that modify the given noun, empty list if no adjectival constructions
+  uses getAmodOfN(dep, noun, index)
+Possesed owned by noun (possd)
+  list of words that occur in a possessive construction with the given noun where the word is owned by the given noun, empty list if no possessive(owned) construction *gives insight to animacy of the given noun
+  uses getPossdOfN(dep, noun, index)
+Possesive owner of noun (possv)
+  list of words that occur in a possesive construction with the given noun where the given noun owns the word, empty list if no possessive(owner) construction
+  uses getPossvOfN(dep, noun, index)
+Numeric Modifiers (num)
+  list of numbers or numerics that modify the given noun, emtpy list if none exist
+  uses getNumOfN(extdep, noun, index)
+Case Modifiers (case)
+  list of case modifiers (incl. prepositions) of the given noun, emtpy list otherwise
+  uses getCaseOfN(dep, noun, index)
+Adverbial Modifiers (adv)
+  list of adverbial modifiers for the given noun, empty list otherwise
+  uses getAdvOfN(dep, noun, index)
+Appositionals (app)
+  tuple of appositionals related to the given noun with a classifier of the relation of the appositive to the noun as modified or modifier, empty list if none exists
+  uses getApposOfN(dep, noun, index)[0]
+Appositional Modifiers (appmod)
+  list of appositionals related to the given noun where the given noun modifies the word, empty list if none exists
+  uses getApposOfN(dep, noun, index)[1]
+Modified Appositives (modapp)
+  list of appositionals related to the given noun where the given noun is modified by the appositive, empty list if none exists
+  uses getApposOfN(dep, noun, index)[2]
+Modality (modl)
+  list of modals modifying the given noun, empty list otherwise
+  uses getModalOfN(dep, tagged, noun, index)
+Conditional (cond)
+  list of conditional terms that modify the given noun, empty list otherwise
+  uses getCondOfN(dep, tagged, noun, index, verbref)
+Denumerator (den)
+  string of determiner, adjective, or numeric that quantifies the given noun, empty otherwise
+  uses getDenOfN(dets, adjs, num, adv)[0]
+Type of Denumerator (dentype)
+  string of a classifier of the denumerator of the given noun as unit, fuzzy, or other, empty if none exist
+  uses getDenOfN(dets, adjs, num, adv)[1]
+Plurality of Noun (pluN)
+  string of classifier of the plurality of the noun as singular, plural, or ambiguous
+  uses isPluralN(noun, lemma, nountag)
+Bareness of Noun (bareplu)
+  string of classifier of whether the noun is modified with a determiner, possesive, or quantifier, as linked, bare plural, or bare singular
+  uses isBareN(pluN, dets, possv, num)
+Plurality of Verb (pluV)
+  string of a classifier of the plurality of the verb used with the given noun, as singular, plural, or ambiguous, empty if no verb construction for given noun
+  uses isPluralV(verbtag)
+Allan Tests Passed (passedT)
+  list of classifier of allan tests that the sentence fits, as A+N, F+Ns, EX-PL, O-Den, or All+N, empty list if noun construction does not fit into the format
+  uses allanTests(dentype, dets, pluN, pluV)
+Countability (countable)
+  classifier of countable or uncountable based on the allan tests passed, unknown otherwise
+  uses isCountable(passedT)
+Verdicality (veridical)
+  classifier of verdical or nonverdical based on modality, conditionals, or negation of the given noun or related verb, unknown if no obvious evidence of veridicality found
+  uses isVeridical(modl, cond, neg, verbneg)
