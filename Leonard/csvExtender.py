@@ -35,7 +35,7 @@ def getNouns(tagged, lemma):
 	tokenized = tagged.split()
 	nouns = []
 	for i in range(len(tokenized)):
-		noun = re.findall(r'(\S*)/', tokenized[i])
+		noun = re.findall(r'(\S*)/N', tokenized[i])
 		try:
 			if len(noun) == 1 and WordNetLemmatizer().lemmatize(noun[0], 'n') == lemma:
 				tag = re.findall(r'%s\/(\w*)' % noun[0], tokenized[i])
