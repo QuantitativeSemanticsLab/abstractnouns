@@ -7,21 +7,17 @@ import string
 #returns a string of the relevant dependencies (those that contain the target noun)
 def getRelDeps(dep, noun, index):
 	reldep = ''
-	#use regexes to extract noun orccurances on the lhs and rhs of depenencies
 	reldepleft = re.findall(r'(\S*\(%s-%d, \S*-[0-9]*\))' % (noun, index), dep)
 	reldepright = re.findall(r'(\S*\(\S*-[0-9]*, %s-%d\))' % (noun, index), dep)
-	#merge sides into one list
 	for r in reldepleft:
 		reldep += r + ' '
 	for r in reldepright:
 		reldep += r + ' '
 	return reldep
 
-#returns a string of the 10 words surrounding the noun in a sentence to give minimal sencence context
+#returns a string of the 10 words surrounding the noun in a sentence
 def getSentFrag(sent, index):
-	#split sentence into list of words
 	arr = sent.split()
-	# check to make sure that the noun is not in the first 5 words or last 5 words (to avoid null pointers), then sets startindex
 	if (index-6) < 0:
 		startindex = 0
 	else:
@@ -30,7 +26,6 @@ def getSentFrag(sent, index):
 		endindex = len(arr)
 	else:
 		endindex = index+5
-	#extracts fragment list from sentence list and joins into a string
 	sentfragarr = arr[startindex:endindex]
 	sentfrag = ' '.join(sentfragarr)
 	return sentfrag
@@ -38,24 +33,29 @@ def getSentFrag(sent, index):
 
 #returns a list of tuples of nouns, indeces, and tags from a tagged sentence for a given lemma
 def getNouns(tagged, lemma):
-	#split tagged sentence into list
 	tokenized = tagged.split()
 	nouns = []
-	#loop through list, use regexes to extract words with a noun tag
 	for i in range(len(tokenized)):
 		noun = re.findall(r'(\S*)/N', tokenized[i])
-		#lemmatize noun to check if it matches the given noun lemma, then append all occurances of the given noun to a list of noun tuples
-    		if len(noun) == 1:
-			tag = re.findall(r'%s\/(\w*)' % noun[0], tokenized[i])					
+		if len(noun) == 1:
 			try:
-				nouns.append((noun[0], i+1, tag[0]))						
-				lmtz = WordNetLemmatizer().lemmatize(noun[0], 'n')
+				lmtz = WordNetLemmatizer().lemmatize(noun[0], 'n') 
 				if lmtz == lemma:
 					tag = re.findall(r'%s\/(\w*)' % noun[0], tokenized[i])
 					nouns.append((noun[0], i+1, tag[0]))
 			except UnicodeDecodeError:
 				print 'LEMMATIZER ERROR: ' + noun[0]
 	return nouns
+
+def getIndex(tagged, n):
+	tokenized = tagged.split()
+	nouns = []
+	for i in range(len(tokenized)):
+		noun = re.findall(r'(\S*)/N', tokenized[i])
+		if len(noun) == 1:
+			if noun[0] == n:
+				return i+1
+	return False
 
 #looks at tagged sentence to get the tag of a given word
 def getTag(tagged, word):
@@ -70,9 +70,8 @@ def getNeg (dep, noun, index):
 #classifying verbs
 verbtag = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 
-#looks at tagged sentence to get the verb the noun refers to, and returns a tuple with the verb, its tag, whether the noun is a subject or object of the verb, whether the noun is negated, and the verb's lemma
+#looks at tagged sentence to get the verb the noun refers to
 def getVerb(tagged, dep, noun, index):
-	#use regexes to extract verbs used with the given noun in nsubj, nsubjpass, dobj, iobj, compound, xcomp, and ccomp dependencies
 	nsubj = re.findall(r'nsubj\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
 	nobj = re.findall(r'nsubj\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	nsubjpass = re.findall(r'nsubjpass\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
@@ -92,7 +91,7 @@ def getVerb(tagged, dep, noun, index):
 				vtag = getTag(tagged, verb[0])
 			else:
 				verb = ['']
-				vtag = ''
+				vtag = ''		
 		#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
 		elif stype == 'VBG':
 			verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
@@ -111,7 +110,6 @@ def getVerb(tagged, dep, noun, index):
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
 		return verb[0], vtag , 'subject', neg, vlemma
-	#handles cases where noun is the object of the verb
 	if len(nobj) >= 1:
 		stype = getTag(tagged, nobj[0])
 		#handles the copula case, in which the parser uses a non-verb(esp. adjectives) in the nsubj instead of the base verb
@@ -122,12 +120,12 @@ def getVerb(tagged, dep, noun, index):
 				vtag = getTag(tagged, verb[0])
 			else:
 				verb = ['']
-				vtag = ''
+				vtag = ''		
 		#handles the gerund case, in which the parser returns the gerund of the vp rather than the base verb
 		elif stype == 'VBG':
 			verb = re.findall(r'aux\(%s-[0-9]*, (\w*)-[0-9]*\)' % nobj[0], dep)
+			neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nobj[0], dep)
 			if len(verb) >= 1:
-				neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nobj[0], dep)
 				vtag = getTag(tagged, verb[0])
 				vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
 				return verb[0], vtag, 'object', neg, vlemma
@@ -141,31 +139,27 @@ def getVerb(tagged, dep, noun, index):
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
 		return verb[0], vtag , 'object', neg, vlemma
-	#handles passive subject case
 	elif len(nsubjpass) >=1:
 		vtag = getTag(tagged, nsubjpass[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubjpass[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(nsubjpass[0], 'v')
 		return nsubjpass[0], vtag, 'subject', neg, vlemma
-	#handles case where noun is the direct object of the verb
+	#handles cases where noun is the object of the verb
 	elif len(dobj) >= 1:
 		vtag = getTag(tagged, dobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % dobj[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(dobj[0], 'v')
 		return dobj[0], vtag, 'object', neg, vlemma
-	#handles case where noun is the indirect object of the verb
 	elif len(iobj) >= 1:
 		vtag = getTag(tagged, iobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % iobj[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(iobj[0], 'v')
 		return iobj[0], vtag, 'object', neg, vlemma
-	#handles open clausal complement case
 	elif len(xcomp) >= 1:
 		vtag = getTag(tagged, xcomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % xcomp[0], dep)
 		vlemma = WordNetLemmatizer().lemmatize(xcomp[0], 'v')
 		return xcomp[0], vtag, 'object', neg, vlemma
-	#handles clausal complement case
 	elif len(ccomp) >= 1:
 		vtag = getTag(tagged, ccomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % ccomp[0], dep)
@@ -174,11 +168,11 @@ def getVerb(tagged, dep, noun, index):
 	#handles compound case where noun modifies another noun (that is either the subject or object of the verb)
 	elif len(comp) >= 1:
 		verbtup = getVerb(tagged, dep, comp[0][0], int(comp[0][1]))
-		return verbtup[0], verbtup[1], verbtup[2], verbtup[3], verbtup[4]
+		return verbtup[0], verbtup[1], verbtup[2], verbtup[3], verbtup[4] 
 	else:
 		return '', '', '', '', ''
 
-#determines whether the noun is included in a prep phrase, then returns a tuple of the position in the phrase(modifier vs. modified) with the rest of the phrase
+#determines whether the noun is included in a prep phrase, then returns a tuple of the position in the phrase(modifier vs. modified) with the rest of the phrase		
 def getPrepOfN(dep, noun, index):
 	nmod = re.findall(r'nmod\:(\w*)\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	modn = re.findall(r'nmod\:(\w*)\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
@@ -186,27 +180,25 @@ def getPrepOfN(dep, noun, index):
 	objs = []
 	subjs = []
 	preplist = []
-	#handles modified case
 	for i in nmod:
 		if i[0] != 'poss':
 			preplist.append(i)
 			preps.append(i[0])
 			objs.append(i[1])
-	#handles modifier case
 	for i in modn:
 		if i[0] != 'poss':
 			preplist.append(i)
 			preps.append(i[0])
 			subjs.append(i[1])
+			
 	return preplist, preps, subjs, objs
 
-#define article types
 indef_articles = ['a','an','some']
 def_articles = ['the']
 demonstratives = ['this','that','those','these','which']
 quantifiers = ['each','every','few','a few','many','much','some','any','all']
 
-#determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s) and the determiner type
+#determines whether there is a determiner for the given noun in a dependency parse, and returns the determiner(s)
 def getDetOfN(dep, noun, index):
 	det = re.findall(r'det\:*\w*\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	dettype = ''
@@ -223,20 +215,20 @@ def getDetOfN(dep, noun, index):
 			dettype ='other'
 	return det, dettype
 
-#determines whether the noun is compounded with another word, then returns the word it's compounded to
+#determines whether the noun is compounded with another word, then returns the word it's compounded to 
 def getCompOfN(dep, noun, index):
 	compright = re.findall(r'compound\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	compleft = re.findall(r'compound\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
 	comp = compleft + compright
-	return comp
+	return comp 
 
 #determines whether the noun occurs in a list of other nouns, then returns a list of tuples of the other noun(s) and conjunction(s)
 def getConjOfN(dep, noun, index):
 	conjright = re.findall(r'conj\:*(\w*)\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	conjleft = re.findall(r'conj\:*(\w*)\((\w*)-[0-9]*, %s-%d\)' % (noun, index), dep)
-	conjs = [] #conjunction
-	conjd = [] #conjoined
-	conjp = [] #conjunction phrase
+	conjs = []
+	conjd = []
+	conjp = []
 	for i in conjright:
 		conjs.append(i[0])
 		conjd.append(i[1])
@@ -287,17 +279,14 @@ def getApposOfN(dep, noun, index):
 	appos = []
 	mfdappos = []
 	mfyappos = []
-	#handles modified case
 	for i in mfd:
 		appos += ('modified', i)
 		mfdappos.append(i)
-	#handles modifier case
 	for i in mfy:
 		appos += ('modifier', i)
 		mfyappos.append(i)
 	return appos, mfyappos, mfdappos
 
-#determines the modality of the noun and returns the auxillary that suggests modality
 def getModalOfN(dep, tagged, noun, index):
 	aux = re.findall(r'aux\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	if len(aux) >= 1:
@@ -306,7 +295,6 @@ def getModalOfN(dep, tagged, noun, index):
 			return aux
 	return []
 
-#determines whether the noun is used as a conditional
 def getCondOfN(dep, tagged, noun, index, verb):
 	mark = re.findall(r'mark\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	markv = re.findall(r'mark\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb, dep)
@@ -319,6 +307,8 @@ def getCondOfN(dep, tagged, noun, index, verb):
 		if mtag == 'IN':
 			return markv
 	return []
+
+
 
 #classifying denumerators
 unit = ['a', 'an', 'one', '1'] #fall under determiners or numbers
@@ -362,11 +352,23 @@ def isPluralN(noun, lemma, ntag):
 		else:
 			return "ambiguous"
 
-#determines whether a noun is bare (ie. not modified by determiners, possesives, or numbers)
-def isBareN(plurality, dets, poss, nums):
-	if plurality == 'plural' and dets == [] and poss == [] and nums == []:
+def isBareN(extdep, tagged, plurality, dets, poss, nums, dens, adjs, conjd):
+	bareconj = True
+	if conjd != []:
+		i = conjd[0]
+		conjdi = getIndex(tagged, i)
+		conjddep = getRelDeps(extdep, i, conjdi)
+		conjdet = getDetOfN(conjddep, i, conjdi)[0]
+		conjposs = getPossdOfN(conjddep, i, conjdi)
+		conjnums = getNumOfN(extdep, i, conjdi)
+		conjadj = getAmodOfN(conjddep, i, conjdi)
+		conjadv = getAdvOfN(conjddep, i, conjdi)
+		conjdens = getDenOfN(conjdet, conjadj, conjnums, conjadv)[0]
+		if conjdet != [] or conjposs != [] or conjnums !=[] or conjdens != "":
+			bareconj = False
+	if plurality == 'plural' and dets == [] and poss == [] and nums == [] and dens[0] == "" and adjs == [] and bareconj:
 		return 'bare plural'
-	elif plurality == 'singular' and dets == [] and poss == [] and nums == []:
+	elif plurality == 'singular' and dets == [] and poss == [] and nums == [] and dens[0] == "" and adjs == [] and bareconj:
 		return 'bare singular'
 	else:
 		return 'linked'
@@ -382,20 +384,20 @@ def isPluralV(vtag):
 	else:
 		return "ambiguous"
 
-#looks at sentence to determine what allan test(s?) the sentence is modeled after for the given noun, and returns the name of the test(s?) the sentence fits
+#looks at sentence to determine what allan test(s?) the sentence is modeled after for the given noun, and returns the name of the test(s?) the sentence fits 
 def allanTests(dent, det, pluN, pluV):
 	test = []
 	#A+N test
 	if dent == "unit" and pluN != "plural":
 		test.append("A+N")
 	#F+Ns test
-	if dent == "fuzzy" and pluN != "singular":
+	if dent == "fuzzy" and pluN != "singular": 
 		test.append("F+Ns")
 	#EX-PL test
 	if pluN != "plural" and pluV == "plural":
 		test.append("EX-PL")
 	#O-DEN test
-	if dent == "other":
+	if dent == "other":  
 		test.append("O-DEN")
 	#All+N test
 	for d in det:
@@ -403,17 +405,16 @@ def allanTests(dent, det, pluN, pluV):
 			test.append("All+N")
 	return test
 
-#determines whether the noun is countable in the given context based on the allan tests
+#looks at sentence to determine whether the noun is countable in the given context based on the allan tests
 def isCountable(tests):
 	if tests != []:
 		if 'All+N' in tests:
 			return "uncountable"
 		else:
 			return "countable"
-	else:
+	else: 
 		return "unknown"
 
-#determines the veridicality (truthfulness) of the given noun based on negation, modality, and conditional
 def isVerdical(modl, cond, negn, negv):
 	if len(negn) >= 1 or len(negv) >=1:
 		return 'verdical'
@@ -478,16 +479,49 @@ def returnNounTests(sentence, lemma, nountup):
 	modapp = appos[2]
 	modl = getModalOfN(dep, tagged, noun, index)
 	cond = getCondOfN(dep, tagged, noun, index, verbref)
-	dens = getDenOfN(dets, adjs, num, adv)
+	dens = getDenOfN(dets, adjs, num, adv) 
 	den = dens[0]
 	dentype = dens[1]
 	pluN = isPluralN(noun, lemma, nountag)
-	bareplu = isBareN(pluN, dets, possv, num)
+	bareplu = isBareN(extdep, tagged, pluN, dets, possd, num, dens, adjs, conjd)
 	pluV = isPluralV(verbtag)
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
 	verdical = isVerdical(modl, cond, neg, verbneg)
 	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
+
+
+# #test sentence 1: A darkness fell over the room
+# sentence1 = [
+#     "a/DT darkness/NNS fell/VBD over/IN the/DT room/NN", 
+#     "det(darkness-2, a-1) nsubj(fell-3, darkness-2) root(ROOT-0, fell-3) case(room-6, over-4) det(room-6, the-5) nmod(fell-3, room-6)", 
+#     "darkness"]
+# #test sentence 2: Several lambs ran from their pasture
+# sentence2 = [
+#     "several/JJ lambs/NNS ran/VBD from/IN their/PRP$ pasture/NN",
+#     "amod(lambs-2, several-1) nsubj(ran-3, lambs-2) root(ROOT-0, ran-3) case(pasture-6, from-4) nmod:poss(pasture-6, their-5) nmod(ran-3, pasture-6)", 
+#     "lamb"]
+# #test sentence 3: The cattle are grazing in the field
+# sentence3 = [
+#     "the/DT cattle/NNS are/VBP grazing/VBG in/IN the/DT field/NN",
+#     "det(cattle-2, the-1) nsubj(grazing-4, cattle-2) aux(grazing-4, are-3) root(ROOT-0, grazing-4) case(field-7, in-5) det(field-7, the-6) nmod(grazing-4, field-7)", 
+#     "cattle"]
+# #test sentence 4: Each kitten was fluffy 
+# sentence4 = [
+#     "each/DT kitten/NN was/VBD fluffy/JJ",
+#     "det(kitten-2, each-1) nsubj(fluffy-4, kitten-2) cop(fluffy-4, was-3) root(ROOT-0, fluffy-4)", 
+#     "kitten"]
+# #test sentence 5: All lightning is frightening to the child
+# sentence5 = [
+#     "all/DT lightning/NN is/VBZ frightening/JJ to/TO the/DT child/NN",
+#     "det(lightning-2, all-1) nsubj(frightening-4, lightning-2) cop(frightening-4, is-3) root(ROOT-0, frightening-4) case(child-7, to-5) det(child-7, the-6) nmod(frightening-4, child-7)", 
+#     "lightning"]
+
+#print returnNounTests(sentence1)
+#print returnNounTests(sentence2)
+#print returnNounTests(sentence3)
+#print returnNounTests(sentence4)
+#print returnNounTests(sentence5)
 
 
 #takes in a CSV with the sentences, tagged sentences, dependency parses, and lemmas, and writes a new file with extended categorizations for each sentence
@@ -525,17 +559,22 @@ def appendToCSV(infile, outfile, lemma):
 			writer.writerow(row)
 		else:
 			nounoccs = getNouns(row[1], lemma)
-			#handles cases in which the given noun is used multiple times in the sentence (to avoid grouping characteristics with the wrong noun occurence)
 			for i in range(len(nounoccs)):
 				newrow = []
 				newrow.extend([row[0], row[1], row[2]])
 				newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i]))
 				writer.writerow(newrow)
+	#csvifile.close()
+	#csvofile.close()
 
-#accepts lemma from stdin, gets filenames, and runs appendToCsv on filenames
+#appendToCSV('brotherIn.csv', 'brotherOut.csv', 'brother')
+# appendToCSV('harmIn.csv', 'harmOut.csv', 'harm')
+#appendToCSV('crimeIn.csv', 'crimeOut.csv', 'crime')
+#appendToCSV('testingIn.csv', 'testingOut.csv', 'testing')
 lemma = sys.argv[1]
 infilepath = 'infiles/'+ lemma + 'In.csv'
 outfilepath = 'outfiles/' + lemma + 'Out.csv'
 appendToCSV(infilepath, outfilepath, lemma)
 print 'written to ' + outfilepath
+
 
