@@ -4,7 +4,7 @@ import pandas as pd
 from pandas import DataFrame
 import ast
 from itertools import chain 
-from collections import Counter	
+from collections import Counter 
 import csv
 
 word = sys.argv[1]
@@ -12,69 +12,69 @@ infile = 'outfiles/' + word + 'Out.csv'
 df = pd.read_csv(infile)
 
 def fixEmpty(row):
-	if pd.isnull(row[columnname]):
-		return ''
-	else:
-		return row[columnname]
+    if pd.isnull(row[columnname]):
+        return ''
+    else:
+        return row[columnname]
 
 def listCol(row):
-	if pd.isnull(row[columnname]):
-		return []
-	else: 
-		lst = ast.literal_eval(row[columnname])
-		if columnname == 'Prepositional Phrases':
-			lst2 = []
-			for i in lst:
-				string = ' '.join(i)
-				string.lower()
-				lst2.append(string) 
-			cell = lst2
-			return lst2
-		elif len(lst)>= 1:
-			cell = lst
-			return cell
-		else: 
-			return []
+    if pd.isnull(row[columnname]):
+        return []
+    else: 
+        lst = ast.literal_eval(row[columnname])
+        if columnname == 'Prepositional Phrases':
+            lst2 = []
+            for i in lst:
+                string = ' '.join(i)
+                string.lower()
+                lst2.append(string) 
+            cell = lst2
+            return lst2
+        elif len(lst)>= 1:
+            cell = lst
+            return cell
+        else: 
+            return []
 
-def freqCol(col):	
-	mergedlist = df[col].tolist()
-	if col in nonlists:
-	 	freq = Counter(mergedlist)
-	else:
-		freq = Counter(chain.from_iterable(mergedlist))
-	return freq
+def freqCol(col):   
+    mergedlist = df[col].tolist()
+    if col in nonlists:
+        freq = Counter(mergedlist)
+    else:
+        freq = Counter(chain.from_iterable(mergedlist))
+    return freq
 
 def stripCol(row):
-	lst = row[columnname]
-	if len(lst) >= 1:
-		cell = ', '.join(lst)
-		return cell
-	else:
-		return None
+    lst = row[columnname]
+    if len(lst) >= 1:
+        cell = ', '.join(lst)
+        return cell
+    else:
+        return None
 
 def lowerCol(row):
-	if columnname in lowerlist: 
-		if len(row[columnname]) >= 1:
-			newlist = []
-			for i in row[columnname]:
-				newlist.append(i.lower())
-			return newlist
-		else:
-			return []
-	else:
-		return row[columnname].lower()
+    if columnname in lowerlist: 
+        if len(row[columnname]) >= 1:
+            newlist = []
+            for i in row[columnname]:
+                newlist.append(i.lower())
+            return newlist
+        else:
+            return []
+    else:
+        return row[columnname].lower()
 
 def getPercent(num, den):
-	if num is None or den is None:
-		return 0
-	num = float(num)
-	den = float(den)
-	if den != 0:
-		pct = (num/den) 
-		trim = "%.2f" % pct
-		return trim
-	else:
-		return 0
+    if num is None or den is None:
+        return 0
+    num = float(num)
+    den = float(den)
+    if den != 0:
+        pct = (num/den) 
+        trim = "%.2f" % pct
+        return trim
+    else:
+        return 0
 nonlists = []
 lowerlist = []
 results = []
@@ -196,8 +196,8 @@ Verb_Subject_Count = sum(verbsubj.values())
 Verb_Subject_Percentage = getPercent(Verb_Subject_Count, Verb_Construction_Count)
 Unique_Verb_Subject_Count = len(verbsubj) 
 for l in list(verbsubj):
-	if verbsubj[l] <= (Unique_Verb_Subject_Count * .10):
-		del verbsubj[l]
+    if verbsubj[l] <= (Unique_Verb_Subject_Count * .10):
+        del verbsubj[l]
 Significant_Verb_Subjects = verbsubj 
 Significant_Verb_Subject_Count = len(verbsubj)
 results.extend([Verb_Subject_Count, Verb_Subject_Percentage, Unique_Verb_Subject_Count, Significant_Verb_Subjects, Significant_Verb_Subject_Count])
@@ -213,8 +213,8 @@ Verb_Object_Count = sum(verbobj.values())
 Verb_Object_Percentage = getPercent(Verb_Object_Count, Verb_Construction_Count)
 Unique_Verb_Object_Count = len(verbobj) 
 for l in list(verbobj):
-	if verbobj[l] <= (Unique_Verb_Object_Count * .10):
-		del verbobj[l]
+    if verbobj[l] <= (Unique_Verb_Object_Count * .10):
+        del verbobj[l]
 Significant_Verb_Objects = verbobj 
 Significant_Verb_Object_Count = len(verbobj)
 results.extend([Verb_Object_Count, Verb_Object_Percentage, Unique_Verb_Object_Count, Significant_Verb_Objects, Significant_Verb_Object_Count])
@@ -256,8 +256,8 @@ Prepositional_Subject_Count = sum(prepsubj.values())
 Prepositional_Subject_Percentage = getPercent(Prepositional_Subject_Count, Prepositional_Phrase_Count)
 Unique_Prepositional_Subject_Count = len(prepsubj)
 for l in list(prepsubj):
-	if prepsubj[l] <= (Unique_Prepositional_Subject_Count * .10):
-		del prepsubj[l]
+    if prepsubj[l] <= (Unique_Prepositional_Subject_Count * .10):
+        del prepsubj[l]
 Significant_Prepositional_Subjects = prepsubj
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Prepositional_Subject_Count, Prepositional_Subject_Percentage, Unique_Prepositional_Subject_Count, Significant_Prepositional_Subjects])
@@ -274,8 +274,8 @@ Prepositional_Object_Count = sum(prepobj.values())
 Prepositional_Object_Percentage = getPercent(Prepositional_Object_Count, Prepositional_Phrase_Count)
 Unique_Prepositional_Object_Count = len(prepobj)
 for l in list(prepobj):
-	if prepobj[l] <= (Unique_Prepositional_Object_Count * .10):
-		del prepobj[l]
+    if prepobj[l] <= (Unique_Prepositional_Object_Count * .10):
+        del prepobj[l]
 Significant_Prepositional_Objects = prepobj
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Prepositional_Object_Count, Prepositional_Object_Percentage, Unique_Prepositional_Object_Count, Significant_Prepositional_Objects])
@@ -287,16 +287,19 @@ lowerlist.append(columnname)
 df[columnname] = df.apply(listCol, axis = 1)
 df[columnname] = df.apply(lowerCol, axis = 1)
 det = freqCol(columnname)
+quants = {}
+quants.update(det)
 del det['']
 Determiner_Count = sum(det.values())
 Determiner_Percentage = getPercent(Determiner_Count, Noun_Count)
 Unique_Determiner_Count = len(det)
 for l in list(det):
-	if det[l] <= (Unique_Determiner_Count * .10):
-		del det[l]
+    if det[l] <= (Unique_Determiner_Count * .10):
+        del det[l]
 Significant_Determiners = det
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Determiner_Count, Determiner_Percentage, Unique_Determiner_Count, Significant_Determiners])
+
 
 #Determiner Type: fix column to include empty strings, adjust for nonlist frequency, use to get verb type counts
 columnname = 'Determiner Type'
@@ -335,8 +338,8 @@ Conjoined_Count = sum(conj.values())
 Conjoined_Percentage = getPercent(Conjoined_Count, Noun_Count)
 Unique_Conjoined_Count = len(conj)
 for l in list(conj):
-	if conj[l] <= (Unique_Conjoined_Count * .10):
-		del conj[l]
+    if conj[l] <= (Unique_Conjoined_Count * .10):
+        del conj[l]
 Significant_Conjoined = conj
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Conjoined_Count, Conjoined_Percentage, Unique_Conjoined_Count, Significant_Conjoined])
@@ -352,8 +355,8 @@ Compound_Count = sum(comp.values())
 Compound_Percentage = getPercent(Compound_Count, Noun_Count)
 Unique_Compound_Count = len(comp)
 for l in list(comp):
-	if comp[l] <= (Unique_Compound_Count * .10):
-		del comp[l]
+    if comp[l] <= (Unique_Compound_Count * .10):
+        del comp[l]
 Significant_Compounds = comp
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Compound_Count, Compound_Percentage, Unique_Compound_Count, Significant_Compounds])
@@ -364,13 +367,14 @@ lowerlist.append(columnname)
 df[columnname] = df.apply(listCol, axis = 1)
 df[columnname] = df.apply(lowerCol, axis = 1)
 adj = freqCol(columnname)
+quants.update(adj)
 del adj['']
 Adjective_Count = sum(adj.values())
 Adjective_Percentage = getPercent(Adjective_Count, Noun_Count)
 Unique_Adjective_Count = len(adj)
 for l in list(adj):
-	if adj[l] <= (Unique_Adjective_Count * .10):
-		del adj[l]
+    if adj[l] <= (Unique_Adjective_Count * .10):
+        del adj[l]
 Significant_Adjectives = adj
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Adjective_Count, Adjective_Percentage, Unique_Adjective_Count, Significant_Adjectives])
@@ -386,8 +390,8 @@ Possesed_Count = sum(possd.values())
 Possesed_Percentage = getPercent(Possesed_Count, Noun_Count)
 Unique_Possesed_Count = len(possd)
 for l in list(possd):
-	if possd[l] <= (Unique_Possesed_Count * .10):
-		del possd[l]
+    if possd[l] <= (Unique_Possesed_Count * .10):
+        del possd[l]
 Significant_Possesed = possd
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Possesed_Count, Possesed_Percentage, Unique_Possesed_Count, Significant_Possesed])
@@ -410,6 +414,7 @@ lowerlist.append(columnname)
 df[columnname] = df.apply(listCol, axis = 1)
 df[columnname] = df.apply(lowerCol, axis = 1)
 num = freqCol(columnname)
+quants.update(num)
 del num['']
 Numeric_Count = sum(num.values())
 Numeric_Percentage = getPercent(Numeric_Count, Noun_Count)
@@ -454,8 +459,8 @@ Appositional_Modifier_Count = sum(apposmod.values())
 Appositional_Modifier_Percentage = getPercent(Appositional_Modifier_Count, Appositive_Count)
 Unique_Appositional_Modifier_Count = len(apposmod)
 for l in list(apposmod):
-	if apposmod[l] <= (Unique_Appositional_Modifier_Count * .10):
-		del apposmod[l]
+    if apposmod[l] <= (Unique_Appositional_Modifier_Count * .10):
+        del apposmod[l]
 Significant_Appositional_Modifiers = apposmod
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Appositional_Modifier_Count, Appositional_Modifier_Percentage, Unique_Appositional_Modifier_Count, Significant_Appositional_Modifiers])
@@ -472,8 +477,8 @@ Modified_Appositive_Count = sum(modappos.values())
 Modified_Appositive_Percentage = getPercent(Modified_Appositive_Count, Appositive_Count)
 Unique_Modified_Appositive_Count = len(modappos)
 for l in list(modappos):
-	if modappos[l] <= (Unique_Modified_Appositive_Count * .10):
-		del modappos[l]
+    if modappos[l] <= (Unique_Modified_Appositive_Count * .10):
+        del modappos[l]
 Significant_Modified_Appositives = modappos
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Modified_Appositive_Count, Modified_Appositive_Percentage, Unique_Modified_Appositive_Count, Significant_Modified_Appositives])
@@ -564,7 +569,16 @@ NonVerdical_Count = verd.get('nonverdical')
 NonVerdical_Percentage = getPercent(NonVerdical_Count, Noun_Count)
 results.extend([Verdical_Count, Verdical_Percentage, NonVerdical_Count, NonVerdical_Percentage])
 
-
+detlist = ["a", "an", "all", "another", "any", "both", "certain", "each", "either", "enough", "every", "few", "little", "many", "much", "neither", "no", "one", "said", "several", "some", "such", "sufficient", "that", "the", "this", "various", "we", "whatever", "whatsoever", "what", "whichever", "which", "you"]
+for i in detlist:
+    #ct = quants[i]
+    #print i, str(ct)
+    #results.extend(str(ct))
+    try:
+        pct = getPercent(quants[i], Noun_Count)
+        results.extend([str(quants[i]), pct])
+    except KeyError:
+        results.extend(["0", "0"])
 outfile = 'postfiles/' + word + 'Post.csv'
 print 'wrote to ' + word+ 'Post.csv'
 df.to_csv(outfile, index = False)
@@ -572,13 +586,13 @@ df.to_csv(outfile, index = False)
 master = 'master.csv'
 f = open(master, 'a')
 for r in range(len(results)):
-	if results[r] == None:
-		results[r] = 0
-	if isinstance(results[r], dict):
-		freqdict = {}
-		for d in results[r]:
-			freqdict[d] = results[r].get(d)
-		results[r] = freqdict
+    if results[r] == None:
+        results[r] = 0
+    if isinstance(results[r], dict):
+        freqdict = {}
+        for d in results[r]:
+            freqdict[d] = results[r].get(d)
+        results[r] = freqdict
 writer = csv.writer(f)
 writer.writerow(results)
 print 'wrote to master.csv'

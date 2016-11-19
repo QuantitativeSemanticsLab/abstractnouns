@@ -1,0 +1,8 @@
+while read f; do python nountests.py $f; python postprocess.py $f; done <nounlist
+
+
+
+fix nountests script to change name from ex-pl to pluralized subject
+pull down postprocess and writeheader from csug
+^run command
+push up to github (incl. clustering script) and email scott
