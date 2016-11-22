@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import pylab
 #import sys
 import numpy as np
 import pandas as pd
@@ -12,28 +14,37 @@ infile = 'master.csv'
 df = pd.read_csv(infile)
 
 #print df["Noun"]
-
+X = 'Bare Plural Noun Percentage'
+y = 'Unit Denumerator Percentage'
+z = 'Verb Subject Percentage'
+dim = 3 #2 or 3
+clusternum = 8 #up to 8
 
 from sklearn.cluster import KMeans
-X = np.array([[1,2], [1,4], [1,0], [4,2], [4,4], [4,0]])
-subset =df[["Bare Plural Noun Percentage","Quantifier Percentage"]]
+if dim == 2:
+	subset = df[[X,y]]
+if dim ==3:
+	subset =df[[X,y,z]]
 Y = [tuple(x) for x in subset.values]
-#print Y
-kmeans = KMeans(n_clusters=4, random_state=0).fit(Y)
+kmeans = KMeans(n_clusters=clusternum, random_state=0).fit(Y)
 df["clusternum"] = kmeans.labels_
 
-#print df["clusternum"]
 
 plt.figure(3)
-use_colors = {0:"red", 1:"green", 2:"blue", 3:"grey",}
-plt.scatter(df["Bare Plural Noun Percentage"], df["Quantifier Percentage"], c=[use_colors[x] for x in df["clusternum"]])
+fig = pylab.figure()
+ax = Axes3D(fig)
+use_colors = {0:"b", 1:"g", 2:"r", 3:"c", 4:"m", 5:"y", 6:"k", 7:"w"}
+if dim == 2:
+	plt.scatter(df[X], df[y], c=[use_colors[x] for x in df["clusternum"]])
+if dim == 3:
+	ax.scatter(df[X], df[y], df[z], c=[use_colors[x] for x in df["clusternum"]])
+	ax.set_zlabel(z)
 
-plt.xlabel('bare Plural')
-plt.ylabel('quantifier')
+plt.xlabel(X)
+plt.ylabel(y)
 plt.show()
 
 newdf = df.sort(["clusternum"])
-for i in range(len(newdf)):
-	 if df["clusternum"][i] == 2:
-	 	print df["Noun"][i]
-	#print newdf["Noun"][i], newdf["clusternum"][i]
+
+for num in range(clusternum):
+	print [df["Noun"][i] for i in range(len(newdf)) if df["clusternum"][i]==num]
