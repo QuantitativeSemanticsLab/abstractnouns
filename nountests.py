@@ -239,10 +239,26 @@ def getConjOfN(dep, noun, index):
 		conjp.append(i)
 	return conjp, conjs, conjd
 
+def loadAdjTypes(): 
+    adjdict = {}
+    adjdf = open("words.predicted","r")
+    for ln in adjdf:
+        l = re.findall(r"(.*){", ln)[0].split("\t")
+        adjdict[l[0]]=l[1]
+    return adjdict
+
 #determines whether there is an adjectival modifier for the given noun in a dependency parse, and returns the adjective(s)
 def getAmodOfN(dep, noun, index):
 	amod = re.findall(r'amod\(%s-%d, (\w*)-[0-9]*\)' % (noun, index), dep)
 	return amod
+
+def getAdjType(adj, adjdict):
+    adjtype = []
+    for i in adj:
+        if i in adjdict:
+            adjtype.append(adjdict[i])
+    return adjtype
+  
 
 #determines whether there is a possesive pronoun or proper noun for the given noun in a dependency parse, and returns the pronoun(s) or noun(s) that are owned by the noun
 def getPossdOfN(dep, noun, index):
@@ -426,7 +442,7 @@ def isVerdical(modl, cond, negn, negv):
 		return 'unknown'
 
 #takes in a sentence, tags, dependencies, and lemma and returns a list of the outputs to all noun tests
-def returnNounTests(sentence, lemma, nountup):
+def returnNounTests(sentence, lemma, nountup, adjdict):
 	sent = sentence[0]
 	tagged = sentence[1]
 	extdep = sentence[2]
@@ -468,7 +484,8 @@ def returnNounTests(sentence, lemma, nountup):
 	conjd = conj[2]
 	comps = getCompOfN(dep, noun, index)
 	adjs = getAmodOfN(dep, noun, index)
-	possd = getPossdOfN(dep, noun, index)
+	adjtype = getAdjType(adjs, adjdict)
+        possd = getPossdOfN(dep, noun, index)
 	possv = getPossvOfN(dep, noun, index)
 	num = getNumOfN(extdep, noun, index)
 	case = getCaseOfN(dep, noun, index)
@@ -488,7 +505,7 @@ def returnNounTests(sentence, lemma, nountup):
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
 	verdical = isVerdical(modl, cond, neg, verbneg)
-	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
+	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, adjtype,  possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -534,7 +551,7 @@ def appendToMixedCSV(infile, outfile):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
+			row.extend(['Noun', 'Noun Tag', 'Verb', 'Verb Tag', 'Determiners', 'Adjectival Modifiers', 'Adjective Types', 'Possesives', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability'])
 			header = False
 			writer.writerow(row)
 		else:
@@ -551,10 +568,11 @@ def appendToCSV(infile, outfile, lemma):
 	csvofile = open(outfile, 'w')
 	reader = csv.reader(csvifile)
 	writer = csv.writer(csvofile)
+        adjdict = loadAdjTypes()
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Determiner Type', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Bareness of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Determiner Type', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Adjective Types', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Bareness of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:
@@ -562,7 +580,7 @@ def appendToCSV(infile, outfile, lemma):
 			for i in range(len(nounoccs)):
 				newrow = []
 				newrow.extend([row[0], row[1], row[2]])
-				newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i]))
+				newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i], adjdict))
 				writer.writerow(newrow)
 	#csvifile.close()
 	#csvofile.close()
