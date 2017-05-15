@@ -80,38 +80,38 @@ while read f; do python postprocess.py $f; done < nounlist.txt
 To produce the "Adjtype: x" features, use the adjective_supersense_classifier from 
 <i class="icon-share"></i> http://www.cs.cmu.edu/~ytsvetko/papers/adj-lrec14.pdf
 
-'''bash
+```bash
 git clone https://github.com/ytsvetko/adjective_supersense_classifier. 
-'''
+```
 
 Instead of using the provided data file, run gensim word2vec on combined COCA corpus text using the python interface for 2ord2vec 
 
-'''bash
+```bash
 git clone https://github.com/danielfrg/word2vec
-'''
+```
 
 Combine the coca corpus text files into one using the command
 
-''' bash
+``` bash
 cat * > coca.txt
-'''
+```
 
 in the directory of COCA txt files. 
 Then copy runw2v.py into the pulled word2vec directory, run, then convert the resulting .bin file into a txt file
 
-'''bash
+```bash
 python runw2vec.py
 git clone https://github.com/marekrei/convertvec
 ./convertvec bin2txt cocavec.bin cocavec.txt
-'''
+```
 
 The resulting file is cocavec.txt, which should replace the eacl14-faruqui-en-svd-de-64.adj.txt.gz file in adjective_supersense_classifier/data/VSM
 
 Then run the classifier according to it's documentation
 
-'''bash
+```bash
 ./adj_supersense_tagger.sh
-'''
+```
 
 use the words.predicted file from the predicted_supersenses directory to run nountests.py normally.
 
