@@ -3,7 +3,7 @@ import re
 from nltk.stem import WordNetLemmatizer
 import csv
 import string
-
+import ast 
 #returns a string of the relevant dependencies (those that contain the target noun)
 def getRelDeps(dep, noun, index):
 	reldep = ''
@@ -243,8 +243,10 @@ def loadAdjTypes():
     adjdict = {}
     adjdf = open("words.predicted","r")
     for ln in adjdf:
-        l = re.findall(r"(.*){", ln)[0].split("\t")
-        adjdict[l[0]]=l[1]
+        l = re.findall(r"(.*)({.*})", ln)
+    	word = l[0][0].split("\t")[0]
+    	vec = ast.literal_eval(l[0][1]).values()
+    	adjdict[word] = vec
     return adjdict
 
 #determines whether there is an adjectival modifier for the given noun in a dependency parse, and returns the adjective(s)
@@ -257,7 +259,8 @@ def getAdjType(adj, adjdict):
     for i in adj:
         if i in adjdict:
             adjtype.append(adjdict[i])
-    return adjtype
+    vec = [x for x in zip(*adjtype)]
+    return vec
   
 
 #determines whether there is a possesive pronoun or proper noun for the given noun in a dependency parse, and returns the pronoun(s) or noun(s) that are owned by the noun
@@ -485,7 +488,35 @@ def returnNounTests(sentence, lemma, nountup, adjdict):
 	comps = getCompOfN(dep, noun, index)
 	adjs = getAmodOfN(dep, noun, index)
 	adjtype = getAdjType(adjs, adjdict)
-        possd = getPossdOfN(dep, noun, index)
+	if adjtype:
+		adjbehav = list(adjtype[0])
+		adjbody = list(adjtype[1])
+		adjfeel = list(adjtype[2])
+		adjmind = list(adjtype[3])
+		adjmisc = list(adjtype[4])
+		adjmotion = list(adjtype[5])
+		adjpercep = list(adjtype[6])
+		adjquant = list(adjtype[7])
+		adjsocial = list(adjtype[8])
+		adjspatial = list(adjtype[9])
+		adjsubst = list(adjtype[10])
+		adjtemp = list(adjtype[11])
+		adjweather = list(adjtype[12])
+	else: 
+		adjbehav = None
+		adjbody = None
+		adjfeel =  None
+		adjmind =  None
+		adjmisc =  None
+		adjmotion =  None
+		adjpercep =  None
+		adjquant =  None
+		adjsocial =  None
+		adjspatial =  None
+		adjsubst =  None
+		adjtemp =  None
+		adjweather =  None
+	possd = getPossdOfN(dep, noun, index)
 	possv = getPossvOfN(dep, noun, index)
 	num = getNumOfN(extdep, noun, index)
 	case = getCaseOfN(dep, noun, index)
@@ -505,7 +536,7 @@ def returnNounTests(sentence, lemma, nountup, adjdict):
 	passedT = allanTests(dentype, dets, pluN, pluV)
 	countable = isCountable(passedT)
 	verdical = isVerdical(modl, cond, neg, verbneg)
-	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, adjtype,  possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
+	return [noun, index, dep, sfrag, nountag, neg, verbref, verbtag, verbrel, verbsubj, verbsubjlemma, verbobj, verbobjlemma, verbneg, prepphrs, preps, prepsubjs, prepobjs, dets, dettype, conjp, conjs, conjd, comps,  adjs, adjbehav, adjbody, adjfeel, adjmind, adjmisc, adjmotion, adjpercep, adjquant, adjsocial, adjspatial, adjsubst, adjtemp, adjweather, possd, possv, num, case, adv, app, appmod, modapp, modl, cond, den, dentype, pluN, bareplu, pluV, passedT, countable, verdical]
 
 
 # #test sentence 1: A darkness fell over the room
@@ -572,7 +603,7 @@ def appendToCSV(infile, outfile, lemma):
 	header = True
 	for row in reader:
 		if header:
-			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Determiner Type', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'Adjective Types', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Bareness of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
+			row.extend(['Noun', 'Index', 'Relevant Dependencies', 'Sentence Fragment', 'Noun Tag', 'Negation', 'Verb Reference', 'Verb Tag', 'Relation to Verb', 'Verb Subject', 'Verb Subject Lemma', 'Verb Object', 'Verb Object Lemma', 'Verb Negation', 'Prepositional Phrases', 'Prepositions', 'Prepositional Subjects', 'Prepositional Objects', 'Determiners', 'Determiner Type', 'Conjunction Phrases', 'Conjunctions', 'Conjoined', 'Compounds', 'Adjectival Modifiers', 'AdjType: Behavior', 'AdjType: Body', 'AdjType: Feeling', 'AdjType: Mind', 'AdjType: Miscellaneous', 'AdjType: Motion', 'AdjType: Perception', 'AdjType: Quantity', 'AdjType: Social', 'AdjType: Spatial', 'AdjType: Substance', 'AdjType: Temporal', 'AdjType: Weather', 'Possesed owned by noun', 'Possesive owner of noun', 'Numeric Modifiers', 'Case Modifiers', 'Adverbial Modifiers', 'Appositionals', 'Appositional Modifiers', 'Modified Appositives', 'Modality', 'Conditional', 'Denumerator', 'Type of Denumerator', 'Plurality of Noun', 'Bareness of Noun', 'Plurality of Verb', 'Allan Tests Passed', 'Countability', 'Verdicality'])
 			header = False
 			writer.writerow(row)
 		else:

@@ -378,6 +378,19 @@ for l in list(adj):
 Significant_Adjectives = adj
 df[columnname] = df.apply(stripCol, axis = 1)
 results.extend([Adjective_Count, Adjective_Percentage, Unique_Adjective_Count, Significant_Adjectives])
+adjtypclasses = ['Behavior', 'Body', 'Feeling', 'Mind', 'Miscellaneous', 'Motion','Perception','Quantity','Social','Spatial','Substance','Temporal','Weather']
+for i in adjtypclasses:
+    columnname = 'AdjType: ' + i
+    df[columnname] = df.apply(listCol, axis = 1)
+    numadjs = 0
+    sumadjs=0
+    for i in df[columnname]:
+        numadjs += len(i)
+        sumadjs += sum(i)
+    avg = sumadjs/numadjs
+    #df[columnname] = df.apply(stripCol, axis = 1)
+    results.extend([avg])
+
 
 #Possesed owned by noun: convert from string to list, strip to lowercase, get count, unique count, freq list, strip of list formatting 
 columnname = 'Possesed owned by noun'

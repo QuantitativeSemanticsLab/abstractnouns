@@ -76,6 +76,48 @@ while read f; do python postprocess.py $f; done < nounlist.txt
 ```
 
 ---
+## Using the Adjective Supersense Classifier
+To produce the "Adjtype: x" features, use the adjective_supersense_classifier from 
+<i class="icon-share"></i> http://www.cs.cmu.edu/~ytsvetko/papers/adj-lrec14.pdf
+
+'''bash
+git clone https://github.com/ytsvetko/adjective_supersense_classifier. 
+'''
+
+Instead of using the provided data file, run gensim word2vec on combined COCA corpus text using the python interface for 2ord2vec 
+
+'''bash
+git clone https://github.com/danielfrg/word2vec
+'''
+
+Combine the coca corpus text files into one using the command
+
+''' bash
+cat * > coca.txt
+'''
+
+in the directory of COCA txt files. 
+Then copy runw2v.py into the pulled word2vec directory, run, then convert the resulting .bin file into a txt file
+
+'''bash
+python runw2vec.py
+git clone https://github.com/marekrei/convertvec
+./convertvec bin2txt cocavec.bin cocavec.txt
+'''
+
+The resulting file is cocavec.txt, which should replace the eacl14-faruqui-en-svd-de-64.adj.txt.gz file in adjective_supersense_classifier/data/VSM
+
+Then run the classifier according to it's documentation
+
+'''bash
+./adj_supersense_tagger.sh
+'''
+
+use the words.predicted file from the predicted_supersenses directory to run nountests.py normally.
+
+runw2v.py, and words.predicted can be found in this repo, but intermediary files must be run independently. 
+
+---
 ## Clustering
 
 master.csv can be clustered using k-means and plotted in 2 or 3 dimensions by running testplot.py and changing variables to determine the number of dimensions and their content, as well as the number of clusters. Edit lines 17-19 to change the columns to focus on, line 20 to determine the number of dimensions, and 21 for the number of clusters. 

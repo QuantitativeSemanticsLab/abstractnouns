@@ -86,6 +86,8 @@ Compounds (comps)
   uses getCompOfN(dep, noun, index)
 Adjectival Modifiers (adjs)
   list of adjectives that modify the given noun, empty list if no adjectival constructions
+AdjType: x
+  list of scorings for adjective classes, from the adjective supersense classifier, empty list if no adjectival constructions
   uses getAmodOfN(dep, noun, index)
 Possesed owned by noun (possd)
   list of words that occur in a possessive construction with the given noun where the word is owned by the given noun, empty list if no possessive(owned) construction *gives insight to animacy of the given noun
