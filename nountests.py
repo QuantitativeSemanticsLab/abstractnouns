@@ -1,9 +1,20 @@
 import sys
 import re
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import wordnet as wn
 import csv
 import string
 import ast 
+import os
+from os import walk
+import threading
+import time
+
+
+num_of_threads=8
+#pre-define an adjective type list order
+adj_list=['BEHAVIOR', 'BODY', 'FEELING', 'MIND', 'MISCELLANEOUS', 'MOTION', 'PERCEPTION', 'QUANTITY', 'SOCIAL', 'SPATIAL', 'SUBSTANCE', 'TEMPORAL', 'WEATHER']
+
+
 #returns a string of the relevant dependencies (those that contain the target noun)
 def getRelDeps(dep, noun, index):
 	reldep = ''
@@ -39,7 +50,7 @@ def getNouns(tagged, lemma):
 		noun = re.findall(r'(\S*)/N', tokenized[i])
 		if len(noun) == 1:
 			try:
-				lmtz = WordNetLemmatizer().lemmatize(noun[0], 'n') 
+				lmtz = wn.WordNetLemmatizer().lemmatize(noun[0], 'n') 
 				if lmtz == lemma:
 					tag = re.findall(r'%s\/(\w*)' % noun[0], tokenized[i])
 					nouns.append((noun[0], i+1, tag[0]))
@@ -98,7 +109,7 @@ def getVerb(tagged, dep, noun, index):
 			if len(verb) >= 1:
 				neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubj[0], dep)
 				vtag = getTag(tagged, verb[0])
-				vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+				vlemma = wn.WordNetLemmatizer().lemmatize(verb[0], 'v')
 				return verb[0], vtag, 'subject', neg, vlemma
 			else:
 				verb = ['']
@@ -108,7 +119,7 @@ def getVerb(tagged, dep, noun, index):
 			verb = nsubj
 			vtag = stype
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(verb[0], 'v')
 		return verb[0], vtag , 'subject', neg, vlemma
 	if len(nobj) >= 1:
 		stype = getTag(tagged, nobj[0])
@@ -127,7 +138,7 @@ def getVerb(tagged, dep, noun, index):
 			neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nobj[0], dep)
 			if len(verb) >= 1:
 				vtag = getTag(tagged, verb[0])
-				vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+				vlemma = wn.WordNetLemmatizer().lemmatize(verb[0], 'v')
 				return verb[0], vtag, 'object', neg, vlemma
 			else:
 				verb = ['']
@@ -137,33 +148,33 @@ def getVerb(tagged, dep, noun, index):
 			verb = nobj
 			vtag = stype
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % verb[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(verb[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(verb[0], 'v')
 		return verb[0], vtag , 'object', neg, vlemma
 	elif len(nsubjpass) >=1:
 		vtag = getTag(tagged, nsubjpass[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % nsubjpass[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(nsubjpass[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(nsubjpass[0], 'v')
 		return nsubjpass[0], vtag, 'subject', neg, vlemma
 	#handles cases where noun is the object of the verb
 	elif len(dobj) >= 1:
 		vtag = getTag(tagged, dobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % dobj[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(dobj[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(dobj[0], 'v')
 		return dobj[0], vtag, 'object', neg, vlemma
 	elif len(iobj) >= 1:
 		vtag = getTag(tagged, iobj[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % iobj[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(iobj[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(iobj[0], 'v')
 		return iobj[0], vtag, 'object', neg, vlemma
 	elif len(xcomp) >= 1:
 		vtag = getTag(tagged, xcomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % xcomp[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(xcomp[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(xcomp[0], 'v')
 		return xcomp[0], vtag, 'object', neg, vlemma
 	elif len(ccomp) >= 1:
 		vtag = getTag(tagged, ccomp[0])
 		neg = re.findall(r'neg\(%s-[0-9]*, (\w*)-[0-9]*\)' % ccomp[0], dep)
-		vlemma = WordNetLemmatizer().lemmatize(ccomp[0], 'v')
+		vlemma = wn.WordNetLemmatizer().lemmatize(ccomp[0], 'v')
 		return ccomp[0], vtag, 'object', neg, vlemma
 	#handles compound case where noun modifies another noun (that is either the subject or object of the verb)
 	elif len(comp) >= 1:
@@ -245,7 +256,12 @@ def loadAdjTypes():
     for ln in adjdf:
         l = re.findall(r"(.*)({.*})", ln)
     	word = l[0][0].split("\t")[0]
-    	vec = ast.literal_eval(l[0][1]).values()
+    	word_dict=ast.literal_eval(l[0][1])
+    	# print word_dict
+    	vec=[]
+    	for adj_type in adj_list:
+    		vec.append(word_dict[adj_type])
+    	# print vec
     	adjdict[word] = vec
     return adjdict
 
@@ -593,13 +609,15 @@ def appendToMixedCSV(infile, outfile):
 				newrow.extend(returnNounTests([row[0], row[1], row[2]], row[3], nounoccs[i]))
 				writer.writerow(newrow)
 
+
+
 #for files with the same lemma, takes in the lemma and does not store sentence lemmas in the csv
 def appendToCSV(infile, outfile, lemma):
 	csvifile = open(infile, 'rU')
 	csvofile = open(outfile, 'w')
 	reader = csv.reader(csvifile)
 	writer = csv.writer(csvofile)
-        adjdict = loadAdjTypes()
+	
 	header = True
 	for row in reader:
 		if header:
@@ -611,8 +629,11 @@ def appendToCSV(infile, outfile, lemma):
 			for i in range(len(nounoccs)):
 				newrow = []
 				newrow.extend([row[0], row[1], row[2]])
-				newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i], adjdict))
-				writer.writerow(newrow)
+				try:
+					newrow.extend(returnNounTests([row[0], row[1], row[2]], lemma, nounoccs[i], adjdict))
+					writer.writerow(newrow)
+				except:
+					print "Row not valid"
 	#csvifile.close()
 	#csvofile.close()
 
@@ -620,10 +641,69 @@ def appendToCSV(infile, outfile, lemma):
 # appendToCSV('harmIn.csv', 'harmOut.csv', 'harm')
 #appendToCSV('crimeIn.csv', 'crimeOut.csv', 'crime')
 #appendToCSV('testingIn.csv', 'testingOut.csv', 'testing')
-lemma = sys.argv[1]
-infilepath = 'infiles/'+ lemma + 'In.csv'
-outfilepath = 'outfiles/' + lemma + 'Out.csv'
-appendToCSV(infilepath, outfilepath, lemma)
-print 'written to ' + outfilepath
+inFile= sys.argv[1]
+
+if os.path.isfile(inFile):
+	lemma=re.findall(r'infiles\/(\S*)In',inFile)[0]
+	print "Lemma is :%s"%lemma
+	adjdict = loadAdjTypes()
+	outfilepath = 'outfiles/' + lemma + 'Out.csv'
+	appendToCSV(inFile,outfilepath,lemma)
+	print 'written to ' + outfilepath
+else:
+	f = []
+	lemma_list=[]
+	for (dirpath, dirnames, filenames) in walk(inFile):
+	    f.extend(filenames)
+	    break
+	# print f
+	for file_name in f:
+		# print str(file_name)
+		temp=re.findall(r'(\S*)In',str(file_name))
+		# print type(temp)
+		if len(temp)>0:
+			lemma_list.append(temp[0])
+	
+	partition_size=int(len(lemma_list)/num_of_threads)+1
+	lemma_chunks= [lemma_list[x:x+partition_size] for x in xrange(0, len(lemma_list), partition_size)]
+	# for x in lemma_chunks:
+	# 	print len(x)
+	print "Start"
+	adjdict = loadAdjTypes()
+	def thread_work(sub_list,num):
+		for lemma in sub_list:
+			# from nltk.corpus import wordnet
+			# wordnet.ensure_loaded()
+			print "Thread %d starting"%num
+			print "Lemma is :%s"%lemma
+			infilepath = 'infiles/'+ lemma + 'In.csv'
+			outfilepath = 'outfiles/' + lemma + 'Out.csv'
+			appendToCSV(infilepath, outfilepath, lemma)
+			print "Thread %d finished"%num
+			print 'written to ' + outfilepath
+	print "Start multi-threading"
+	for x in range(0,num_of_threads):
+		t=threading.Thread(target=thread_work,args=(lemma_chunks[x],x,))
+		# time.sleep(1)
+		# t.setDaemon=True
+		t.start()
+
+
+	# try:
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[0],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[1],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[2],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[3],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[4],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[5],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[6],))
+	# 	thread.start_new_thread(thread_work,(lemma_chunks[7],))
+	# except:
+	# 	print "Threading failed"
+
+# infilepath = 'infiles/'+ lemma + 'In.csv'
+# outfilepath = 'outfiles/' + lemma + 'Out.csv'
+# appendToCSV(infilepath, outfilepath, lemma)
+# print 'written to ' + outfilepath
 
 
