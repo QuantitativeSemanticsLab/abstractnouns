@@ -52,7 +52,7 @@ Other more complicated tests have more explanation in comments and outfileFormat
 
 The new version of nountests.py creates outfiles differently.
 For a given word, the wordIn.csv should be in a directory called infiles.
-Then to create outfile for that given word (word.csv), run:
+Then to create outfile for that given word (wordIn.csv), run:
 ```bash
 python nountests.py infiles/wordIn.csv
 ```
@@ -61,6 +61,8 @@ To create outfiles for all the nouns in the directory infiles, do:
 ```bash
 python nountests.py infiles
 ```
+The process will use all the cpu resources as I implemented multi-processing.
+So the computer will seem to be slow when you perform other tasks.
 
 ## Creating Postfiles/Master
 
