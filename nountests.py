@@ -6,10 +6,12 @@ import string
 import ast 
 import os
 from os import walk
-import threading
 import time
+from multiprocessing import Pool, cpu_count
+import timeit
 
-
+process_count=cpu_count()
+pool=Pool(cpu_count())
 num_of_threads=8
 #pre-define an adjective type list order
 adj_list=['BEHAVIOR', 'BODY', 'FEELING', 'MIND', 'MISCELLANEOUS', 'MOTION', 'PERCEPTION', 'QUANTITY', 'SOCIAL', 'SPATIAL', 'SUBSTANCE', 'TEMPORAL', 'WEATHER']
@@ -644,12 +646,20 @@ def appendToCSV(infile, outfile, lemma):
 inFile= sys.argv[1]
 
 if os.path.isfile(inFile):
-	lemma=re.findall(r'infiles\/(\S*)In',inFile)[0]
-	print "Lemma is :%s"%lemma
-	adjdict = loadAdjTypes()
-	outfilepath = 'outfiles/' + lemma + 'Out.csv'
-	appendToCSV(inFile,outfilepath,lemma)
-	print 'written to ' + outfilepath
+	if str(inFile)=='nounlist.txt':
+		f= open('inFile','r')
+		for lemma in f:
+			infilepath = 'infiles/'+ lemma + 'In.csv'
+			outfilepath = 'outfiles/' + lemma + 'Out.csv'
+			appendToCSV(inFile,outfilepath,lemma)
+			print 'written to ' + outfilepath
+	else:
+		lemma=re.findall(r'infiles\/(\S*)In',inFile)[0]
+		print "Lemma is :%s"%lemma
+		adjdict = loadAdjTypes()
+		outfilepath = 'outfiles/' + lemma + 'Out.csv'
+		appendToCSV(inFile,outfilepath,lemma)
+		print 'written to ' + outfilepath
 else:
 	f = []
 	lemma_list=[]
@@ -664,29 +674,48 @@ else:
 		if len(temp)>0:
 			lemma_list.append(temp[0])
 	
-	partition_size=int(len(lemma_list)/num_of_threads)+1
-	lemma_chunks= [lemma_list[x:x+partition_size] for x in xrange(0, len(lemma_list), partition_size)]
+	# partition_size=int(len(lemma_list)/process_count)+1
+	# lemma_chunks= [lemma_list[x:x+partition_size] for x in xrange(0, len(lemma_list), partition_size)]
+	# print lemma_chunks
 	# for x in lemma_chunks:
 	# 	print len(x)
+	start = timeit.default_timer()
 	print "Start"
 	adjdict = loadAdjTypes()
-	def thread_work(sub_list,num):
-		for lemma in sub_list:
-			# from nltk.corpus import wordnet
-			# wordnet.ensure_loaded()
-			print "Thread %d starting"%num
-			print "Lemma is :%s"%lemma
-			infilepath = 'infiles/'+ lemma + 'In.csv'
-			outfilepath = 'outfiles/' + lemma + 'Out.csv'
+	def process_lemma(lemma):
+		# In order to make the multi-threading to work, here is what you need to do
+		# Run the code for the first time, you will likely to get error in nltk.util.py
+		# Go to that file, at some line that I cannot remember but you will probably figure out
+		# add wordnet.ensure_loaded()
+		# print lemma
+		print "Lemma is :%s"%lemma
+		infilepath = 'infiles/'+ lemma + 'In.csv'
+		outfilepath = 'outfiles/' + lemma + 'Out.csv'
+		try:
 			appendToCSV(infilepath, outfilepath, lemma)
-			print "Thread %d finished"%num
 			print 'written to ' + outfilepath
-	print "Start multi-threading"
-	for x in range(0,num_of_threads):
-		t=threading.Thread(target=thread_work,args=(lemma_chunks[x],x,))
+		except:
+			print "Infile name error"
+			print "Lemma name: %s"%lemma
+			# print "Process %d finished"%num
+		
+
+
+
+	print "Start multi processing"
+	# print lemma_list
+	pool.map(process_lemma,lemma_list)
+	stop = timeit.default_timer()
+
+	print stop - start 
+	# for x in range(0,process_count):
+	# 	# print lemma_chunks[x]
+		
+	# 	# put wordnet.ensure_loaded()
+	# 	pool.map(thread_work,lemma_chunks[x])
 		# time.sleep(1)
 		# t.setDaemon=True
-		t.start()
+
 
 
 	# try:
