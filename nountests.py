@@ -645,8 +645,17 @@ def appendToCSV(infile, outfile, lemma):
 #appendToCSV('testingIn.csv', 'testingOut.csv', 'testing')
 inFile= sys.argv[1]
 
+
+
+
+
+
+
 if os.path.isfile(inFile):
 	if str(inFile)=='nounlist.txt':
+		# This part has not been tested yet
+		# it reads a nount list and then go through the infile directory
+		# and do the processing
 		f= open('inFile','r')
 		for lemma in f:
 			infilepath = 'infiles/'+ lemma + 'In.csv'
@@ -654,6 +663,9 @@ if os.path.isfile(inFile):
 			appendToCSV(inFile,outfilepath,lemma)
 			print 'written to ' + outfilepath
 	else:
+		# This has been tested
+		# Reads an infile, which is in infiles directory
+		# and write to post file
 		lemma=re.findall(r'infiles\/(\S*)In',inFile)[0]
 		print "Lemma is :%s"%lemma
 		adjdict = loadAdjTypes()
@@ -661,6 +673,12 @@ if os.path.isfile(inFile):
 		appendToCSV(inFile,outfilepath,lemma)
 		print 'written to ' + outfilepath
 else:
+	# This has been tested, it uses multiprocessing
+	# to process the infiles, codes are straight forward
+	# but do read the comments in process_lemma
+	# also since this uese all cpu resources, you computer will be slow
+	# but the processing procedure will be fast
+	# a price to pay
 	f = []
 	lemma_list=[]
 	for (dirpath, dirnames, filenames) in walk(inFile):
@@ -672,6 +690,7 @@ else:
 		temp=re.findall(r'(\S*)In',str(file_name))
 		# print type(temp)
 		if len(temp)>0:
+			# This is to get the lemma
 			lemma_list.append(temp[0])
 	
 	# partition_size=int(len(lemma_list)/process_count)+1
@@ -699,9 +718,7 @@ else:
 			print "Lemma name: %s"%lemma
 			# print "Process %d finished"%num
 		
-
-
-
+	pool=Pool(cpu_count())
 	print "Start multi processing"
 	# print lemma_list
 	pool.map(process_lemma,lemma_list)
@@ -716,19 +733,6 @@ else:
 		# time.sleep(1)
 		# t.setDaemon=True
 
-
-
-	# try:
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[0],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[1],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[2],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[3],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[4],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[5],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[6],))
-	# 	thread.start_new_thread(thread_work,(lemma_chunks[7],))
-	# except:
-	# 	print "Threading failed"
 
 # infilepath = 'infiles/'+ lemma + 'In.csv'
 # outfilepath = 'outfiles/' + lemma + 'Out.csv'
