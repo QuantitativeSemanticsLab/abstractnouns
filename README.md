@@ -11,6 +11,22 @@ The COCA files can't be stored here due to liscensing, so the commands to run de
 ```bash
 for f in COCA_Corpus/*/*; do python c2h5multi.py $f; done
 ```
+## Parsing COCA with New Parser
+
+There is a new parser called parseCorpus.py. This parser parse each text file in corpus to a csv file. The csv file has three columns, which are the sentence, part of speech tags and enhanced ++ dependencies. 
+This parser is very fast. The idea is to create a local host of CoreNLP. To create the local host, cd to the coreNLP directory, then run the command:
+```bash
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 
+```
+More information about the local host can be found here:
+https://stanfordnlp.github.io/CoreNLP/corenlp-server.html
+
+To do the parsing, run this command:
+```bash
+python parseCorpus.py COCA
+```
+Here COCA is a directory that can contain directories and text files. IT CANNOT BE A FILE ITSELF.
+Notice that this parse will only read text files, no other format.
 
 ---
 ## Creating Infiles
