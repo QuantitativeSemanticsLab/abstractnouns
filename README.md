@@ -37,14 +37,6 @@ To create an infile for a given word run this command:
 python H5toCSV.py <word lemma>
 ```
 
-## Creating Infiles with raw2infile.py
-In files are created by parsing the raw files created with new parser. For each row in the raw file, the parser will look for the nouns specified in nounlist.txt(a text file listing all the nouns you want), and for each noun that is found, create the noun.csv if it does not exist yet, or append the row to noun.csv 
-To start the parsing, run command:
-```bash
-python raw2infile.py path/to/raw/files/
-```
-
-
 
 To create infiles for all of the nouns in nounlist run these commands:
 ```bash
@@ -58,6 +50,16 @@ while read f; do $f; done <nonregularnouns_tup.txt
 ```
 
 The first command creates infiles for all regular nouns w/ +s plural constructions. The second command creates separate infiles for plural and nonplural versions of non-regular nouns (with -y+ies, -s+es, etc.) plural constructions. The third command merges the singular and plural non-regular noun infiles into one infile (named for the singular version of the noun)
+
+
+## Creating Infiles with raw2infile.py
+In files are created by parsing the raw files created with new parser. For each row in the raw file, the parser will look for the nouns specified in nounlist.txt(a text file listing all the nouns you want), and for each noun that is found, create the noun.csv if it does not exist yet, or append the row to noun.csv. The infile directory is specified in the code.
+To start the parsing, run command:
+```bash
+python raw2infile.py 
+```
+
+
 
 ## Creating Outfiles
 
