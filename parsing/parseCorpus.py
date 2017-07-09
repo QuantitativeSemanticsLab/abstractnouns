@@ -24,10 +24,10 @@ import timeit
 # more information can be found here
 # https://stanfordnlp.github.io/CoreNLP/corenlp-server.html
 
-params = (
-    ('properties', '{"annotators":"pos,depparse","outputFormat":"json"}'),
-)
 
+params = (
+    ('properties', '{"annotators":"pos,lemma,ner,parse,openie, mention, coref", "coref.algorithm":"neural","outputFormat":"json",timeout:"900000"}'),
+)
 # data = "Life and Letters <p> In the house of literature there are many anterooms . Let 's suppose , for instance , that we find ourselves in the most public of this stately house 's rooms , the parlor . While the great writer is busy working upstairs , here , milling around , are the various people who play subsidiary roles in that writer 's life : in one corner stand family members and close friends ; in another , deep in conference , are editors , publishers , agents ; also present are journalists , photographers , proteges , miscellaneous admirers and hangers-on , and , perhaps , taking notes in an alcove , the writer 's official biographer . <p>"
 
 
@@ -57,12 +57,60 @@ def parsePOS(pos_list):
   # parsing the part of speech tags
   sentence=[]
   posList=[]
+  nerList=[]
   for tags in pos_list:
     word=tags['word']
+    index=str(tags['index'])
+    lemma=tags['lemma']
     pos=tags['pos']
-    posList.append(word+'/'+pos)
+    ner=tags['ner']
+    posList.append(word+'/'+lemma+'/'+pos)
     sentence.append(word)
-  return [' '.join(sentence),' '.join(posList)]
+    if ner!='O':
+      # if ner=='DATE':
+      #   # Since phrase like "mid of july" should be considered as time
+      #   # together in stead of mid/time, of/time, july/time
+      #   # the if loops here are to combine time phrases
+      #   id=tags['timex']['tid']
+      #   if id!=tid:
+      #     if tid!=-1:
+      #       # if we just had the first time fragment
+      #       time=word
+      #     else:
+      #       # if we enconter another time fragment, we need to append the last one
+      #       time+='/DATE'
+      #       nerList.append(time)
+      #       time=word
+
+      #     tid=id
+      #   else:
+      #     # if the id matches the tid
+      #     # that must means that a previous term has been added
+      #     time+='-'+word
+      # else:
+      nerList.append(word+'/'+index+'/'+ner)
+
+  return [' '.join(sentence),' '.join(posList), ' '.join(nerList)]
+
+
+
+def parseOpenIE(openIEList):
+  relationList=[]
+  relation_index_list=[]
+  for relation in openIEList:
+    rel=relation['relation']
+    obj=relation['object']
+    sub=relation['subject']
+    objSpan=relation['objectSpan']
+    subSpan=relation['subjectSpan']
+    relSpan=relation['relationSpan']
+
+    relationList.append('('+rel+'('+sub+', '+obj+')'+')')
+    relation_index_list.append("("+"-".join(str(x) for x in relSpan)+"("+"-".join(str(x) for x in subSpan)+", "+"-".join(str(x) for x in objSpan)+")")
+  return [relationList, relation_index_list]
+
+
+
 
 def parseSentence(sentence):
   # this function is to parse a sentence
@@ -71,6 +119,7 @@ def parseSentence(sentence):
   # then the port is 9000. You can of course 
   # use another one if port 9000 is busy
   rows=[]
+  coref_rows=[]
   
   try: 
     # parsing to utf-8 is going to cause some problems in some lines
@@ -81,17 +130,29 @@ def parseSentence(sentence):
     data=sentence.replace(u'\xa0', u' ').encode('utf-8')
     result= requests.post('http://localhost:9000/', params=params, data=data).content
     json_item = json.loads(result)
-    for item in json_item['sentences']:
+    for index, item in enumerate(json_item['sentences']):
       dep_list=item['enhancedPlusPlusDependencies']
       pos_list=item['tokens']
+      openIE_list=item['openie']
       pos_result=parsePOS(pos_list)
       dependency_result=parseDependency(dep_list)
-      rows.append([pos_result[0],pos_result[1]," ".join(dependency_result)])
+      openIE_result=parseOpenIE(openIE_list)
+      rows.append([pos_result[0],pos_result[1]," ".join(dependency_result), pos_result[2], "; ".join(openIE_result[0]), "; ".join(openIE_result[1]), str(index+1)])
       # print " ".join(dependency_result)
-    return rows
+    for group in json_item['corefs']:
+      for refs in json_item['corefs'][group]:
+        text=refs['text']
+        representative=str(refs['isRepresentativeMention'])
+        startIndex=str(refs['startIndex'])
+        endIndex=str(refs['endIndex'])
+        sentNum=str(refs['sentNum'])
+        coref_rows.append([text, representative, startIndex, endIndex, sentNum])
+    return [rows, coref_rows]
+
   except:
     print "Error parsing sentence"
     return False
+
 
 def parseFile(file):
   # this function parses a file
@@ -101,21 +162,33 @@ def parseFile(file):
   print "File read"
   filetup = re.findall(r'(\w*).txt', file_name)
   csv_name=path_name+"/"+filetup[0]+'.csv'
+  coref_csv_name=path_name+"/"+filetup[0]+"_Coref"+'.csv'
   print "CSV path: %s"%csv_name
   with open(csv_name,'wb') as outcsv:
     print "CSV created"
-    print "Start parsing"
-    writer=csv.writer(outcsv)
-    writer.writerow(['sent','tags','parse'])
-    line_num=1
-    for line in f:
-      rows=parseSentence(line)
-      if rows:
-        for row in rows:
-          writer.writerow(row)
-      print "File %s line %d finished"%(file_name,line_num)
-      line_num=line_num+1
-  print "File finished %s"%csv_name
+    with open(coref_csv_name,'wb') as corcsv:
+      print "Coreference CSV created"
+      print "Start parsing"
+      writer=csv.writer(outcsv)
+      corwriter=csv.writer(corcsv)
+      writer.writerow(['sent','tags','parse','ner','open IE','open IE index','sentence number', 'paragraph number'])
+      corwriter.writerow(['text', 'is representative', 'start index', 'end index', 'sentence number', 'paragraph number'])
+      line_num=1
+      for line in f:
+        result=parseSentence(line)
+        if result:
+          rows=result[0]
+          coref_rows=result[1]
+          for row in rows:
+            row.append(str(line_num))
+            writer.writerow(row)
+          for row in coref_rows:
+            row.append(str(line_num))
+            corwriter.writerow(row)
+        print "File %s line %d finished"%(file_name,line_num)
+        line_num=line_num+1
+  print "File Finished %s"%csv_name
+  print "Coreference File Finished %s"%coref_csv_name
 
 
 
@@ -142,13 +215,14 @@ def mainWork(inFile):
 
 
 inFile=sys.argv[1]
+# mainWork(inFile)
 directory_list=[]
 for root, dirs, files in walk(inFile):
   directory_list.extend(dirs)
   # Added this line so that if there are text files in the directory
   # then it will also be parsed directly
-  # I have not run tthis code with this specific line, but should be fine       
-  directory_list.exted(files)
+  # I have not run tthis code with this specific line, but should be fine
+  directory_list.extend(files)
   break
 directory_list=map(lambda x: inFile+"/"+x, directory_list)
 for dirs in directory_list:
